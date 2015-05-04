@@ -5,3 +5,5 @@
 + Using Jekyllrb for fast prototyping html mockups.
 + User flow and UI/UX playground.
 + Collaborators, Tu Trinh & Leon Truong
++ Building page templates
+    + Landing page
