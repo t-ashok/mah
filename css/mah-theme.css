@@ -1,0 +1,36 @@
+/* Additional Theme Style
+
+* Project: MAH
+* Date: 5/4/2015
+
+  Common CSS properties
+  -------------------------
+
+*/
+/*
+*	GENERAL SETTINGS
+* 	COLORS
+ */
+/* General */
+body {
+  background-color: #f8f8f8;
+}
+pre {
+  font-size: 11px;
+}
+/* Header */
+.sub-logo{width:150px;}
+
+/* Footer */
+footer {
+  padding-top: 0;
+}
+
+/* Buttons */
+
+
+
+/* Nav menu items */
+li.current-menu-item a {
+  color: #000 !important;
+}

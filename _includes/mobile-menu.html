@@ -1,0 +1,64 @@
+<!-- Mobile Menu Wrapper ====================== -->
+<div id="mobile-menu-wrap">
+    <!-- Search -->
+    <form method="get" class="mobile-search-form" action="">
+        <input placeholder="Search" name="s" autocomplete="off" type="text">
+        <a href="#" class="mobile-menu-close pull-right"><i class="fa fa-close"></i></a>
+    </form>
+
+    <nav id="mobile-menu" class="clearfix">
+        <div class="menu-ecc-navigation-mobile-container">
+
+            <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary">
+
+                <div class="">
+
+
+                    <div class="nav" id="">
+                        <h5>Navigation</h5>
+                        <ul class="list-unstyled menu">
+                            {% assign pages = site.pages | sort:"weight"  %}
+                            {% for page in pages %}
+                            {% if page.title %}
+                            <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
+                            <li class="menu-item">
+                                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+
+                    <!--Example-->
+                    <div class="nav" id="">
+                        <h5>Layout Example</h5>
+                        <ul class="list-unstyled menu">
+
+                            <li class="menu-item">
+                                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-left-sidebar.html" target="_blank"> Content w/ Left Sidebar</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-right-sidebar.html" target="_blank"> Content w/ Right Sidebar</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-full-width.html" target="_blank"> Full Width Content </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div><!-- // sidebar -->
+
+
+
+        </div>
+    </nav>
+</div><!-- //#mobile-menu-wrap -->

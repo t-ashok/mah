@@ -1,20 +1,37 @@
-<!DOCTYPE html>
-<html>
 
-  {% include head.html %}
+{% include utility.html %}
+{% include head.html %}
 
-  <body>
+<body>
+<!-- Mobile Menu Wrapper ====================== -->
+{% include mobile-menu.html %}
 
-    {% include header.html %}
+<div id="mainWrapper">
 
-    <div class="page-content">
-      <div class="wrapper">
+  {% include header.html %}
+
+  <!-- Main content -->
+  <div id="main">
+    <!-- container-->
+    <div class="container">
+      <div class="row has-right-sidebar  inner-page-wrap ">
+
         {{ content }}
-      </div>
-    </div>
+        <!--sidebar include-->
+        {% include sidebar.html %}
 
-    {% include footer.html %}
+      </div><!-- //.row -->
+    </div><!-- //.container -->
 
-  </body>
+
+    <!--/#main-->
+  </div>
+
+  {% include footer.html %}
+  <!--/#mainWrapper-->
+</div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/core-functions.js"></script>
+</body>
 
 </html>
