@@ -16,11 +16,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, .btn{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
+    /*font-weight: 400;*/
+    /*font-style: normal;*/
+    /*text-transform: uppercase;*/
 }
+
 
 a {
     outline: medium none !important;
@@ -35,9 +35,6 @@ a:hover{
     text-decoration: none;
     color: #ed1b24;
 }
-
-
-
 
 .page-header {
     text-transform: uppercase;
