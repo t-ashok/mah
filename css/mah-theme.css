@@ -2112,7 +2112,7 @@ h6,
     /*font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;*/
     /*font-weight: 700;*/
     line-height: 1.1;
-    color: #364347;
+    /*color: #364347;*/
 }
 h1 small,
 h2 small,
@@ -2126,7 +2126,7 @@ h6 small,
 .h4 small,
 .h5 small,
 .h6 small {
-    color: #93a4aa;
+    /*color: #93a4aa;*/
     font-size: 82%;
 }
 h1,
@@ -2173,9 +2173,7 @@ h6,
     margin: 48px 0 24px;
     border-bottom: none;
 }
-p {
-    color: #364347;
-}
+
 .thumbnail {
     padding: 0;
     border: 0;
