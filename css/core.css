@@ -502,7 +502,7 @@ display: block;
 }
 
 .nav .menu li.menu-item a:before {
-    content: "";
+    content: "\f054";
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -698,21 +698,21 @@ nav.ahamenu .menu li:first-child:hover a.aha_logo img {
 visibility: hidden;
 }
 
-.dropdown-menu {
-    border-radius: 0px;
-}
+/*.dropdown-menu {*/
+    /*border-radius: 0px;*/
+/*}*/
 
-.dropdown-menu  li {
-    border-top:1px solid #ccc;
-}
+/*.dropdown-menu  li {*/
+    /*border-top:1px solid #ccc;*/
+/*}*/
 
-.dropdown-menu > li:first-child {
-    border-top: 0px;
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    text-decoration: none;
-    background-color: transparent;
-}
+/*.dropdown-menu > li:first-child {*/
+    /*border-top: 0px;*/
+/*}*/
+/*.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {*/
+    /*text-decoration: none;*/
+    /*background-color: transparent;*/
+/*}*/
 
 /*=====================================
 =            Media Queries            =
