@@ -2385,7 +2385,7 @@ a.thumbnail[class*="fa-"]:hover:before {
 
 /*Custom*/
 /*Used for home page with image*/
-.caption {
+.image-caption {
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,0.3)!important;color:#fff;padding: 10px;width:100%;
@@ -2396,4 +2396,13 @@ a.thumbnail[class*="fa-"]:hover:before {
 .image-caption-wrapper {
     position: relative;
     margin-bottom: 20px;
+}
+
+/*Image Card*/
+.image-card {
+
+}
+.image-card .thumbnail .caption {
+    border: 0px;
+    padding: 0px;
 }

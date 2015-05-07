@@ -1,0 +1,44 @@
+<!--if want sidebar to affix then add "sidebar-affix" to below div -->
+<div class="">
+
+
+    <div class="nav" id="">
+        <h5>Navigation</h5>
+        <ul class="list-unstyled menu">
+            {% assign pages = site.pages | sort:"weight"  %}
+            {% for page in pages %}
+            {% if page.title %}
+            <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
+            <li class="menu-item">
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+    </div>
+
+    <!--Example-->
+    <div class="nav" id="">
+        <h5>Layout Example</h5>
+        <ul class="list-unstyled menu">
+
+            <li class="menu-item">
+                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-left-sidebar.html" target="_blank"> Content w/ Left Sidebar</a>
+            </li>
+            <li class="menu-item">
+                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-right-sidebar.html" target="_blank"> Content w/ Right Sidebar</a>
+            </li>
+            <li class="menu-item">
+                <a class="page-link" href="http://static.heart.org/ahaanywhere_dev/v2/wcm-full-width.html" target="_blank"> Full Width Content </a>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+</div>
