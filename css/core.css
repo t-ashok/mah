@@ -786,7 +786,7 @@ visibility: hidden;
 /*Bootstrap MD*/
 @media(min-width:992px){
     nav#main-navigation .menu > li > a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .sub-logo {
         width: 300px;
