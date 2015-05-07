@@ -18,13 +18,30 @@
     <div class="container">
       <div class="row">
         <!--Big-->
-        <div class="col-sm-6" style="background-color: #ff0000;">ad asd</div>
+        <div class="col-sm-6">
+            {% assign hero = "hero.jpg" %}
+            {% assign description = "Treatment of Hypertension in Patients With Coronary Artery Disease" %}
+            {% include components/caption-image.html %}
+        </div>
         <!--Quarters-->
-        <div class="col-sm-6" style="background-color: #1d6c66">
-          <div class="col-sm-6" style="background-color: #009926;">fasfs</div>
-          <div class="col-sm-6" style="background-color: #009926;">asf</div>
-          <div class="col-sm-6" style="background-color: #009926;">asfds</div>
-          <div class="col-sm-6" style="background-color: #009926;">asfd</div>
+        <div class="col-sm-6">
+
+          <div class="col-sm-6">
+              {% assign hero = "icsLogo.png" %}
+              {% assign description = "Secondary Prevention after CABG Surgery" %}
+              {% include components/caption-image.html %}
+          </div>
+          <div class="col-sm-6"">
+              {% include components/caption-image.html %}
+          </div>
+          <div class="col-sm-6">
+              {% assign hero = "icsLogo.png" %}
+              {% assign description = "Science News from ISC 2015" %}
+              {% include components/caption-image.html %}
+          </div>
+          <div class="col-sm-6">
+              {% include components/caption-image.html %}
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +64,13 @@
    <div class="wrapper" style="background-color: #f7f7f7;">
        <!--Section-->
       <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h1 class="lead text-center text-uppercase ">
+                      Start a Conversation or Join Other Communities
+                  </h1>
+              </div>
+          </div>
           <div class="row">
               <div class="col-sm-4">
                   {% include /components/media-object.html %}
@@ -85,8 +109,12 @@
       <!--Section-->
       <div class="wrapper" style="background-color: #fff;">
           <div class="container">
+
               <div class="row">
                     <div class="col-sm-12">
+                        <h1 class="lead text-center text-uppercase ">
+                            Our Sponsors
+                        </h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, animi aut blanditiis consectetur cum dolorum eaque error, est excepturi harum ipsa nam natus odio sint temporibus tenetur?
                         </p>
