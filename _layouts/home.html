@@ -11,12 +11,14 @@
     {% include header.html %}
 
     <!-- Main content -->
-    <div id="main" style="background-color: #ff0;">
+    <div id="main">
         <!-- container-->
         <div class="container">
             <div class="row has-right-sidebar  inner-page-wrap ">
 
+                {{ content }}
 
+                {% include sidebar.html %}
 
             </div><!-- //.row -->
         </div><!-- //.container -->
