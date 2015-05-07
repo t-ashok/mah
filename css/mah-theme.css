@@ -2410,5 +2410,10 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 .box-content-wrap {
+
+}
+
+.box-content-wrap .thumbnail .caption {
+    border: 0;
     background-color: #f7f7f7;
 }
