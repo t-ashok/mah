@@ -11,17 +11,109 @@
   {% include header.html %}
 
   <!-- Main content -->
+  <!--Main is full page-->
   <div id="main">
+  <!--Section-->
+    <!--Hero-->
+    <div class="container">
+      <div class="row">
+        <!--Big-->
+        <div class="col-sm-6" style="background-color: #ff0000;">ad asd</div>
+        <!--Quarters-->
+        <div class="col-sm-6" style="background-color: #1d6c66">
+          <div class="col-sm-6" style="background-color: #009926;">fasfs</div>
+          <div class="col-sm-6" style="background-color: #009926;">asf</div>
+          <div class="col-sm-6" style="background-color: #009926;">asfds</div>
+          <div class="col-sm-6" style="background-color: #009926;">asfd</div>
+        </div>
+      </div>
+    </div>
+
+  <!--Section-->
     <!-- container-->
     <div class="container">
-      <div class="row has-right-sidebar  inner-page-wrap ">
+      <div class="row has-left-sidebar inner-page-wrap ">
 
-        {{ content }}
         <!--sidebar include-->
         {% include sidebar.html %}
 
+        {{ content }}
+
+
       </div><!-- //.row -->
     </div><!-- //.container -->
+
+
+   <div class="wrapper" style="background-color: green;">
+       <!--Section-->
+      <div class="container" style="background-color: red;">
+          <div class="row">
+              <div class="col-sm-4">1</div>
+              <div class="col-sm-4">2</div>
+              <div class="col-sm-4">3</div>
+              <div class="col-sm-4">4</div>
+              <div class="col-sm-4">5</div>
+              <div class="col-sm-4">6</div>
+              <div class="col-sm-4">7</div>
+              <div class="col-sm-4">8</div>
+              <div class="col-sm-4">9</div>
+          </div>
+      </div>
+    </div>
+      <!--End-->
+
+      <!--Section-->
+      <div class="wrapper" style="background-color: #fff;">
+          <div class="container">
+              <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, animi aut blanditiis consectetur cum dolorum eaque error, est excepturi harum ipsa nam natus odio sint temporibus tenetur?
+                        </p>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <!--End-->
+
+      <!--Section-->
+      <!--Subscribe Newsletter-->
+      <div class="wrapper" style="background-color: #f7f7f7;">
+          <div class="container">
+              <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="lead" >
+                            <span style="text-transform: uppercase;">Subscribe To Our Newsletter</span>
+                            <p class="small">Clinical Implications section emailed directly to you each month</p>
+                        </h2>
+                        <!--Form-->
+                        <form action="" method="post" role="form" class="form-inline">
+
+                        
+                        	<div class="form-group">
+                        		<label for="fname"></label>
+                        		<input type="text" class="form-control input-md" name="fname" id="fname" placeholder="First Name">
+                                <label for="lname"></label>
+                                <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name">
+                                <label for="subscribe-email"></label>
+                                <input type="text" class="form-control" name="subscribe-email" id="subscribe-email" placeholder="E-mail Address">
+                        	</div>
+                        
+                        	
+                        
+                        	<button type="submit" class="btn btn-primary btn-danger">Submit</button>
+                        </form>
+
+
+
+
+                    </div>
+              </div>
+          </div>
+      </div>
+
+
+
 
 
     <!--/#main-->
