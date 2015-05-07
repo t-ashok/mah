@@ -2379,8 +2379,8 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 
-/*Custom*/
-/*Used for home page with image*/
+/* Custom - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* Used for home page with image */
 .image-caption {
     position: absolute;
     bottom: 0;
@@ -2394,11 +2394,21 @@ a.thumbnail[class*="fa-"]:hover:before {
     margin-bottom: 20px;
 }
 
-/*Image Card*/
+/* Image Card */
 .image-card {
 
 }
 .image-card .thumbnail .caption {
     border: 0px;
     padding: 0px;
+}
+
+/* Card */
+.card .thumbnail .caption{
+    border-top: 2px solid #d6e1e5;
+    border-radius: 0px;
+}
+
+.box-content-wrap {
+    background-color: #f7f7f7;
 }
