@@ -1,29 +1,40 @@
 @charset "utf-8";
 
-
-
-
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 22px;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #222;
+$background-color: #f7f7f7;
+$brand-color:      #BC0009;
+
+$default-bg-color:      #222;
+$default-bg-color-light:  lighten($default-bg-color, 40%);
+$default-bg-color-dark:   darken($default-bg-color, 25%);
+
+$primary-bg-color:      #ED0000;
+
+
+$invert-bg-color:       #e3dee5;
+
+
+
+$invert-font-color:      #fff;
+
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-//$content-width:    800px;
+$content-width:    800px;
 //
-//$on-palm:          600px;
-//$on-laptop:        800px;
+$on-palm:          600px;
+$on-laptop:        800px;
 
 
 
@@ -41,10 +52,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+  "../_sass/base",
+  "../_sass/core",
+  "../_sass/layout",
+  "../_sass/syntax-highlighting"
+  ;
+
+
