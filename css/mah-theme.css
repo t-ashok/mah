@@ -30,7 +30,7 @@ pre {
   font-size: 11px;
 }
 /* Header */
-.sub-logo{width:150px;}
+.sub-logo{width:200px;}
 
 /* Footer */
 footer {
@@ -232,22 +232,22 @@ fieldset[disabled] .btn {
     padding: 3px 0 3px 10px;
 }
 .btn-default {
-    color: #02baf2;
-    background-color: white;
-    border-color: #d6e1e5;
+    color: #fff;
+    background-color: #222222;
+    border-color: #222222;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-    color: #02baf2;
-    background-color: white;
-    border-color: #02baf2;
+    color: #fff;
+    background-color: #4c4c4c;
+    border-color: #4c4c4c;
 }
 .btn-default:active,
 .btn-default.active {
-    background: #02baf2;
-    border-color: #009dcd;
+    background: #4c4c4c;
+    border-color: #4c4c4c;
     color: white;
 }
 .btn-default.disabled,
@@ -833,28 +833,28 @@ fieldset[disabled] .btn-inverse.active {
     text-align: left;
 }
 .btn-group-dropdown .btn-default {
-    color: #364347;
+    /*color: #364347;*/
 }
 .btn-group-dropdown .btn-default:hover {
-    border-color: #93a4aa;
+    border-color: #ED0000;
 }
 .btn-group-dropdown .btn-default:hover [class^="ss-"],
 .btn-group-dropdown .btn-default:hover [class^="fa-"] {
-    color: #02baf2;
+    color: #222;
 }
 .btn-group-dropdown .btn-default:active {
-    background: #e1eef3;
-    border-color: #93a4aa;
+    background: #ED0000;
+    border-color: #ED0000;
 }
 .btn-group-dropdown .btn-default:active [class^="ss-"],
 .btn-group-dropdown .btn-default:active [class^="fa-"] {
     color: #02baf2;
 }
 .btn-group-dropdown .btn-primary.dropdown-toggle {
-    border-left: 1px solid #009dcd;
+    /*border-left: 1px solid #009dcd;*/
 }
 .btn-group-dropdown .btn-danger.dropdown-toggle {
-    border-left: 1px solid #cc0000;
+    /*border-left: 1px solid #cc0000;*/
 }
 .btn-group-dropdown .btn-inverse {
     color: #fff;
@@ -871,7 +871,7 @@ fieldset[disabled] .btn-inverse.active {
     color: #02baf2;
 }
 .btn-group-dropdown .btn-inverse.dropdown-toggle {
-    border-left: 1px solid black;
+    /*border-left: 1px solid black;*/
 }
 .btn-group-dropdown.open .btn {
     -webkit-box-shadow: none;
@@ -2041,7 +2041,7 @@ select[multiple].input-lg {
 }
 .icon-button > i {
     color: #02baf2;
-    font-size: 16px;
+    font-size: 20px;
 }
 .tool-container {
     background-color: #364347;
@@ -2072,7 +2072,7 @@ select[multiple].input-lg {
     transition: none;
 }
 .tool-item > .fa {
-    color: #93a4aa;
+    color: #f7f7f7;
 }
 .tool-item.selected,
 .tool-item:hover {
