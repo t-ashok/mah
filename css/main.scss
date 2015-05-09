@@ -1,4 +1,7 @@
-@charset "utf-8";
+@charset "UTF-8";
+
+
+
 
 // Our variables
 $base-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9,55 +12,42 @@ $base-line-height: 22px;
 $spacing-unit:     30px;
 
 $text-color:       #222;
+$invert-text-color:#fff;
 $background-color: #f7f7f7;
 $brand-color:      #BC0009;
 
-$default-bg-color:      #222;
-$default-bg-color-light:  lighten($default-bg-color, 40%);
-$default-bg-color-dark:   darken($default-bg-color, 25%);
 
-$primary-bg-color:      #ED0000;
+$btn-default-bg-color:      #222;
+$btn-default-bg-color-light:  lighten($btn-default-bg-color, 40%);
+$btn-default-bg-color-dark:   darken($btn-default-bg-color, 25%);
 
+$btn-primary-bg-color:      #ED0000;
+$btn-primary-bg-color-light:  lighten($btn-primary-bg-color, 40%);
+$btn-primary-bg-color-dark:   darken($btn-primary-bg-color, 25%);
 
-$invert-bg-color:       #e3dee5;
+$btn-invert-bg-color:       #e3dee5;
+$btn-invert-bg-color-light:  lighten($btn-invert-bg-color, 40%);
+$btn-invert-bg-color-dark:   darken($btn-invert-bg-color, 25%);
 
-
-
-$invert-font-color:      #fff;
-
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-//
-$on-palm:          600px;
-$on-laptop:        800px;
+$primary-border-color: #e5e5e5;
+$primary-border-color-lighten: lighten($primary-border-color, 40%);
+$primary-border-color-dark: darken($primary-border-color, 25%);
 
 
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-
-  "../_sass/core"
-
-
+@import 'core',
+        'mah_theme'
   ;
-
-
