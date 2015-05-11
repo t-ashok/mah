@@ -2426,3 +2426,24 @@ a.thumbnail[class*="fa-"]:hover:before {
     border: 0;
     background-color: #f7f7f7;
 }
+
+/* Content Tags */
+.tag {
+    margin: 5px 0;
+}
+.tag .indicator {
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    background-color: #00769a;
+    margin-right: 5px;
+}
+/* hypertension */
+.tag-hyper .indicator {
+    background-color: #70ca9a;
+}
+
+/*Bootstrap Overwrite*/
+.media {
+    margin-bottom: 30px;
+}
