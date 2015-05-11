@@ -2,182 +2,90 @@
 title: Membership
 layout: l_default
 ---
-
-<body class="membership">
-<!-- Mobile Menu Wrapper ====================== -->
-{% include mobile-menu.html %}
-
-<div id="mainWrapper">
-
-  {% include header.html %}
-
-  <!-- Main content -->
-  <!--Main is full page-->
-  <div id="main">
-  <!--Section-->
-    <!--Hero-->
-    <div class="container">
-      <div class="row">
-        <!--Big-->
-        <div class="col-sm-6">
-            {% assign hero = "hero.jpg" %}
-            {% assign description = "Treatment of Hypertension in Patients With Coronary Artery Disease" %}
-            {% include components/caption-image.html %}
+<!--This is content for this page-->
+<div class="col-md-12 col-sm-12" role="main">
+    <!--Content-->
+    <div class="row">
+        <div class="container">
+        <h2>Learn and connect.</h2>
+        <p>The American Heart Association/American Stroke Association currently has over 32,000 members that support our mission through their outstanding gifts of time, dedication and heart. Our robust group of cardiovascular professionals who participate in discovery and dissemination of science, through 16 different scientific councils, each unique in their own way, which are sure to coincide with your cardiovascular specialties and classifications.</p>
+        <button type="button" class="btn btn-default btn-lg">Sign In</button>
+        <button type="button" class="btn btn-primary btn-lg">Upgrade Membership</button>
         </div>
-        <!--Quarters-->
-        <div class="col-sm-6">
 
-          <div class="col-sm-6">
-              {% assign hero = "icsLogo.png" %}
-              {% assign description = "Secondary Prevention after CABG Surgery" %}
-              {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6"">
-              {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6">
-              {% assign hero = "icsLogo.png" %}
-              {% assign description = "Science News from ISC 2015" %}
-              {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6">
-              {% include components/caption-image.html %}
-          </div>
-        </div>
-      </div>
     </div>
 
-  <!--Section-->
-    <!-- container-->
-    <div class="container">
-      <div class="row has-left-sidebar inner-page-wrap ">
+    <div class="pricing-table">
 
-        <!--sidebar include-->
-        {% include sidebar.html %}
+        <!-- PRICING TABLES -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><h4>BASIC</h4><small>$9 ANNUALLY</small></th>
+                    <th><h4>EARLY<br>CAREER</h4><small>$9 ANNUALLY</small></th>
+                    <th><h4>PROFESSIONAL</h4><small>$9 ANNUALLY</small></th>
+                    <th><h4>PREMIUM</h4><small>$9 ANNUALLY</small></th>
 
-        {{ content }}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><strong>36 tokens for AHA Journals CME program</strong></th>
+                    <td></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Online access AHA scientific journals</strong></th>
+                    <td></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Science OnDemand®</strong></th>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Priority registration and housing</strong></th>
+                    <td></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Savings on each Specialty Conference</strong></th>
+                    <td></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Eligible for AHA council grants and awards</strong></th>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row"><strong>Networking opportunities</strong></th>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td><i class="fa fa-check"></i></td>
 
-
-      </div><!-- //.row -->
-    </div><!-- //.container -->
-
-
-   <div class="wrapper" style="background-color: #f7f7f7;">
-       <!--Section-->
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-12">
-                  <h1 class="lead text-center text-uppercase ">
-                      Start a Conversation or Join Other Communities
-                  </h1>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-              <div class="col-sm-4">
-                  {% include /components/media-object.html %}
-              </div>
-
-
-          </div>
-      </div>
-    </div>
-      <!--End-->
-
-      <!--Section-->
-      <div class="wrapper" style="background-color: #fff;">
-          <div class="container">
-
-              <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="lead text-center text-uppercase ">
-                            Our Sponsors
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, animi aut blanditiis consectetur cum dolorum eaque error, est excepturi harum ipsa nam natus odio sint temporibus tenetur?
-                        </p>
-                    </div>
-              </div>
-          </div>
-      </div>
-      <!--End-->
-
-      <!--Section-->
-      <!--Subscribe Newsletter-->
-      <div class="wrapper" style="background-color: #f7f7f7;">
-          <div class="container">
-              <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h2 class="lead" >
-                            <span style="text-transform: uppercase;">Subscribe To Our Newsletter</span>
-                            <p class="small">Clinical Implications section emailed directly to you each month</p>
-                        </h2>
-                        <!--Form-->
-                        <form action="" method="post" role="form" class="form-inline">
-
-                        
-                        	<div class="form-group">
-                        		<label for="fname"></label>
-                        		<input type="text" class="form-control input-md" name="fname" id="fname" placeholder="First Name">
-                                <label for="lname"></label>
-                                <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name">
-                                <label for="subscribe-email"></label>
-                                <input type="text" class="form-control" name="subscribe-email" id="subscribe-email" placeholder="E-mail Address">
-                        	</div>
-                        
-                        	
-                        
-                        	<button type="submit" class="btn btn-primary btn-danger">Submit</button>
-                        </form>
-
-
-
-
-                    </div>
-              </div>
-          </div>
-      </div>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- /END ALL PACKAGE -->
 
 
 
 
 
-    <!--/#main-->
-  </div>
-
-  {% include footer.html %}
-  <!--/#mainWrapper-->
-</div>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/core-functions.js"></script>
-<script src="js/checkbox.js"></script>
-<script src="js/radio.js"></script>
-<script src="js/bootstrap-switch.js"></script>
-<script src="js/toolbar.js"></script>
-<script src="js/application.js"></script>
-</body>
-
-</html>
+</div><!-- //.col-md-9 -->

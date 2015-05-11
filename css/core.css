@@ -48,7 +48,13 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 
+.padding-0 {
+    padding: 0;
+}
 
+.border-0 {
+    border: 0 none !important;
+}
 
 .content{
     background-color: #fff;
@@ -60,12 +66,6 @@ margin-bottom: 30px;
 .has-left-sidebar .type-page {
     float: right!important;
 }
-
-
-.affix-top,.affix{
- position: static;
-}
-
 
 
 /*Sidebar Affix*/
@@ -120,6 +120,23 @@ margin-bottom: 10px;
 }
 
 
+/*==============================
+=     Background Colors        =
+==============================*/
+.bg-color-white {
+    background-color: #ffffff;
+
+}
+
+.bg-color-primary {
+    background-color: #ED0000;
+    color: #fff;
+}
+
+.bg-color-default {
+    background-color: #222222;
+    color: #ffffff;
+}
 
 /*==============================
 =            Footer            =

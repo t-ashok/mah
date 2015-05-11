@@ -33,6 +33,7 @@ pre {
 #header {
     background-color: transparent !important;
     border-bottom-color: transparent; !important;
+
 }
 
 .sub-logo{width:200px;}
@@ -2446,4 +2447,18 @@ a.thumbnail[class*="fa-"]:hover:before {
 /*Bootstrap Overwrite*/
 .media {
     margin-bottom: 30px;
+}
+
+/*Membership*/
+
+.pricing-table tr .fa {
+    font-size: 30px;
+}
+.pricing-table tr th,
+.pricing-table tbody tr td {
+    text-align: center;
+}
+
+.pricing-table tbody tr th {
+    text-align: left;
 }
