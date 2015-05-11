@@ -30,6 +30,11 @@ pre {
   font-size: 11px;
 }
 /* Header */
+#header {
+    background-color: transparent !important;
+    border-bottom-color: transparent; !important;
+}
+
 .sub-logo{width:200px;}
 
 /* Footer */
