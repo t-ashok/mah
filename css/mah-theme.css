@@ -2398,7 +2398,7 @@ a.thumbnail[class*="fa-"]:hover:before {
     border: 1px solid #c1c1c1;
 }
 
-.meeting .thumbnail {
+.meeting-thumbnail {
     margin-bottom: 30px;
 }
 
