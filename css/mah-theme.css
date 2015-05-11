@@ -2391,6 +2391,13 @@ a.thumbnail[class*="fa-"]:hover:before {
 
 /* Custom - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 /* Used for home page with image */
+.img-full {
+    width: 100%;
+}
+.img-border {
+    border: 1px solid #c1c1c1;
+}
+
 .image-caption {
     position: absolute;
     bottom: 0;
@@ -2462,3 +2469,4 @@ a.thumbnail[class*="fa-"]:hover:before {
 .pricing-table tbody tr th {
     text-align: left;
 }
+
