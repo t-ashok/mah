@@ -47,7 +47,8 @@ $primary-border-color-dark: darken($primary-border-color, 25%);
   border-radius: $radius;
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import 'core',
-        'mah_theme'
-  ;
+@import
+'../_sass/_core.scss',
+'../_sass/_mah_theme.scss'
+
+;
