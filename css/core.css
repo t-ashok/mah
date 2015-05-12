@@ -75,6 +75,31 @@ a:hover{
     border: 0 none !important;
 }
 
+.border-1 {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-2 {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.border-color-grey {
+    border-color: #d6e1e5;
+}
+
+.border-color-primary {
+    border-color: #ED0000;
+}
+
+.border-color-default {
+    border-color: #000;
+}
+
+
+
+
 .align-right {
     text-align: right;
 }
@@ -163,7 +188,7 @@ margin-bottom: 10px;
 
 .bg-color-grey,
 .bg-color-grey .jumbotron {
-    background-color: #eaeaea;
+    background-color: #f7f7f7;
 }
 
 

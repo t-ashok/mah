@@ -2417,6 +2417,18 @@ a.thumbnail[class*="fa-"]:hover:before {
     margin-bottom: 20px;
 }
 
+.feature .image-caption-wrapper {
+    height: 380px;
+    background-color: black;
+}
+
+.feature .image-caption-wrapper .image-caption {
+    font-size: 20px;
+    line-height: 26px;
+
+}
+
+
 /* Image Card */
 .image-card {
 
@@ -2427,6 +2439,11 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 /* Card */
+
+.card {
+    padding: 20px;
+}
+
 .card .thumbnail .caption{
     border-top: 2px solid #d6e1e5;
     border-radius: 0px;
