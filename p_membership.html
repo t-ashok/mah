@@ -84,7 +84,26 @@ layout: l_default
         </table>
     </div> <!-- /END ALL PACKAGE -->
 
+    <div>
+        {% for post in site.posts limit:2 %}
+        <div class="6u">
+            <section class="box">
+                <a href="{{ post.url | prepend: site.baseurl }}" class="image featured"><img src="{{ post.banner | prepend: site.baseurl }}" alt="" /></a>
+                <header>
+                    <h3>{{ post.title }}</h3>
+                    <p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>
+                </header>
+                <p>{{ post.excerpt }}</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{{ post.url | prepend: site.baseurl }}" class="button icon fa-file-text">Continue Reading</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </div>
+        {% endfor %}
 
+    </div>
 
 
 

@@ -2474,3 +2474,7 @@ a.thumbnail[class*="fa-"]:hover:before {
     text-align: left;
 }
 
+.pricing-table .table>tbody>tr>th {
+    vertical-align: middle;
+}
+

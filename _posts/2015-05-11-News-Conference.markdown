@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome"
+title:  "Conference News"
 date:   2015-05-04 11:26:01
 categories: Stroke
 banner: /img/sample/thumbnail.png
