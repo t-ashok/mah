@@ -36,16 +36,35 @@ a:hover{
     color: #ed1b24;
 }
 
+.skip a {
+
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    color: #000;
+}
+
 .page-header {
     text-transform: uppercase;
     border: 0;
     margin: 0;
 }
 
+.no-title .page-header,
+.no-title .page-title
+{
+    display: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
 /*For row spacing inside main content*/
 #main .row, .spacer {
-margin-top: 30px;
-margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .padding-0 {
@@ -54,6 +73,10 @@ margin-bottom: 30px;
 
 .border-0 {
     border: 0 none !important;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .content{
@@ -137,6 +160,13 @@ margin-bottom: 10px;
     background-color: #222222;
     color: #ffffff;
 }
+
+.bg-color-grey,
+.bg-color-grey .jumbotron {
+    background-color: #eaeaea;
+}
+
+
 
 /*==============================
 =            Footer            =
