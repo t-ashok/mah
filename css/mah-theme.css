@@ -2407,7 +2407,7 @@ a.thumbnail[class*="fa-"]:hover:before {
 .image-caption {
     position: absolute;
     bottom: 0;
-    background-color: rgba(0,0,0,0.3)!important;color:#fff;padding: 10px;width:100%;
+    background-color: rgba(0,0,0,0.8)!important;color:#fff;padding: 10px;width:100%;
     font-size: 16px;
     line-height: 18px;
 }
@@ -2449,13 +2449,23 @@ a.thumbnail[class*="fa-"]:hover:before {
     display: inline-block;
     width: 6px;
     height: 12px;
-    background-color: #00769a;
     margin-right: 5px;
 }
 /* hypertension */
 .tag-hyper .indicator {
     background-color: #70ca9a;
 }
+/*stroke*/
+.tag-stroke .indicator {
+    background-color: #9175bd;
+}
+/*Cardiology*/
+.tag-cardio .indicator {
+    background-color: #00769a;
+}
+
+
+
 
 /*Bootstrap Overwrite*/
 .media {
@@ -2484,4 +2494,12 @@ a.thumbnail[class*="fa-"]:hover:before {
     margin: 10px 0 10px;
 }
 
+.meetings,
+.news {
+    display: inline-block;
+}
+
+h4 .text-uppercase {
+    vertical-align: middle;
+}
 

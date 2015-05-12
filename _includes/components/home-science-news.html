@@ -1,23 +1,37 @@
 <!-- Science News -->
-<div class="science">
+<div class="news">
     <div class="col-sm-12">
-        <h4 class="text-uppercase"><span>Science News</span>
+        <h4><span class="text-uppercase">Science News</span>
 
 
         <!-- Single button -->
 
             <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Councils
+                    Select a Council
                 </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">All Councils</a></li>
-                    <li><a href="#">Council 1</a></li>
-                    <li><a href="#">Council 2</a></li>
-                    <li><a href="#">Council 3</a></li>
-                    <li><a href="#">Council 4</a></li>
 
+                <!--<ul class="dropdown-menu" role="menu">-->
+                    <!--<li><a href="#">All Councils</a></li>-->
+                    <!--<li><a href="#">Council 1</a></li>-->
+                    <!--<li><a href="#">Council 2</a></li>-->
+                    <!--<li><a href="#">Council 3</a></li>-->
+                    <!--<li><a href="#">Council 4</a></li>-->
+
+                <!--</ul>-->
+
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                    <div class="arrow top"></div>
+                    <li class="dropdown-header">Some Title</li>
+                    <li><a role="menuitem" tabindex="-1" href="#fakeLink">Dropdown item one</a></li>
+                    <li class="active"><a role="menuitem" tabindex="-1" href="#fakeLink">Second item</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#fakeLink">Some third thing here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Another title</li>
+                    <li class="disabled"><a role="menuitem" tabindex="-1" href="#fakeLink">I'm a disabled link</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#fakeLink">Second item</a></li>
                 </ul>
+
             </div>
 
         </h4>
@@ -34,3 +48,4 @@
         {% include components/news-media-object.html %}
     </div>
 </div>
+<div class="spacer"></div>
