@@ -73,6 +73,10 @@ a:hover{
     padding: 0;
 }
 
+.padding-10 {
+    padding: 10px;
+}
+
 .border-0 {
     border: 0 none !important;
 }

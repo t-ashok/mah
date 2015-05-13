@@ -34,9 +34,31 @@
         <h4>Heart Failure New Drug</h4>
     </div>
     <div class="col-sm-6">
-        {% include components/news-media-object.html %}
-        {% include components/news-media-object.html %}
-        {% include components/news-media-object.html %}
+
+            {% for post in site.posts limit:3 %}
+            <div class="media">
+                <div class="media-left">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                        <img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                        <span class="indicator"></span>{{ post.categories }}
+                    </a>
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                    <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                    <!--<p class="media-excerpt">{{ post.excerpt }}</p>-->
+                </div>
+
+                <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
+            </div>
+            {% endfor %}
+
+
     </div>
 </div>
 <div class="spacer"></div>
