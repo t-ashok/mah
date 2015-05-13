@@ -2210,17 +2210,7 @@ body.no-title .page-title
     margin: -18px 0 0 -18px;
     color: #93a4aa;
 }
-.thumbnail .caption {
-    border-bottom: 2px solid #d6e1e5;
-    border-left: 2px solid #d6e1e5;
-    border-right: 2px solid #d6e1e5;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: #364347;
-    font-size: 14px;
-    line-height: 1.7142857142857142;
-    padding: 20px;
-}
+
 .thumbnail.thumbnail-caption > img,
 .thumbnail.thumbnail-caption a > img {
     border-top-left-radius: 5px;
@@ -2448,15 +2438,9 @@ a.thumbnail[class*="fa-"]:hover:before {
 
 /* Card */
 
-.card {
-    padding: 20px;
+.sidebar .card {
+    margin-bottom: 50px;
 }
-
-.card .thumbnail .caption{
-    border-top: 2px solid #d6e1e5;
-    border-radius: 0px;
-}
-
 .box-content-wrap {
 
 }
