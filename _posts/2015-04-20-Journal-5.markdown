@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Circulation Journal"
+title:  "jAHA Journal"
 date:   2015-03-20 11:26:01
 categories: Journals
-banner: /img/sample/j_circ.png
+banner: /img/sample/j_jaha.png
 ---
 

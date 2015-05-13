@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Stroke Journal"
+title:  "ATVB Journal"
 date:   2015-03-20 11:26:01
 categories: Journals
-banner: /img/sample/journal.png
+banner: /img/sample/j_atvb.png
 ---
 
