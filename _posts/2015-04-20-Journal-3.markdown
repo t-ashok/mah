@@ -6,3 +6,6 @@ categories: Journals
 banner: /img/sample/j_hyper.png
 ---
 
+Recent Clinical and Translational Advances in Pediatric Hypertension.
+
+<a href="http://stroke.ahajournals.org/content/46/5/1167.full">Full Text</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">PDF</a>

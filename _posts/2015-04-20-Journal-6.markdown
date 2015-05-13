@@ -6,3 +6,6 @@ categories: Journals
 banner: /img/sample/j_stroke.png
 ---
 
+Multivitamin Use and Risk of Stroke Mortality: The Japan Collaborative Cohort Study
+
+<a href="http://stroke.ahajournals.org/content/46/5/1167.abstract">Abstract</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full">Full Text</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">PDF</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167/suppl/DC2">Data Supplement</a>

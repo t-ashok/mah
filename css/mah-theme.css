@@ -928,7 +928,7 @@ fieldset[disabled] .btn-inverse.active {
     margin-bottom: 20px;
     padding-left: 32px;
     font-size: 14px;
-    font-family: Helvetica "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     min-height: 20px;
 }
@@ -2404,6 +2404,9 @@ a.thumbnail[class*="fa-"]:hover:before {
     margin-bottom: 30px;
 }
 
+
+
+
 .image-caption {
     position: absolute;
     bottom: 0;
@@ -2426,6 +2429,11 @@ a.thumbnail[class*="fa-"]:hover:before {
     font-size: 20px;
     line-height: 26px;
 
+}
+
+
+.image-caption-wrapper.hero-sm {
+    height: 180px;
 }
 
 

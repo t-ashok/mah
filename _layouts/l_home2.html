@@ -14,6 +14,12 @@
     <div class="container">
         <!--Carousel-->
 
+        <div class="row">
+            <div class="col-sm-12">
+                {% include components/carousel.html %}
+            </div>
+        </div>
+
       <div class="row">
         <!--Big-->
         <div class="col-sm-6 feature">
@@ -29,7 +35,7 @@
               {% assign description = "Smothering the fires within" %}
               {% include components/caption-image.html %}
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6"">
             {% assign hero = "joel.jpg" %}
             {% assign description = "CVGPS researcher treat stroke with plumbing fix" %}
             {% include components/caption-image.html %}
@@ -40,7 +46,7 @@
               {% include components/caption-image.html %}
           </div>
           <div class="col-sm-6">
-              {% assign hero = "blogBanner4.jpg" %}
+              {% assign hero = "blogBanner.jpg" %}
               {% assign description = "CVGPS research aims to improve common blood pressure medication" %}
               {% include components/caption-image.html %}
           </div>
