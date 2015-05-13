@@ -44,6 +44,8 @@ a:hover{
     color: #000;
 }
 
+
+
 .page-header {
     text-transform: uppercase;
     border: 0;
@@ -102,6 +104,10 @@ a:hover{
 
 .align-right {
     text-align: right;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .content{
@@ -599,12 +605,13 @@ border-color: #DDD;
 }
 
 .navbar-brand {
-float: left;
+/*float: left;*/
 height: 64px;
-padding: 10px 0;
-font-size: 18px;
-line-height: 20px;
+/*padding: 10px 0;*/
+/*font-size: 18px;*/
+/*line-height: 20px;*/
 }
+
 
 .navbar-default  .navbar-nav > li > a {
 text-transform: uppercase;

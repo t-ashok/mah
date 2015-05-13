@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Title of a ISC Conference News"
+title:  "Title of an EPI Conference News"
 date:   2015-05-04 11:26:01
-categories: Stroke
+categories: EPI
 banner: /img/sample/thumbnail.png
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.

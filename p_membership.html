@@ -10,13 +10,13 @@ layout: l_full_width_no_title
             <div class="container">
                 <h1>Learn & Connect</h1>
                 <p class="lead">The American Heart Association/American Stroke Association currently has over 32,000 members that support our mission through their outstanding gifts of time, dedication and heart. Our robust group of cardiovascular professionals who participate in discovery and dissemination of science, through 16 different scientific councils, each unique in their own way, which are sure to coincide with your cardiovascular specialties and classifications.</p>
-                <div class="btn btn-lg btn-embossed btn-primary">Sign In</div>
+                <div class="btn btn-danger btn-embossed">Sign In</div>
                 <p>or <a href="/free-flat-ui-drunken-parrot-lite/">Upgrade Membership</a></p>
             </div>
 
     </div>
 
-    <div class="container pricing-table">
+    <div class="container pricing-table table-responsive">
 
         <!-- PRICING TABLES -->
         <table class="table table-striped">
@@ -80,29 +80,139 @@ layout: l_full_width_no_title
                     <td><i class="fa fa-check"></i></td>
                     <td><i class="fa fa-check"></i></td>
 
+
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><div class="btn btn-primary btn-block">Select and Join</div>
+                        <p class="align-center">or <a href="#">See all benefits</a></p>
+                    </td>
+                    <td><div class="btn btn-primary btn-block">Select and Join</div>
+                        <p class="align-center">or <a href="#">See all benefits</a></p>
+                    </td>
+                    <td><div class="btn btn-primary btn-block">Select and Join</div>
+                        <p class="align-center">or <a href="#">See all benefits</a></p>
+                    </td>
+                    <td><div class="btn btn-primary btn-block">Select and Join</div>
+                        <p class="align-center">or <a href="#">See all benefits</a></p>
+                    </td>
+
+                </tr>
+            <tr></tr>
+            <tr></tr>
+
+            </tbody>
+        </table>
+    </div> <!-- /END ALL PACKAGE -->
+
+
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Company</th>
+                    <th class="numeric">Price</th>
+                    <th class="numeric">Change</th>
+                    <th class="numeric">Change %</th>
+                    <th class="numeric">Open</th>
+                    <th class="numeric">High</th>
+                    <th class="numeric">Low</th>
+                    <th class="numeric">Volume</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Code">AAC</td>
+                    <td data-title="Company">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                    <td data-title="Price" class="numeric">$1.38</td>
+                    <td data-title="Change" class="numeric">-0.01</td>
+                    <td data-title="Change %" class="numeric">-0.36%</td>
+                    <td data-title="Open" class="numeric">$1.39</td>
+                    <td data-title="High" class="numeric">$1.39</td>
+                    <td data-title="Low" class="numeric">$1.38</td>
+                    <td data-title="Volume" class="numeric">9,395</td>
                 </tr>
             </tbody>
         </table>
     </div> <!-- /END ALL PACKAGE -->
 
+    <div class="spacer" style="margin-top: 60px;"></div>
     <div class="container">
-        {% for post in site.posts limit:2 %}
-        <div class="6u">
-            <section class="box">
-                <a href="{{ post.url | prepend: site.baseurl }}" class="image featured"><img src="{{ post.banner | prepend: site.baseurl }}" alt="" /></a>
-                <header>
-                    <h4>{{ post.title }}</h4>
-                    <p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>
-                </header>
-                <p>{{ post.excerpt }}</p>
-                <footer>
-                    <ul class="actions">
-                        <li><a href="{{ post.url | prepend: site.baseurl }}" class="button icon fa-file-text">Continue Reading</a></li>
-                    </ul>
-                </footer>
-            </section>
+        <div class="col-md-4">
+            {% for post in site.posts limit:2 %}
+            <div class="media">
+                <div class="media-left">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                        <img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+                    </a>
+                </div>
+                    <div class="media-body">
+                        <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                            <span class="indicator"></span>{{ post.categories }}
+                        </a>
+                        <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                        <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                        <p class="media-excerpt">{{ post.excerpt }}</p>
+                    </div>
+
+                    <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div class="col-md-4">
+            {% for post in site.posts limit:2 %}
+            <div class="media">
+                <div class="media-left">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                        <img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                        <span class="indicator"></span>{{ post.categories }}
+                    </a>
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                    <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                    <p class="media-excerpt">{{ post.excerpt }}</p>
+                </div>
+
+                <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            {% for post in site.posts limit:2 %}
+            <div class="media">
+                <div class="media-left">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                        <img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                        <span class="indicator"></span>{{ post.categories }}
+                    </a>
+                    <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                    <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                    <p class="media-excerpt">{{ post.excerpt }}</p>
+                </div>
+
+                <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
+            </div>
+            {% endfor %}
+        </div>
+
     </div>
 
 
