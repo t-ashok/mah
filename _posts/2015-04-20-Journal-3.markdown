@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Cardiology Journal"
+date:   2015-03-20 11:26:01
+categories: Journals
+banner: /img/sample/journal.png
+---
+
