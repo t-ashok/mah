@@ -13,23 +13,52 @@
             </span>
         </h4>
     </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
+    <ul class="col-sm-6">
+
+        {% for category in site.categories %}
+        <li><a name="{{ category | first }}">{{ category | first }}</a>
+            <ul>
+                {% for posts in category %}
+                {% for post in posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+        {% for posts in category %}
+        {% for post in site.posts limit:2 %}
+        <div class="media">
+            <div class="media-left">
+                <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                    <img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                    <span class="indicator"></span>{{ post.categories }}
+                </a>
+                <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                <p class="media-excerpt">{{ post.excerpt }}</p>
+            </div>
+
+            <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
+        </div>
+        {% endfor %}
+        {% endfor %}
     </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
-    </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
-    </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
-    </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
-    </div>
-    <div class="col-sm-6">
-        {% include components/journal-media-object.html %}
-    </div>
+
+    <!--<div class="col-sm-6">-->
+        <!--{% include components/journal-media-object.html %}-->
+    <!--</div>-->
 
 </div>
