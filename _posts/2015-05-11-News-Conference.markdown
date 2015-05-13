@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Title of a ISC Conference News"
+title:  "Acute Stroke Therapy Articles from Stroke"
 date:   2015-05-04 11:26:01
 categories: Stroke
 banner: /img/sample/thumbnail.png

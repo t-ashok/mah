@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Title of an EPI Conference News"
+title:  "Science News from ATVB|PVD 2015"
 date:   2015-05-04 11:26:01
 categories: EPI
 banner: /img/sample/thumbnail.png

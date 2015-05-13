@@ -2472,7 +2472,8 @@ a.tag {
     position: relative;
 }
 /* hypertension */
-.tag-hyper .indicator {
+.tag-hyper .indicator,
+.tag-hypertension .indicator {
     background-color: #70ca9a;
 }
 /*stroke*/
@@ -2480,7 +2481,7 @@ a.tag {
     background-color: #9175bd;
 }
 /*Cardiology*/
-.tag-cardiovascular .indicator {
+.tag-cardiology .indicator {
     background-color: #00769a;
 }
 

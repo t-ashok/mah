@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Title of an EPI Conference News Title of an EPI Conference News"
+title:  "The National Physical Activity Plan"
 date:   2015-05-04 11:26:01
 categories: Cardiology
 banner: /img/sample/thumbnail.png
