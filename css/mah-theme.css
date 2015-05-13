@@ -2496,7 +2496,10 @@ a.tag {
     background-color: #ffd245;
 }
 
-
+/* Carousel Slide */
+.carousel-inner > .item {
+    /*height: 500px;*/
+}
 
 /*Bootstrap Overwrite*/
 .media {
