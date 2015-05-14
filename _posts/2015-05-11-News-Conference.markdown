@@ -5,10 +5,6 @@ date:   2015-05-04 11:26:01
 categories: Stroke
 banner: /img/sample/j_stroke.png
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+The results of the four recently presented/published trials for acute ischemic stroke herald the dawn of a new era in the treatment of patients with large vessel occlusion amenable to endovascular intervention. 
 
-You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
+Additional trials are underway or have been stopped earlier because of the positive results observed in the initial trials. Hopefully, the ongoing trials will largely amplify and build upon the results observed in the MR CLEAN, ESCAPE, EXTEND-IA and SWIFT PRIME trials. At this time it is important for the medical community,health care planners and policy makers to have interpretation and guidance from experts about the trial results currently available for help in steering them as to how the trial results should be utilized in daily practice and for the local organization of acute stroke care. To accomplish this goal, Stroke invited a panel of experts with a wide range of backgrounds to provide insights.

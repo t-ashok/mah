@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jAHA Journal"
+title:  "JAHA"
 date:   2015-03-20 11:26:01
 categories: Journals
 banner: /img/sample/j_jaha.png

@@ -1156,20 +1156,20 @@ fieldset[disabled] .btn-inverse.active {
     }
 }
 label {
-    font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 2.4;
     color: #364347;
 }
 .form-control {
-    border: 1px solid #d6e1e5;
+    border: 1px solid #eaeaea;
     /*color: #364347;*/
     /*font-size: 16px;*/
     /*line-height: 1.467;*/
     /*padding: 7px 12px;*/
     /*height: 40px;*/
     -webkit-appearance: none;
-    border-radius: 4px;
+    border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
@@ -1180,10 +1180,12 @@ label {
 }
 .form-group.focus .form-control,
 .form-control:focus {
-    border-color: #02baf2;
+    border-color: #93a4aa;
     outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+   -webkit-box-shadow: inset hoff voff blur #EAEAEA;
+    -moz-box-shadow: inset hoff voff blur #EAEAEA;
+    box-shadow: inset hoff voff blur #EAEAEA;
+
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -1192,20 +1194,20 @@ fieldset[disabled] .form-control {
     cursor: default;
 }
 .form-control:-moz-placeholder {
-    color: #b2c6cd;
+    color: #999;
 }
 .form-control::-moz-placeholder {
-    color: #b2c6cd;
+    color: #999;
     opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-    color: #b2c6cd;
+    color: #999;
 }
 .form-control::-webkit-input-placeholder {
-    color: #b2c6cd;
+    color: #999;
 }
 .form-control.placeholder {
-    color: #b2c6cd;
+    color: #999;
 }
 .form-control-static {
     padding-top: 6px;
@@ -1403,10 +1405,10 @@ select[multiple].input-lg {
 }
 .input-group-addon {
     padding: 6px 10px;
-    color: #93a4aa;
+    color: #222;
     background-color: #e1eef3;
     border: 1px solid #d6e1e5;
-    border-radius: 4px;
+    border-radius: 0;
     min-width: 40px;
     max-width: 40px;
 }
@@ -2391,7 +2393,7 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 .meeting-thumbnail {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 
@@ -2615,6 +2617,10 @@ a.tag {
 .meetings,
 .news {
     display: inline-block;
+}
+
+.feature-meeting-sm .col-xs-6 {
+    padding: 5px;
 }
 
 h4 .text-uppercase {
