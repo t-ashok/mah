@@ -1057,7 +1057,7 @@ fieldset[disabled] .btn-inverse.active {
     padding: 4px 15px;
 }
 .dropdown-menu > li > a:hover {
-    background-color: #e1eef3;
+    background-color: #eaeaea;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2402,7 +2402,7 @@ a.thumbnail[class*="fa-"]:hover:before {
 .image-caption {
     position: absolute;
     bottom: 0;
-    background-color: rgba(0,0,0,0.8)!important;color:#fff;padding: 10px;width:100%;
+    background-color: rgba(0,0,0,1)!important;color:#fff;padding: 10px;width:100%;
     font-size: 16px;
     line-height: 18px;
 }
