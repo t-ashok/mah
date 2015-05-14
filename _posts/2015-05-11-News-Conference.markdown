@@ -3,7 +3,7 @@ layout: post
 title:  "Acute Stroke Therapy Articles from Stroke"
 date:   2015-05-04 11:26:01
 categories: Stroke
-banner: /img/sample/thumbnail.png
+banner: /img/sample/j_stroke.png
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 
