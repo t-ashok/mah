@@ -2493,7 +2493,15 @@ a.tag {
 
 /* Carousel Slide */
 .carousel-inner > .item {
-    /*height: 500px;*/
+    height: 380px;
+}
+
+.feature .carousel {
+    /*height: 380px;*/
+}
+
+.carousel .carousel-caption {
+
 }
 
 /*Bootstrap Overwrite*/

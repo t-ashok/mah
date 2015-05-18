@@ -19,40 +19,8 @@
                 {% include components/carousel.html %}
             </div>
         </div>
-
-      <div class="row">
-        <!--Big-->
-        <div class="col-sm-6 feature">
-            {% assign hero = "blogBanner.jpg" %}
-            {% assign description = "Stories explaining how the scientific research underway in the Cardiovascular Genome-Phenome Study can save and improve lives" %}
-            {% include components/caption-image-feature.html %}
-        </div>
-        <!--Quarters-->
-        <div class="col-sm-6">
-
-          <div class="col-sm-6">
-              {% assign hero = "blogBanner2.jpg" %}
-              {% assign description = "Smothering the fires within" %}
-              {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6"">
-            {% assign hero = "joel.jpg" %}
-            {% assign description = "CVGPS researcher treat stroke with plumbing fix" %}
-            {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6">
-              {% assign hero = "blogBanner3.jpg" %}
-              {% assign description = "AHA supporters donate millions for research" %}
-              {% include components/caption-image.html %}
-          </div>
-          <div class="col-sm-6">
-              {% assign hero = "blogBanner.jpg" %}
-              {% assign description = "CVGPS research aims to improve common blood pressure medication" %}
-              {% include components/caption-image.html %}
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
 
   <!--Section-->
     <!-- container-->
@@ -61,7 +29,6 @@
 
         <!--sidebar include-->
         {% include sidebar.html %}
-
 
         {{ content }}
 
@@ -161,31 +128,24 @@
                         	<!--<button type="submit" class="btn btn-primary btn-danger">Submit</button>-->
                         <!--</form>-->
 
-
-
-
                     <!--</div>-->
               <!--</div>-->
           <!--</div>-->
       <!--</div>-->
 
-
-
-
-
     <!--/#main-->
   </div>
 
-  {% include footer.html %}
-  <!--/#mainWrapper-->
-</div>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/js/core-functions.js"></script>
-<script src="js/checkbox.js"></script>
-<script src="js/radio.js"></script>
-<script src="js/bootstrap-switch.js"></script>
-<script src="js/toolbar.js"></script>
-<script src="js/application.js"></script>
-</body>
+      {% include footer.html %}
+      <!--/#mainWrapper-->
+    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/core-functions.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/toolbar.js"></script>
+    <script src="js/application.js"></script>
+    </body>
 
 </html>
