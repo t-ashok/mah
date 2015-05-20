@@ -1,0 +1,12 @@
+{
+  "mocks":[
+    {
+      "name":"Home",
+      "link":"index.html"
+    },
+    {
+      "name":"Dashboard",
+      "link":"dashboard.html"
+    }
+  ]
+}
