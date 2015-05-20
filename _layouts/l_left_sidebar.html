@@ -14,13 +14,13 @@
                 <div class="container">
                     <div class="row has-left-sidebar inner-page-wrap ">
 
-                        <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary">
+                        <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary" style="background-color: #009926;">
                             <!-- Sidebar content here -->
                             <!-- will get sidebar value from page using this template from frontmatter, sidebar: 'nameOfSidebar'-->
                             {% include {{page.sidebar}} %}
                         </div>
 
-                        <div class="col-md-9 col-sm-12" role="main">
+                        <div class="col-md-9 col-sm-12" role="main" style="background-color: yellow">
                             <!-- Content main content here -->
 
                             {{ content }}
