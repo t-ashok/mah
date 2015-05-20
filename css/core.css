@@ -209,7 +209,7 @@ margin-bottom: 10px;
 
 .bg-color-default {
     background-color: #222222;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .bg-color-grey,
