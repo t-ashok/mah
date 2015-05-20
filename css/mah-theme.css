@@ -2447,9 +2447,11 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 /* Card */
-
+.card {
+    margin-bottom: 20px;
+}
 .sidebar .card {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 .box-content-wrap {
 
