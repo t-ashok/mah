@@ -207,9 +207,17 @@ margin-bottom: 10px;
     color: #fff;
 }
 
+.bg-color-primary .caption {
+    color: #fff;
+}
+
 .bg-color-default {
     background-color: #222222;
-    color: #ffffff !important;
+    color: #fff;
+}
+
+.bg-color-default .caption {
+    color: #fff;
 }
 
 .bg-color-grey,
