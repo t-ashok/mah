@@ -5,6 +5,9 @@ sidebar: 'sidebar_styleguide.html'
 ---
 
 <!-- Content -->
+<div class="row">
+
+
 <div class="col-md-4 col-sm-4">
     <div class="card border-2 border-color-grey padding-10">
         <h4><span class="text-uppercase">Featured Journal</span></h4>
@@ -47,26 +50,30 @@ sidebar: 'sidebar_styleguide.html'
     </p>
 </div>
 
-<div class="col-md-4 col-sm-4">
-    <div class="card bg-color-grey padding-10">
-        <h4><span class="text-uppercase">Featured Journal</span></h4>
-        <div class="thumbnail">
-            <img src="{{site.baseurl}}/img/sample/featureJournal.png" alt="..." class="img-responsive">
-            <div class="caption">
-                <h5>Sequential Hybrid Procedure for Persistent Atrial Fibrillation</h5>
-                <p>
-                    Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures. The hybrid approach has recently emerged as a technique that overcomes the limitations of both surgical and catheter procedures alone.
-                </p>
-                <p><a href="#" class="btn btn-primary" role="button">Read More</a>
+
+
+</div><!-- //.row -->
+<div class="row">
+    <div class="col-md-4 col-sm-4">
+        <div class="card bg-color-grey padding-10">
+            <h4><span class="text-uppercase">Featured Journal</span></h4>
+            <div class="thumbnail">
+                <img src="{{site.baseurl}}/img/sample/featureJournal.png" alt="..." class="img-responsive">
+                <div class="caption">
+                    <h5>Sequential Hybrid Procedure for Persistent Atrial Fibrillation</h5>
+                    <p>
+                        Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures. The hybrid approach has recently emerged as a technique that overcomes the limitations of both surgical and catheter procedures alone.
+                    </p>
+                    <p><a href="#" class="btn btn-primary" role="button">Read More</a>
+                </div>
             </div>
         </div>
+        <p>
+            {% highlight html %}
+        <div class="card card bg-color-grey padding-10">
+            {% endhighlight %}
+        </p>
     </div>
-    <p>
-        {% highlight html %}
-    <div class="card card bg-color-grey padding-10">
-        {% endhighlight %}
-    </p>
-</div>
 
 <div class="col-md-4 col-sm-4">
     <div class="card bg-color-default padding-10">
@@ -84,6 +91,7 @@ sidebar: 'sidebar_styleguide.html'
     </div>
     <p>
         {% highlight html %}
+     //no border & no padding
     <div class="card card bg-color-default padding-10">
         {% endhighlight %}
     </p>
@@ -99,7 +107,7 @@ sidebar: 'sidebar_styleguide.html'
                 <p>
                     Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures. The hybrid approach has recently emerged as a technique that overcomes the limitations of both surgical and catheter procedures alone.
                 </p>
-                <p><a href="#" class="btn btn-primary" role="button">Read More</a>
+                <p><a href="#" class="btn btn-stroke" role="button">Read More</a>
             </div>
         </div>
     </div>
@@ -109,3 +117,5 @@ sidebar: 'sidebar_styleguide.html'
         {% endhighlight %}
     </p>
 </div>
+
+</div> <!-- //.row -->
