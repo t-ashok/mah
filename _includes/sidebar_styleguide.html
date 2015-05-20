@@ -1,12 +1,12 @@
 <!-- using json data from _data/style-navigation.json -->
 <div class="nav" id="" style="background-color: transparent;">
-    <h5>Layout Example</h5>
+    <!--<h5>Style Guide</h5>-->
     <ul class="list-unstyled menu">
 
         {% for nav in site.data.style-navigation.nav %}
         <li class="menu-item">
 
-            <a class="page-link" href="{{ nav.link }}" target="_blank"> {{ nav.name }} </a>
+            <a class="page-link" href="{{ nav.link }}"> {{ nav.name }} </a>
         </li>
         {% endfor %}
 
