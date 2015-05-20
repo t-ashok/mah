@@ -1,0 +1,20 @@
+{
+  "navs":[
+    {
+      "name":"Update Profile",
+      "link":""
+    },
+    {
+      "name":"Calendar",
+      "link":""
+    },
+    {
+      "name":"Inbox",
+      "link":""
+    },
+    {
+      "name":"Logout",
+      "link":""
+    }
+  ]
+}
