@@ -1,0 +1,32 @@
+{
+  "mainnavs":[
+    {
+      "name":"Communities",
+      "link":"communities.html"
+    },
+    {
+      "name":"Statement & Guidelines",
+      "link":"statement.html"
+    },
+    {
+      "name":"Meetings",
+      "link":"meetings.html"
+    },
+    {
+      "name":"Journals",
+      "link":"journals.html"
+    },
+    {
+      "name":"Professional Education",
+      "link":"proed.html"
+    },
+    {
+      "name":"Research & Grants",
+      "link":"research.html"
+    },
+    {
+      "name":"Professional Membership",
+      "link":"membership.html"
+    }
+  ]
+}

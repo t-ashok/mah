@@ -89,48 +89,23 @@
 
       <div class="navbar-collapse collapse nav-collapse">
         <ul class="nav navbar-nav menu" >
-          <li class="active" >
 
-            <a href="index.html">Communities
-              <span class="nav-line" > </span>
-            </a>
-          </li>
-          <li >
-            <a href="#">Statements & Guidelines
-              <span class="nav-line" > </span>
-            </a>
-          </li>
-          <li >
+          {% for nav in site.data.main-navigation.mainnavs %}
 
-            <a href="create.html">Meetings
+          <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
+          {% if nav.name == 'Communities' %}
+            {% assign active = 'active' %}
+          {% else %}
+            {% assign active = '' %}
+          {% endif %}
+          <li class="{{active}}">
+            <a href="{{ nav.link }}">{{ nav.name }}
               <span class="nav-line" > </span>
             </a>
           </li>
 
-          <li >
+          {% endfor %}
 
-            <a href="faq.html">Journals
-              <span class="nav-line" > </span>
-            </a>
-          </li>
-          <li >
-
-            <a href="admin.html">Professional Education
-              <span class="nav-line" > </span>
-            </a>
-          </li>
-          <li >
-
-            <a href="admin.html">Research & Grants
-              <span class="nav-line" > </span>
-            </a>
-          </li>
-          <li >
-
-            <a href="p_membership.html">Professional Membership
-              <span class="nav-line" > </span>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
@@ -139,7 +114,9 @@
 
 
     <!-- Page tite -->
-    <div class="row page-title">
+    
+   <div class="container">
+     <div class="row page-title">
       <!--<div class="col-md-3 hidden-xs"></div>-->
       <div class="container">
         <div class="page-header">
@@ -150,6 +127,7 @@
         </div> <!--page-hea-der-->
       </div><!-- //.col-md-12 -->
     </div><!-- //.row -->
+   </div><!-- //.container -->
 
 </div>
 
