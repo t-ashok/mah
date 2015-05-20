@@ -639,7 +639,7 @@ height: 64px;
     padding-right: 0;
 }
 .navbar-nav {
-    
+
 }
 
 
@@ -919,4 +919,6 @@ visibility: hidden;
 
 
 
-
+.thumbnail {
+    background: transparent;
+}
