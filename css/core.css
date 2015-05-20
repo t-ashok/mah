@@ -468,10 +468,16 @@ form .form-header {}
 ==============================*/
 #header{
 background-color: #f8f8f8;
-padding-top: 20px;
+padding-top: 0px;
 padding-bottom: 0px;
 border-bottom: 1px solid #e5e5e5;
 }
+
+#header .brand {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .sub-logo {
 width: 350px;
 }
@@ -514,9 +520,11 @@ width: 350px;
     color: #222;
 }
 
-.label {
-    font-size: 1em;
+.avatar-wrapper .label {
+    font-size: .7em;
     font-weight: 200;
+    text-transform: uppercase;
+    padding: 5px 10px;
 }
 
 

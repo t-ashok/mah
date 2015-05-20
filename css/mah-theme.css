@@ -1451,11 +1451,11 @@ select[multiple].input-lg {
     padding: .2em .5em .2em;
 }
 .label-default {
-    background-color: #b2c6cd;
+    background-color: #222;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-    background-color: #93afb9;
+    background-color: #4c4c4c;
 }
 .label-primary {
     background-color: #02baf2;
@@ -1599,6 +1599,24 @@ select[multiple].input-lg {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
+
+#main-navigation {
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #f3f3f3;
+}
+
 @media (min-width: 1000px) {
     .nav-tabs > li > a:hover {
         border-color: #ffffff #ffffff #d6e1e5;
