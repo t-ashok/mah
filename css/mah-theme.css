@@ -1395,6 +1395,9 @@ select[multiple].input-lg {
         top: 14px;
         right: 2px;
     }
+    .has-left-sidebar .sidebar {
+        float: none;
+    }
 }
 .input-group-lg > .input-group-addon {
     font-size: 20px;
@@ -2444,9 +2447,11 @@ a.thumbnail[class*="fa-"]:hover:before {
 }
 
 /* Card */
-
+.card {
+    margin-bottom: 20px;
+}
 .sidebar .card {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 .box-content-wrap {
 
