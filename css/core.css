@@ -476,6 +476,24 @@ border-bottom: 1px solid #e5e5e5;
 width: 350px;
 }
 
+.nav>li>a:hover, .nav>li>a:focus {
+    background: transparent;
+}
+
+/*Avatar area*/
+.navbar .dropdown {
+    display: inline-block;
+}
+
+.avatar {
+    padding: 0;
+    /*height: 100px;*/
+}
+
+.avatar .username {
+    height: 50px;
+}
+
 /*============================
 =            Main            =
 ============================*/
@@ -583,9 +601,9 @@ a.mobile-menu-show {
 /*===================================
 =            Sidebar Nav            =
 ===================================*/
-.nav {
-    background: #EAEAEA;
-}
+/*.nav {*/
+    /*background: #EAEAEA;*/
+/*}*/
 
 .nav .menu li > a{
 padding: 10px 0px;
