@@ -1,0 +1,48 @@
+{% include head.html %}
+
+    <body class="article">
+    <!-- Mobile Menu Wrapper ====================== -->
+    {% include mobile-menu.html %}
+    {% include utility.html %}
+        <div id="mainWrapper">
+
+            {% include header.html %}
+
+            <!-- Main content -->
+            <div id="main">
+                <!-- container-->
+                <div class="container">
+                    <div class="row has-left-sidebar inner-page-wrap ">
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary">
+                            <!-- Sidebar content here -->
+                            <!-- will get sidebar value from page using this template from frontmatter, sidebar: 'nameOfSidebar'-->
+                            {% include {{page.sidebar}} %}
+                        </div>
+
+                        <div class="col-md-9 col-sm-12" role="main">
+                            <!-- Content main content here -->
+
+                            {{ content }}
+                        </div>
+
+                    </div><!-- //.row -->
+                </div><!-- //.container -->
+
+
+                <!--/#main-->
+            </div>
+
+            {% include footer.html %}
+            <!--/#mainWrapper-->
+        </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/core-functions.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/toolbar.js"></script>
+    <script src="js/application.js"></script>
+    </body>
+
+</html>
