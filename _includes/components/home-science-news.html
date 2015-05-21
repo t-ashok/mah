@@ -35,20 +35,20 @@
         </h4>
         <div class="spacer"></div>
     </div>
-    <div class="col-sm-6" style="margin-bottom: 40px;">
+    <div class="col-sm-6 news-feature" style="margin-bottom: 40px;">
         <!--Big Thumb-->
         <!--<img class="img-responsive img-full" src="{{site.baseurl}}/img/sample/news_feature.png" alt="title">-->
-        <div <div class="embed-responsive embed-responsive-16by9">
+        <div class="news-feature-media embed-responsive embed-responsive-16by9">
             <iframe src="https://www.youtube.com/embed/Yn-9Hz78FNw" frameborder="0"  allowfullscreen></iframe>
         </div>
-        <div class="text-uppercase tag tag-hyper"><span class="indicator"></span>Hypertension</div>
+        <a href="#" class="text-uppercase tag tag-hyper"><span class="indicator"></span>Hypertension</a>
         <a href="#"><h5>ATVB | PVD 2015 Expert Perspectives on This Year's Sessions</h5></a>
         <p class="media-excerpt">Muredach P. Reilly, MBBCH, MSCE, program chair for ATVB/PVD 2015, Kathryn J. Moore, PhD, chair of the council for ATVB, and Michael Conte, MD, chair of the council for PVD, provide their expert perspectives on the science that was presented at the meeting this year in San Francisco with a focus on new approaches for translating science into new patient therapies.</p>
     </div>
 
 
 
-    <div class="col-sm-6">
+    <div class="col-sm-6 news-feature-list">
             {% for post in site.posts limit:3 %}
             <div class="media">
                 <div class="media-left">
@@ -63,7 +63,7 @@
                     <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
                     <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
 
-                    <p class="media-excerpt">{{ post.excerpt limit: 50 }}</p>
+                    {{ post.excerpt limit: 50 }}
                 </div>
                 <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
             </div>
