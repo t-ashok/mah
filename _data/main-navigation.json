@@ -2,31 +2,38 @@
   "mainnavs":[
     {
       "name":"Communities",
+      "class":"nav-1",
       "link":"communities.html"
     },
     {
       "name":"Statement & Guidelines",
+      "class":"nav-2",
       "link":"statement.html"
     },
     {
       "name":"Meetings",
+      "class":"nav-3",
       "link":"meetings.html"
     },
     {
       "name":"Journals",
+      "class":"nav-4",
       "link":"journals.html"
     },
     {
       "name":"Professional Education",
+      "class":"nav-5",
       "link":"proed.html"
     },
     {
       "name":"Research & Grants",
+      "class":"nav-6",
       "link":"research.html"
     },
     {
       "name":"Professional Membership",
-      "link":"membership.html"
+      "class":"nav-7",
+      "link":"p_membership.html"
     }
   ]
 }
