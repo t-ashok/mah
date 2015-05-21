@@ -280,9 +280,9 @@ fieldset[disabled] .btn-default.active {
     border-color: #d6e1e5;
 }
 .btn-stroke {
-    color: #02baf2;
-    background-color: white;
-    border-color: #d6e1e5;
+    color: #222;
+    background-color: transparent;
+    border-color: #222;
     border-width: 2px;
     padding: 5px 15px;
 }
@@ -290,9 +290,9 @@ fieldset[disabled] .btn-default.active {
 .btn-stroke:focus,
 .btn-stroke:active,
 .btn-stroke.active {
-    color: #02baf2;
-    background-color: white;
-    border-color: #02baf2;
+    color: #999;
+    background-color: transparent;
+    border-color: #ED0000;
 }
 .btn-stroke:active,
 .btn-stroke.active {
@@ -739,7 +739,7 @@ fieldset[disabled] .btn-inverse.active {
 }
 .btn-xs {
     padding: 5px 13px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.083;
     /*border-radius: 3px;*/
 }

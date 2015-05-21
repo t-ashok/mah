@@ -496,6 +496,10 @@ width: 350px;
     display: inline-block;
 }
 
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 10px;
+}
+
 .avatar-wrapper {
     padding: 0;
     /*height: 100px;*/
@@ -526,6 +530,9 @@ width: 350px;
     text-transform: uppercase;
     padding: 5px 10px;
 }
+
+
+
 
 
 
@@ -699,9 +706,8 @@ height: 64px;
     padding-left: 0;
     padding-right: 0;
 }
-.navbar-nav {
 
-}
+
 
 
 .navbar-default  .navbar-nav > li > a {
@@ -714,7 +720,7 @@ background-color: transparent;
 color: #333;
 }
 .navbar-default .navbar-nav > li > a:hover {
-color: #333;
+color: #999;
 }
 .navbar-default .navbar-nav > .active > a:hover {
 background-color: transparent;
