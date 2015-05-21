@@ -1515,8 +1515,8 @@ select[multiple].input-lg {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-    background-color: white;
-    border-color: #ffffff #ffffff #d6e1e5;
+    background-color: transparent;
+    border-color: transparent;
 }
 .nav-tabs {
     border-bottom: 1px solid #d6e1e5;

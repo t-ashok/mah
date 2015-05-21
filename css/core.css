@@ -510,6 +510,7 @@ width: 350px;
 .avatar-wrapper .avatar-img {
     margin-left: 10px;
     line-height: 34px;
+    display: block;
 }
 
 .avatar-wrapper .username {
