@@ -1,28 +1,25 @@
+<!-- No sidebar, just main content region -->
+<!-- 100%, full-width -->
 {% include head.html %}
 
-    <body>
+    <body {% if page.bodyClass %}class="{{page.bodyClass}}"{% endif %}>
     <!-- Mobile Menu Wrapper ====================== -->
     {% include mobile-menu.html %}
     {% include utility.html %}
         <div id="mainWrapper">
-
             {% include header.html %}
-
             <!-- Main content -->
             <div id="main">
                 <!-- container-->
                 <div class="container">
-                    <div class="row inner-page-wrap ">
+                    <div class="row inner-page-wrap">
 
                         {{ content }}
 
                     </div><!-- //.row -->
                 </div><!-- //.container -->
-
-
                 <!--/#main-->
             </div>
-
             {% include footer.html %}
             <!--/#mainWrapper-->
         </div>
