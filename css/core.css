@@ -184,6 +184,7 @@ margin-bottom: 10px;
 ==============================*/
 .btn {
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .btn {
     transition: all 0.5s ease 0s ;
@@ -919,14 +920,12 @@ visibility: hidden;
         display: none;
     }
     .navbar-default .navbar-nav > .active > a{
-
-    background-color: #f8f8f8;
+        background-color: #f8f8f8;
     }
     nav#main-navigation .menu > li > a span.nav-line {
-    display: none;
-
+        display: none;
     }
-  
+
     footer nav.misc-nav ul {
         float: left !important;
     }
@@ -960,22 +959,38 @@ visibility: hidden;
         width: 100%;
     }
 
-} 
+
+
+}
+
+
 
 @media(min-width:768px){
     .sub-logo {
         width: 300px;
     }
     nav#main-navigation .menu > li > a{
-        font-size: 14px;
+        font-size: .85em;
+    }
+
+
+
+    nav#main-navigation .menu > li {
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
 } 
 
 /*Bootstrap MD*/
 @media(min-width:992px){
-    nav#main-navigation .menu > li > a{
-        font-size: 14px;
+    /*nav#main-navigation .menu > li > a{*/
+        /*font-size: 1em;*/
+    /*}*/
+
+    nav#main-navigation .menu > li {
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .sub-logo {
         width: 300px;
