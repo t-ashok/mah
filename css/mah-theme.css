@@ -1601,20 +1601,20 @@ select[multiple].input-lg {
 }
 
 #main-navigation {
-    border-top: 1px solid #EAEAEA;
+    border-top: 2px solid #5d5d5d;
     border-bottom: 1px solid #EAEAEA;
-    background-color: #000;
-    color: #fff;
+    background-color: #f7f7f7;
+    /*color: #000;*/
     
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #000;
 
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #f3f3f3;
+    color: #5d5d5d;
 }
 
 @media (min-width: 1000px) {
@@ -2555,7 +2555,7 @@ a.tag {
 }
 
 .carousel .carousel-caption {
-    background: #222222;
+    background: #000;
     right: 0;
     left: 0;
     bottom: 0;
