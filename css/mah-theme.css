@@ -173,8 +173,20 @@ a.list-group-item.active > .badge,
 }
 
 
+/*Text Color*/
+.text-danger,
+.text-primary {
+    color: #BC0009;
+}
 
 
+.text-default {
+    color: #000;
+}
+
+.text-muted {
+    color: #f7f7f7;
+}
 
 .btn {
     font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;
