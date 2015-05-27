@@ -6,14 +6,9 @@
       "link":"communities.html"
     },
     {
-      "name":"Statement & Guidelines",
+      "name":"Guidelines & Statements",
       "class":"nav-2",
       "link":"statement.html"
-    },
-    {
-      "name":"Meetings",
-      "class":"nav-3",
-      "link":"meetings.html"
     },
     {
       "name":"Journals",
@@ -21,19 +16,21 @@
       "link":"journals.html"
     },
     {
-      "name":"Professional Education",
-      "class":"nav-5",
-      "link":"proed.html"
-    },
-    {
-      "name":"Research & Grants",
-      "class":"nav-6",
-      "link":"research.html"
+      "name":"Meetings/Education",
+      "class":"nav-3",
+      "link":"meetings.html"
     },
     {
       "name":"Professional Membership",
       "class":"nav-7",
       "link":"membership.html"
+    },
+
+    {
+      "name":"Research Programs",
+      "class":"nav-6",
+      "link":"research.html"
     }
+
   ]
 }
