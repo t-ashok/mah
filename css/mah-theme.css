@@ -187,6 +187,10 @@ a.list-group-item.active > .badge,
     color: #f7f7f7;
 }
 
+.text-white {
+    color: #fff;
+}
+
 .btn {
     font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;
     border: 1px solid transparent;
