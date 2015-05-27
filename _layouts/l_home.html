@@ -16,21 +16,24 @@
 
       <div class="row">
         <!--Big-->
-        <div class="col-sm-6 feature">
-                {% include components/carousel.html %}
+        <div class="col-md-6 feature">
+            {% assign hero = "c_ss_color.png" %}
+            {% assign description = "Basic Cardiovascular Science Scientific Sessions" %}
+            {% include components/caption-image.html %}
+
         </div>
         <!--Quarters-->
-        <div class="col-sm-6">
+        <div class="col-md-6">
 
           <a href="#" class="col-sm-6">
-              {% assign hero = "c_ss.png" %}
-              {% assign description = "Basic Cardiovascular Science Scientific Sessions" %}
+              {% assign hero = "woman.png" %}
+              {% assign description = "Diagnosis Of Acute Rheumatic Fever In The Era Of Doppler Echocardiography" %}
               {% include components/caption-image.html %}
           </a>
           <a href="#" class="col-sm-6">
-            {% assign hero = "c_circ_logo.png" %}
-            {% assign description = "Smoking Status With Health-Related Outcomes After PCI" %}
-            {% include components/caption-image.html %}
+                {% assign hero = "c_circ_logo.png" %}
+                {% assign description = "Smoking Status With Health-Related Outcomes After PCI" %}
+                {% include components/caption-image.html %}
           </a>
           <a href="#" class="col-sm-6">
               {% assign hero = "webinar.png" %}

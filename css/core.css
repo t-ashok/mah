@@ -245,7 +245,7 @@ border-top-color: #333;
 font-size: 12px;
 }
 footer .row {
-margin-bottom: 20px;
+/*margin-bottom: 20px;*/
 }
 
 #footer-main{
@@ -943,7 +943,10 @@ visibility: hidden;
 
 
     
-} 
+}
+
+
+
 /*Tablet Bootstrap SM*/
 @media (min-width: 768px) and (max-width: 979px) { 
     .navbar-header {
@@ -1001,10 +1004,18 @@ visibility: hidden;
     }
 } 
 /*Bootstrap LG*/
-@media(min-width:1200px){}
+@media(min-width:1200px){
+    nav#main-navigation .menu > li > a {
+        font-size: 1em;
+    }
+}
 
 
 
 .thumbnail {
     background: transparent;
+}
+
+.img-responsive {
+    width: 100%;
 }

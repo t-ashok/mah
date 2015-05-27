@@ -2483,11 +2483,27 @@ a.thumbnail[class*="fa-"]:hover:before {
     height: auto;
 }
 
+
+@media screen and (min-width: 768px) {
+    .image-caption-wrapper.hero-sm {
+        height: 230px;
+    }
+    .feature .image-caption-wrapper.hero-sm {
+        height: 450px;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
     .image-caption-wrapper.hero-sm {
         height: 182px;
     }
+
+    .feature .image-caption-wrapper.hero-sm {
+        height: 383px;
+    }
 }
+
 
 
 /* Image Card */
