@@ -2228,6 +2228,10 @@ h6,
     border-bottom: none;
 }
 
+.page-title-wrapper {
+
+}
+
 body.home .page-title,
 body.no-title .page-title
 {

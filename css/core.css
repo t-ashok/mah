@@ -58,6 +58,8 @@ a:hover{
     display: none;
 }
 
+
+
 .container-fluid {
     padding: 0;
 }
@@ -102,13 +104,18 @@ a:hover{
     border-style: solid;
 }
 
+.border-1-bottom {
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
 .border-2 {
     border-width: 2px;
     border-style: solid;
 }
 
 .border-color-grey {
-    border-color: #d6e1e5;
+    border-color: #eaeaea;
 }
 
 .border-color-primary {
@@ -118,6 +125,8 @@ a:hover{
 .border-color-default {
     border-color: #000;
 }
+
+
 
 
 
@@ -224,6 +233,10 @@ margin-bottom: 10px;
 .bg-color-grey,
 .bg-color-grey .jumbotron {
     background-color: #eaeaea;
+}
+
+.bg-color-lightgrey {
+    background-color: #f7f7f7;
 }
 
 
@@ -481,6 +494,10 @@ border-bottom: 1px solid #e5e5e5;
 
 .sub-logo {
 width: 350px;
+}
+
+.navbar {
+    margin-bottom: 0;
 }
 
 .navbar-nav>li>a {
