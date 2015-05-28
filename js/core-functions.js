@@ -164,7 +164,9 @@ var onReady = {
 			cellAlign: 'left',
 			contain: true,
 			prevNextButtons: false,
-			autoPlay:true
+			autoPlay:true,
+			accessibility: true,
+			wrapAround: true
 		});
 
 		nav.init();
