@@ -23,6 +23,9 @@
   position: absolute;
   width: 100%;
 }
+.cell {
+  width: 100%;
+}
 
 /* ---- previous/next buttons ---- */
 

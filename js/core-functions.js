@@ -163,7 +163,8 @@ var onReady = {
 		$('#featuresSlider').flickity({
 			cellAlign: 'left',
 			contain: true,
-			prevNextButtons: false
+			prevNextButtons: false,
+			autoPlay:true
 		});
 
 		nav.init();
