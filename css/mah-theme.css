@@ -187,6 +187,10 @@ a.list-group-item.active > .badge,
     color: #f7f7f7;
 }
 
+.text-white {
+    color: #fff;
+}
+
 .btn {
     font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;
     border: 1px solid transparent;
@@ -2754,4 +2758,30 @@ a.mobile-menu-show {
     /*font-size: 28px;*/
     margin-top: 12px;
     margin-right: 10px;
+}
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
+    visibility: hidden
+}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+    visibility: visible
+}
+.delay-25s {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-75s {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }

@@ -1,38 +1,68 @@
 ---
-layout: l_default
+layout: l_full_width_no_title
 title: "Membership"
 bodyClass: "membership"
 ---
 <div class="page page-type" role="main">
 <!--Content-->
- <div class="container-fluid sectionName">
+ <div class="container-fluid jumbotron" style="background: url('img/sample/bg_people.jpg') #000;background-position: cover; height: 400px;">
      <div class="row">
          <div class="container">
-             <div class="col-md-2 col-sm-12">
-                 <img src="http://placehold.it/300x128" class="img-responsive">
-            </div>
+
             <div class="col-md-10 col-sm-12">
-                 <h3 class="media-heading text-primary">Join or Renew Today!</h3>
-                 <p>
+                 <h1 class="media-heading" style="margin-top: 40px;color:#fff;font-weight: 100;">Join or Renew Today!</h3>
+                 <p style="color:#f7f7f7;">
                      Joining as an AHA/ASA Professional Member puts you in touch with more than 32,000 like-minded individuals and brings you closer to the heart and soul of the AHA and its mission of building healthier lives, free of cardiovascular diseases and stroke.
                  </p>
-                 <a href="#" role="button" class="btn btn-primary btn-sm"> Sign In</a>
-                 <a href="#" role="button" class="btn btn-stroke btn-sm" style="white-space: normal;"> Upgrade Your Membership</a>
+                 <p>
+                     <a href="#" role="button" class="btn btn-primary btn-md"> Become A Member</a>
+                     <a href="#" role="button" class="btn btn-default btn-md" style="white-space: normal;color:#fff !important;"> Renew Your Membership</a>
+                 </p>
             </div>
          </div>
      </div>
  </div>
+
+    <div class="container-fluid benefits border-1-bottom border-color-grey margin-top-10">
+        <div class="row">
+            <div class="container">
+                <div class="col-md-3 wp1" style="margin-top: -25px;">
+                    <img src="img/sample/userinfo.png" class="img-responsive" alt="User Info">
+                </div>
+                <div class="col-md-9">
+                    <h3 class="text-primary" style="text-transform: uppercase;">Access to our career enhancing benefits, including:</h3>
+
+                    <ul class="">
+                        <li>Up to $400 in savings on Scientific Sessions registration and International Stroke Conference registration plus savings at AHA’s other scientific conferences</li>
+                        <li>Customized access to research and clinical information across multiple specialties</li>
+                        <li>Leadership Opportunities</li>
+                        <li>Be a part of our AHA Professional Online Network — connect with peers and leaders in your specialty</li>
+                        <li>Research grant application fee waived for members. You can apply at my.americanheart.org/research</li>
+                        <li>Online access to AHA scientific journals</li>
+                        <li>Affiliate with our Scientific Councils</li>
+                    </ul>
+
+                </div><!-- end col -->
+            </div>
+
+
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <div class="spacer"></div>
 <!-- Table -->
-<div class="container-fluid sectionName">
+<div class="container-fluid">
     <div class="row">
         <div class="container">
             <div class="col-md-12">
+                <h2 class="align-center text-primary" style="text-transform: uppercase;">Membership Levels</h2>
+                <div class="spacer"></div>
                 <div class="no-more-tables">
                     <table class="table table-bordered table-striped table-condensed">
                         <thead class="">
-                        <tr>
-                            <th>Membership Level</th>
-                            <th>Councils Affiliations</th>
+                        <tr style="font-size: 1.3em; font-weight: 100;">
+                            <th style="white-space: nowrap;">Membership Level</th>
+                            <th style="white-space: nowrap;">Councils Affiliations</th>
                             <th>Journals</th>
                             <th>Benefits</th>
                         </tr>
@@ -49,10 +79,10 @@ bodyClass: "membership"
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
                             <td>
-                                1 Council Affiliation
+                                1 Council
                             </td>
                             <td>
-                                Dicounted Online Journal Affiliations
+                                Additional cost
                             </td>
                             <td>
                                 Email updates tailored to deliver subspecialty content dealing with clinical and/or research  topics, news releases, recent articles, "hot" news, etc.
@@ -69,10 +99,10 @@ bodyClass: "membership"
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
                             <td>
-                                2 Council Affiliation
+                                2 Councils
                             </td>
                             <td>
-                                Dicounted Online Journal Affiliations
+                                XX% Discount on <strong>printed</strong> journal
                             </td>
                             <td>
                                 Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
@@ -89,10 +119,10 @@ bodyClass: "membership"
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
                             <td>
-                                2 Council Affiliation
+                                2 Councils
                             </td>
                             <td>
-                                Dicounted Online Journal Affiliations
+                                XX% Discount on <strong>printed</strong> journal
                             </td>
                             <td>
                                 Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
@@ -109,10 +139,10 @@ bodyClass: "membership"
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
                             <td>
-                                3 Council Affiliation
+                                3 Councils
                             </td>
                             <td>
-                                7 Free Online Journal Affiliations
+                                7 Free Online Journal
                             </td>
                             <td>
                                 <ul class="list-unstyled">
@@ -145,10 +175,10 @@ bodyClass: "membership"
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
                             <td>
-                                3 Council Affiliation
+                                3 Councils
                             </td>
                             <td>
-                                11 Free Online Journal Affiliations
+                                11 Free Online Journal
                             </td>
                             <td>
                                 <ul class="list-unstyled">
@@ -196,39 +226,43 @@ bodyClass: "membership"
 
 </div>
 <!-- -->
-<div class="spacer"></div>
+
 <!-- -->
-<div class="container-fluid sectionName">
+<div class="container-fluid pricing-option bg-color-lightgrey">
     <div class="row">
         <div class="container">
                 <!-- col -->
                 <div class="col-md-6">
-                    <h4>Multi-Year Membership</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
-                    </p>
-                    <ul>
-                        <li>List item 01</li>
-                        <li>List item 02</li>
-                        <li>List item 03</li>
-                        <li>List item 04</li>
+                    <div class="card">
+                        <h2>Multi-Year Membership</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
+                        </p>
+                        <ul>
+                            <li>List item 01</li>
+                            <li>List item 02</li>
+                            <li>List item 03</li>
+                            <li>List item 04</li>
 
-                    </ul>
-                    <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
+                        </ul>
+                        <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
+                    </div>
                 </div>
                 <!-- col -->
                 <div class="col-md-6">
-                    <h4>Group Membership</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
-                    </p>
-                    <ul>
-                        <li>List item 01</li>
-                        <li>List item 02</li>
-                        <li>List item 03</li>
-                        <li>List item 04</li>
-                    </ul>
-                    <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
+                    <div class="card">
+                        <h2>Group Membership</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
+                        </p>
+                        <ul>
+                            <li>List item 01</li>
+                            <li>List item 02</li>
+                            <li>List item 03</li>
+                            <li>List item 04</li>
+                        </ul>
+                        <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
+                    </div>
                 </div>
 
             <!--//.container-->
@@ -238,4 +272,62 @@ bodyClass: "membership"
     <!--//.container-fluid-->
 </div>
 <!-- -->
+    <!-- 3 cards -->
+    <div class="container-fluid sectionName">
+        <div class="row">
+            <div class="container">
+                <!--cols-->
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3 class="media-heading text-center padding-10" style="font-weight: 200;">
+                            <i class="fa fa-users margin-bottom-10 wp2" style="font-size: 50px" aria-hidden="true"></i><br>FAHA
+                        </h3>
+                        <hr style="margin-bottom: 10px;margin-top: 10px;">
+                        <p class="text-larger padding-10 align-center">
+                            As a member, you are eligible for members-only privileges, including publications, discounts and many more. One of the most valuable benefits is access to your multidisciplinary network through the membership directory.
+                        </p>
+                    </div>
+                </div>
+                <!--cols-->
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3 class="media-heading text-center padding-10" style="font-weight: 200; white-space: nowrap;">
+                            <i class="fa fa-book margin-bottom-10 wp2 delay-25s" style="font-size: 50px" aria-hidden="true"></i><br>Membership Directory
+                        </h3>
+                        <hr style="margin-bottom: 10px;margin-top: 10px;">
+                        <p class="text-larger padding-10 align-center">
+                            By earning the right to include the initials F.A.H.A. among your credentials, you let colleagues and patients know that you have been welcomed into one of the world’s most eminent organizations of cardiovascular and stroke professionals.
+                        </p>
+                    </div>
+                </div>
+                <!--cols-->
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3 class="media-heading text-center padding-10" style="font-weight: 200;">
+                            <i class="fa fa-heart margin-bottom-10 wp2 delay-05s" style="font-size: 50px" aria-hidden="true"></i><br>Volunteer
+                        </h3>
+                        <hr style="margin-bottom: 10px;margin-top: 10px;">
+                        <p class="text-larger padding-10 align-center">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, architecto at consectetur dolorum ea fuga, fugit, in labore libero maiores officiis pariatur porro praesentium quos recusandae. In nihil perspiciatis placeat!
+                        </p>
+                    </div>
+                </div>
+                <!--cols-->
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3 class="media-heading text-center padding-10" style="font-weight: 200;">
+                            <i class="fa fa-puzzle-piece margin-bottom-10 wp2 delay-75s" style="font-size: 50px" aria-hidden="true"></i><br>Councils
+                        </h3>
+                        <hr style="margin-bottom: 10px;margin-top: 10px;">
+                        <p class="text-larger padding-10 align-center">
+                            Members have access to affiliate and interact with one or more scientific councils that match their specialty or classification, depending on the membership level selected.                        </p>
+                    </div>
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-fluid-->
+    </div>
+    <!--End cards-->
 </div><!-- //.col-md-12 -->
