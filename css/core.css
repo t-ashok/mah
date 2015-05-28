@@ -750,7 +750,7 @@ position: relative;
 }
 
 nav#main-navigation .menu > li > a {
-    padding: 15px 2px;
+    padding: 15px 5px;
 }
 
 nav#main-navigation .menu > li {
@@ -990,14 +990,14 @@ visibility: hidden;
         width: 300px;
     }
     nav#main-navigation .menu > li > a{
-        font-size: .85em;
+        font-size: .9em;
     }
 
 
 
     nav#main-navigation .menu > li {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
 } 
@@ -1009,8 +1009,8 @@ visibility: hidden;
     /*}*/
 
     nav#main-navigation .menu > li {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
     .sub-logo {
         width: 300px;
@@ -1023,7 +1023,9 @@ visibility: hidden;
 /*Bootstrap LG*/
 @media(min-width:1200px){
     nav#main-navigation .menu > li > a {
-        font-size: 1em;
+        font-size: 1.1em;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 }
 
