@@ -1,0 +1,60 @@
+{% include head.html %}
+
+    <body class="">
+    <!-- Mobile Menu Wrapper ====================== -->
+    {% include mobile-menu.html %}
+    {% include utility.html %}
+        <div id="mainWrapper">
+
+            {% include header.html %}
+
+            <!-- Main content -->
+            <div id="main">
+
+                <!-- Jumbotron if have -->
+                {% if page.jumbotron %}
+                    {% include {{ page.jumbotron }} %}
+
+                {% endif %}
+
+                <!-- container-->
+                <div class="container-fluid">
+                    <div class="row has-right-sidebar inner-page-wrap ">
+
+                        <div class="container">
+                            <div class="col-md-9 col-sm-12 page type-page" role="main">
+                            <!-- Content main content here -->
+
+                            {{ content }}
+
+                            </div>
+
+                            <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary">
+
+                                <!-- Sidebar content here -->
+                                <!-- will get sidebar value from page using this template from frontmatter, sidebar: 'nameOfSidebar'-->
+                                {% if {{page.sidebar}} %}
+                                {% include {{page.sidebar}} %}
+                                {% endif %}
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div><!-- //.row -->
+                </div><!-- //.container -->
+
+
+                <!--/#main-->
+            </div>
+
+            {% include footer.html %}
+            <!--/#mainWrapper-->
+        </div>
+    <!-- All js scripts -->
+    {% include allscripts.html %}
+    </body>
+
+</html>
