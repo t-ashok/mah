@@ -70,7 +70,10 @@ a:focus {
     text-decoration: none;
 }
 a:focus {
-    outline: none;
+    /*outline: none;*/
+    /*outline: thin dotted;*/
+     outline: 5px auto -webkit-focus-ring-color;
+     outline-offset: -2px;
 }
 .alert {
     border: none;
@@ -229,10 +232,9 @@ a.list-group-item.active > .badge,
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus {
-    outline: none;
+    /*outline: none;*/
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
     outline: none;
     color: #ffffff;
 }

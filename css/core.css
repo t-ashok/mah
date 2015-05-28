@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, .btn{
 
 
 a {
-    outline: medium none !important;
+    /*outline: medium none !important;*/
     transition: all 0.2s ease-in-out 0s;
     text-decoration: none;
     /*color: #ed1b24;*/
