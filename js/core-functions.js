@@ -158,6 +158,14 @@ var onReady = {
 			offset: '75%'
 		});
 
+		/***************** Flickity ******************/
+
+		$('#featuresSlider').flickity({
+			cellAlign: 'left',
+			contain: true,
+			prevNextButtons: false
+		});
+
 		nav.init();
 		page.init();
 		reloadFunctions.init();
