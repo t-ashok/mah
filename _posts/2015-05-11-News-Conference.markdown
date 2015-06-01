@@ -2,7 +2,7 @@
 layout: l_article
 title:  "Acute Stroke Therapy Articles from Stroke"
 date:   2015-05-04 11:26:01
-categories: [categories.name]
+categories: [Hypertension, Stroke, tu]
 tags : [Tags 1, tags 2]
 
 hideTitle: false
