@@ -1180,7 +1180,9 @@ fieldset[disabled] .btn-inverse.active {
 label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    line-height: 2.4;
+    /*line-height: 2.4;*/
+    line-height: 12px;
+    margin-bottom: 0;
     color: #364347;
 }
 .form-control {
