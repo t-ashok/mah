@@ -9,11 +9,11 @@ hideTitle: false
 <!--Membership Form-->
 <form action="" method="post" role="form">
 	<legend>General Membership</legend>
-	<div class="col-sm-12 text-primary">(* = required)</div>
+	<div class="col-sm-12">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 	<div class="col-sm-6">
-		<div class="form-group input-required">
-			<label for="firstname">First Name</label>
-			<input type="text" class="form-control " required name="firstname" id="firstname" placeholder="First Name"><span></span>
+		<div class="form-group">
+			<label for="firstName">First Name <span class="required">*</span></label>
+			<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
 		</div>
 	</div>
 	<div class="col-sm-6">
@@ -23,15 +23,16 @@ hideTitle: false
 		</div>
 	</div>
 	<div class="col-sm-6">
-
 		<div class="form-group">
-			<label for="email">Email</label>
-			<input type="text" class="form-control" name="email" id="email" placeholder="Email">
+			<label for="email">Email <span class="required">*</span></label>
+			<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
 		</div>
-
 	</div>
 	<div class="col-sm-6">
-
+		<div class="form-group">
+			<label for="confirmEmail">Confirm Email <span class="required">*</span></label>
+			<input type="text" class="form-control " required name="confirmEmail" id="confirmEmail" placeholder="Confirm Email">
+		</div>
 	</div>
 	
 	<div class="col-sm-12">

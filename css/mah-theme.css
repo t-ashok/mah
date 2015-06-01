@@ -2250,6 +2250,11 @@ h6,
 
 }
 
+.heading {
+    font-weight: 200;
+    color: #DC0006;
+}
+
 body.home .page-title,
 body.no-title .page-title
 {
