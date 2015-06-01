@@ -22,39 +22,6 @@
 
 
             <ul class="avatar-wrapper nav navbar-nav navbar-right">
-              <!--<li class="dropdown">-->
-                <!--<a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success pull-right">3</span></a>-->
-                <!--<ul class="dropdown-menu title-caret dropdown-lg" role="menu">-->
-                  <!--<li><p class="drop-title">You have 3 pending tasks!</p></li>-->
-                  <!--<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><li class="dropdown-menu-list slimscroll tasks" style="overflow: hidden; width: auto; height: 100%;">-->
-                    <!--<ul class="list-unstyled">-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="task-icon badge badge-success"><i class="icon-user"></i></div>-->
-                          <!--<span class="badge badge-roundless badge-default pull-right">1min ago</span>-->
-                          <!--<p class="task-details">New user registered.</p>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="task-icon badge badge-danger"><i class="icon-energy"></i></div>-->
-                          <!--<span class="badge badge-roundless badge-default pull-right">24min ago</span>-->
-                          <!--<p class="task-details">Database error.</p>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="task-icon badge badge-info"><i class="icon-heart"></i></div>-->
-                          <!--<span class="badge badge-roundless badge-default pull-right">1h ago</span>-->
-                          <!--<p class="task-details">Reached 24k likes</p>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                    <!--</ul>-->
-                  <!--</li><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.3; display: none; border-radius: 0px; z-index: 99; right: 0px; height: 138px; background: rgb(204, 204, 204);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; opacity: 0.2; z-index: 90; right: 0px; background: rgb(51, 51, 51);"></div></div>-->
-                  <!--<li class="drop-all"><a href="#" class="text-center">All Tasks</a></li>-->
-                <!--</ul>-->
-              <!--</li>-->
-
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                   <div class="avatar-img pull-right"><i class="fa fa-angle-down"></i></div>
@@ -143,13 +110,17 @@
         <div class="page-header">
 
           <h1>{{page.title}}</h1>
+          <h4>{{page.tags}}</h4>
           <h4>{{page.categories}}</h4>
-
+          {% for categories in site.data.category %}
+            <h4>{{categories.name}}</h4>
+          {% endfor %}
         </div> <!--page-hea-der-->
       </div><!-- //.col-md-12 -->
     </div><!-- //.row -->
    </div><!-- //.container -->
   {% endif %}
+
 
 </div>
 
