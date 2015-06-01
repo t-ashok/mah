@@ -2003,7 +2003,7 @@ select[multiple].input-lg {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-    padding: 14px 5px;
+    padding: 14px 10px;
     border-top: 1px solid #d6e1e5;
 }
 .table > thead > tr > th {
