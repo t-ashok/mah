@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: l_article
 title:  "AHA/ASA Guideline"
 date:   2015-02-30 11:26:01
 categories: Cardiology

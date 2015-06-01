@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: l_article
 title:  "Acute Stroke Therapy Articles from Stroke"
 date:   2015-05-04 11:26:01
 categories: Stroke

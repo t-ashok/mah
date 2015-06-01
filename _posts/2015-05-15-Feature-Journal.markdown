@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: l_article
 title:  "ATVB Call For Papers In Recognition Of National Cholesterol Month"
 date:   2015-05-12 11:26:01
 categories: Cardiology

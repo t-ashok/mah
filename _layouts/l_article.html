@@ -13,9 +13,13 @@
                 <!-- container-->
                 <div class="container">
                     <div class="row has-left-sidebar inner-page-wrap ">
-                        {% include sidebar_styleguide.html %}
 
-                        {{ content }}
+                        <div class="col-md-3">
+                            {% include sidebar_membership_tiers.html %}
+                        </div>
+                        <div class="col-md-9">
+                            {{ content }}
+                        </div>
 
                     </div><!-- //.row -->
                 </div><!-- //.container -->

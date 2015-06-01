@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: l_article
 title:  "Stroke Journal"
 date:   2015-03-20 11:26:01
 categories: Journals

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: l_article
 title:  "Basic Cardiovascular Sciences 2015 Scientific Sessions"
 date:   2015-03-20 11:26:01
 categories: Conference
