@@ -2241,8 +2241,8 @@ h6,
     font-size: 14px;
 }
 .page-header {
-    padding-bottom: 11px;
-    margin: 48px 0 24px;
+    /*padding-bottom: 11px;*/
+    /*margin: 48px 0 24px;*/
     border-bottom: none;
 }
 
@@ -2252,7 +2252,7 @@ h6,
 
 .heading {
     font-weight: 200;
-    color: #DC0006;
+
 }
 
 body.home .page-title,
