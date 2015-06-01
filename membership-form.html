@@ -9,17 +9,17 @@ hideTitle: false
 <!--Membership Form-->
 <form action="" method="post" role="form">
 	<legend>General Membership</legend>
-
+	<div class="col-sm-12 text-primary">(* = required)</div>
 	<div class="col-sm-6">
-		<div class="form-group">
+		<div class="form-group input-required">
 			<label for="firstname">First Name</label>
-			<input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
+			<input type="text" class="form-control " required name="firstname" id="firstname" placeholder="First Name"><span></span>
 		</div>
 	</div>
 	<div class="col-sm-6">
 		<div class="form-group">
-			<label for="lastname">Last Name</label>
-			<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+			<label for="lastname">Last Name <span class="required">*</span></label>
+			<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
 		</div>
 	</div>
 	<div class="col-sm-6">
