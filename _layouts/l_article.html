@@ -19,11 +19,21 @@
                         </div>
                         <div class="col-md-9">
                             {{ content }}
+                            <hr/>
+                            <div class="post-meta">
+                                {% if post.tags %}
+                                    <h4>{{post.tags}}</h4>
+                                {% endif %}
+                                {% if page.categories %}
+                                    <a href="{{ page.categories }}" class="text-uppercase tag tag-{{ page.categories }}">
+                                        <span class="indicator"></span>{{ page.categories }}
+                                    </a>
+                                {% endif %}
+                            </div>
                         </div>
 
                     </div><!-- //.row -->
                 </div><!-- //.container -->
-
 
                 <!--/#main-->
             </div>
