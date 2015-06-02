@@ -5,7 +5,7 @@ date:   2015-05-04 11:26:01
 categories: [Hypertension, Stroke, tu]
 tags : [Tags 1, tags 2]
 
-hideTitle: false
+showTitle: true
 
 banner: /img/sample/j_stroke.png
 image1: /img/sample/feature.jpg
