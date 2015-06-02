@@ -99,9 +99,11 @@
 
 
     <!-- Page tite -->
-
   <!-- if your page has a page.title -->
-  {% if page.showTitle == true %}
+  <!-- to show page title make sure you have showTitle: true -->
+  <!-- if not then page title will not be visible -->
+
+  {% if page.showTitle  %}
 
    <div class="container-fluid page-title-wrapper">
      <div class="row page-title">
