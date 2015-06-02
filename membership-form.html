@@ -7,32 +7,100 @@ hideTitle: false
 ---
 <h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
 <!--Membership Form-->
+
+
+
 <form action="" method="post" role="form">
 	<!--<legend>General Membership</legend>-->
 	<div class="col-sm-12">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 	<br/><br/>
-	<div class="col-sm-6">
-		<div class="form-group">
-			<label for="firstName">First Name <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
+	
+	<div class="col-sm-12">
+		<div class="panel panel-default bg-color-lightgrey">
+			<div class="panel-body">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="firstName">First Name <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="lastname">Last Name <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="email">Email <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="confirmEmail">Confirm Email <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="confirmEmail" id="confirmEmail" placeholder="Confirm Email">
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="password">Password <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="password" id="password" placeholder="Password">
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="col-sm-6">
+	
+
+
+
+
+
+	<div class="col-sm-12">
+		<!--Security Question-->
 		<div class="form-group">
-			<label for="lastname">Last Name <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
+			<label for="secQuestion">Security Question <span class="required">*</span></label>
+			<select class="form-control" name="secQuestion" id="secQuestion">
+				<option>Select security question</option>
+				<option>What is your favorite movie?</option>
+				<option>Who is your favorite actor?</option>
+				<option>Where was your high school?</option>
+				<option>What city did you fall in love?</option>
+			</select>
+
 		</div>
 	</div>
-	<div class="col-sm-6">
+
+
+
+	<div class="col-sm-12">
 		<div class="form-group">
-			<label for="email">Email <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
+			<label for="secAnswer"> Security Answer <span class="required">*</span></label>
+			<input type="text" class="form-control " required name="secAnswer" id="secAnswer" placeholder="Security Answer">
 		</div>
 	</div>
-	<div class="col-sm-6">
+
+	<div class="col-sm-12">
+		<!-- Primary Specialy-->
 		<div class="form-group">
-			<label for="confirmEmail">Confirm Email <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="confirmEmail" id="confirmEmail" placeholder="Confirm Email">
+			<label for="primeSpecialty"> Primary Specialty <span class="required">*</span></label>
+			<select class="form-control" name="primeSpecialty" id="primeSpecialty">
+				<option>Hypertension</option>
+				<option>Hypertension</option>
+				<option>Hypertension</option>
+				<option>Hypertension</option>
+				<option>Hypertension</option>
+			</select>
+
 		</div>
 	</div>
 	
