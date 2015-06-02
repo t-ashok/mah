@@ -5,7 +5,16 @@ bodyClass: "membership"
 ---
 <div class="page page-type" role="main">
 <!--Content-->
- <div class="container-fluid jumbotron" style="background: url('img/sample/bg_people.jpg') #000;background-position: cover; min-height: 400px;">
+ <div class="container-fluid jumbotron" style="background: url('img/sample/bg_people.jpg') repeat-x #000;background-position: cover; min-height: 400px; ">
+     <script>
+         $(function(){
+             var x = 0;
+             setInterval(function(){
+                 x-=1;
+                 $('.jumbotron').css('background-position', x + 'px 0');
+             }, 60);
+         })
+     </script>
      <div class="row">
          <div class="container">
 
@@ -23,13 +32,13 @@ bodyClass: "membership"
      </div>
  </div>
 
-    <div class="container-fluid benefits border-1-bottom border-color-grey margin-top-10">
+    <div class="container-fluid benefits border-1-bottom border-color-grey margin-top-10 margin-bottom-10">
         <div class="row">
             <div class="container">
-                <div class="col-md-3 wp1 delay-05s" style="margin-top: -25px;">
-                    <img src="img/sample/userinfo.png" class="img-responsive" alt="User Info">
+                <div class="col-md-4 wp1 delay-05s">
+                    {% include components/testimonials.html %}
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <h3 class="text-primary" style="text-transform: uppercase;">Access to our career enhancing benefits, including:</h3>
 
                     <ul class="">
@@ -43,6 +52,7 @@ bodyClass: "membership"
                     </ul>
 
                 </div><!-- end col -->
+                <div class="spacer"></div>
             </div>
 
 
@@ -50,15 +60,7 @@ bodyClass: "membership"
         </div><!-- end row -->
     </div><!-- end container -->
     <div class="spacer"></div>
-<!-- Testimonials -->
-<div class="container-fluid testimonials">
-    <div class="row">
-        <div class="container">
-            <!--cols-->
-            {% include components/testimonials.html %}
-        </div>
-    </div>
-</div>
+
 
 
 <!-- Table -->
