@@ -25,7 +25,29 @@ bodyClass: "membership"
                  </p>
                  <p>
                      <a href="membership-tiers.html" role="button" class="btn btn-primary btn-md animated fadeInUp"> Become A Member</a>
-                     <a href="#" role="button" class="btn btn-default btn-md animated fadeInUp" style="white-space: normal;color:#fff !important;"> Renew Your Membership</a>
+                     <a data-toggle="collapse" href="#login" aria-expanded="false" aria-controls="login" role="button" class="btn btn-default btn-md animated fadeInUp text-white" style="white-space: normal;"> Renew Your Membership</a>
+                     <!--Login-->
+                     <div class="collapse col-sm-10" id="login" style="margin-left: -10px;">
+                         <div class="well">
+
+
+                             <button type="button" class="close" data-toggle="collapse" data-target="#login" aria-expanded="false" aria-controls="login"><span aria-hidden="true">&times;</span></button>
+                             <h3 class="lead media-heading">Login</h3>
+
+                             <form class="form-inline">
+
+                                 <div class="form-group">
+                                     <label for="exampleInputName2">Username</label>
+                                     <input type="text" class="form-control" id="exampleInputName2" placeholder="jane.doe@example.com">
+                                 </div>
+                                 <div class="form-group margin-left-10">
+                                     <label for="exampleInputEmail2">Password</label>
+                                     <input type="password" class="form-control" id="exampleInputEmail2" placeholder="">
+                                 </div>
+                                 <a href="#" type="submit" class="btn btn-sm btn-primary margin-left-10"> Log In</a>
+                             </form>
+                         </div>
+                     </div>
                  </p>
             </div>
          </div>

@@ -10,7 +10,7 @@ showTitle: true
 <div class="row">
 <div class="col-sm-12">
 	<div class="col-sm-3">
-		<div class="membership-step-card active panel palette-gunpowder animated flipInY">
+		<div class="membership-step-card panel  animated flipInY">
 			<div class="panel-body text-center">
 			   <h3 class="lead media-heading">
 				   Create Profile
@@ -22,7 +22,7 @@ showTitle: true
 		</div>
 	</div>
 	<div class="col-sm-3">
-		<div class="membership-step-card panel palette-coral animated flipInY delay-25s">
+		<div class="membership-step-card active panel animated flipInY delay-25s">
 			<div class="panel-body text-center">
 				<h3 class="lead media-heading">
 					Select Coucils
@@ -33,7 +33,7 @@ showTitle: true
 		</div>
 	</div>
 	<div class="col-sm-3">
-		<div class="membership-step-card panel palette-coral animated flipInY delay-05s">
+		<div class="membership-step-card panel animated flipInY delay-05s">
 			<div class="panel-body text-center">
 				<h3 class="lead media-heading">
 					Select Journals
@@ -44,7 +44,7 @@ showTitle: true
 		</div>
 	</div>
 	<div class="col-sm-3">
-		<div class="membership-step-card panel palette-coral animated flipInY delay-75s">
+		<div class="membership-step-card panel animated flipInY delay-75s">
 			<div class="panel-body text-center">
 				<h3 class="lead media-heading">
 					Checkout
@@ -67,115 +67,5 @@ showTitle: true
 
 
 <form action="" method="post" role="form">
-	<!--<legend>General Membership</legend>-->
-	<div class="col-sm-12">(<span class="required" style="line-height: 12px">*</span> = required )</div>
-	<br/><br/>
-	
-	<div class="col-sm-12">
-		<div class="panel panel-default bg-color-lightgrey">
-			<div class="panel-body">
-				<div class="col-sm-2">
-					
-					<div class="form-group"><label for="prefix">Prefix</label>
-					<select aria-invalid="false" tabindex="0" class="form-control" id="prefix" name="prefix">
-						<option value="Select" selected="">Select</option>
-						<option value="Dr.">Dr.</option>
-						<option value="Mr.">Mr.</option>
-						<option value="Ms.">Ms.</option>
-						<option value="Mrs.">Mrs.</option>
-					</select></div>
-				</div>
 
-				<div class="col-sm-4">
-					<div class="form-group">
-						<label for="firstName">First Name <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
-					</div>
-				</div>
-
-				<div class="col-sm-4">
-					<div class="form-group">
-						<label for="lastname">Last Name <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
-					</div>
-				</div>
-				<div class="col-sm-2">
-					<div class="form-group">
-						<label for="suffix">Suffix</label>
-						<input type="text" class="form-control " required name="suffix" id="suffix" placeholder="Suffix">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="email">Email <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="confirmEmail">Confirm Email <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="confirmEmail" id="confirmEmail" placeholder="Confirm Email">
-					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="password">Password <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="password" id="password" placeholder="Password">
-					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="confirmPassword">Confirm Password <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="col-sm-12">
-		<!--Security Question-->
-		<div class="form-group">
-			<label for="secQuestion">Security Question <span class="required">*</span></label>
-			<select class="form-control" name="secQuestion" id="secQuestion">
-				<option>Select security question</option>
-				<option>What is your favorite movie?</option>
-				<option>Who is your favorite actor?</option>
-				<option>Where was your high school?</option>
-				<option>What city did you fall in love?</option>
-			</select>
-
-		</div>
-	</div>
-
-
-
-	<div class="col-sm-12">
-		<div class="form-group">
-			<label for="secAnswer"> Security Answer <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="secAnswer" id="secAnswer" placeholder="Security Answer">
-		</div>
-	</div>
-
-	<div class="col-sm-12">
-		<!-- Primary Specialy-->
-		<div class="form-group">
-			<label for="primeSpecialty"> Primary Specialty <span class="required">*</span></label>
-			<select class="form-control" name="primeSpecialty" id="primeSpecialty">
-				<option>Hypertension</option>
-				<option>Hypertension</option>
-				<option>Hypertension</option>
-				<option>Hypertension</option>
-				<option>Hypertension</option>
-			</select>
-
-		</div>
-	</div>
-	
-	<div class="col-sm-12">
-		<button type="submit" class="btn btn-primary"> Next </button>
-	</div>
 </form>

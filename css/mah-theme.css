@@ -2665,10 +2665,10 @@ a.tag {
     padding-left: 20px;
 }
 .membership-step-card {
-
+    background-color: #d6e1e5;
 }
 .membership-step-card.active {
-
+    background-color: #5e6969;
 }
 .membership-step-card.active > .panel-body {
     color: #fff;
