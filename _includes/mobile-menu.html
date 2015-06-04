@@ -8,30 +8,22 @@
 
     <nav id="mobile-menu" class="clearfix">
         <div class="menu-ecc-navigation-mobile-container">
+            <!-- Navigation created from main-navigation.json -->
+            <div class="nav" id="">
+                <!--<h5>Navigation</h5>-->
+                <ul class="list-unstyled menu">
 
-            <div class="col-md-3 col-sm-12 col-xs-12 sidebar" role="complementary">
+                    {% for nav in site.data.main-navigation.mainnavs %}
 
-                <div class="">
+                    <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
+                    <li class="menu-item">
+                        <a class="page-link" href="{{ nav.link }}">{{ nav.name }}</a>
+                    </li>
 
-                    <!-- Navigation created from main-navigation.json -->
-                    <div class="nav" id="">
-                        <!--<h5>Navigation</h5>-->
-                        <ul class="list-unstyled menu">
+                    {% endfor %}
 
-                            {% for nav in site.data.main-navigation.mainnavs %}
-
-                            <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
-                            <li class="menu-item">
-                                <a class="page-link" href="{{ nav.link }}">{{ nav.name }}</a>
-                            </li>
-
-                            {% endfor %}
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div><!-- // sidebar -->
+                </ul>
+            </div>
         </div>
     </nav>
 </div><!-- //#mobile-menu-wrap -->
