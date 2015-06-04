@@ -3,7 +3,7 @@
     {
       "name":"Communities",
       "class":"nav-1",
-      "link":{{site.baseurl}}/communities.html
+      "link":"{{site.baseurl}}/communities.html"
     },
     {
       "name":"Guidelines & Statements",
