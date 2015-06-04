@@ -2664,7 +2664,15 @@ a.tag {
     vertical-align: middle;
     padding-left: 20px;
 }
+.membership-step-card {
 
+}
+.membership-step-card.active {
+
+}
+.membership-step-card.active > .panel-body {
+    color: #fff;
+}
 
 /*-------*/
 
