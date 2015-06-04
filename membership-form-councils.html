@@ -6,7 +6,6 @@ title: "Become a Member"
 showTitle: true
 ---
 
-<!-- Steps Cards-->
 <div class="row">
 <div class="col-sm-12">
 	<div class="col-sm-3">
@@ -67,11 +66,55 @@ showTitle: true
 
 
 <form action="" method="post" role="form">
-{% assign dataname = site.data.councils.councils %}
-{% for council in dataname %}
+	<div class="list-group" id="sortable">
+		{% assign dataname = site.data.councils.councils %}
+		{% for council in dataname %}
+		<a href="#" class="list-group-item">
+			<h4 class="list-group-item-heading">{{council.id}}:{{council.name}}</h4>
+			<p class="list-group-item-text">
+				<label class="checkbox" for="checkbox1">
+			<span class="icons">
+				<span class="first-icon"></span>
+				<span class="second-icon fa fa-check"></span>
+			</span>
+					<input value="" id="checkbox1" data-toggle="checkbox" type="checkbox">
+					<span class="">
+						{{council.snippet}}
+					</span>
+				</label>
+			</p>
+		</a>
+		{% endfor %}
 
-{% endfor %}
+	</div>
 
+
+
+
+	<label class="checkbox" for="checkbox1">
+		<span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input value="" id="checkbox1" data-toggle="checkbox" type="checkbox">
+		Oy! Me box is filled!
+	</label>
+
+	<ul id="sortables">
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+	</ul>
 
 
 </form>
+
+
+<script>
+	$(function() {
+		$( "#sortable" ).sortable();
+		$( "#sortable" ).disableSelection();
+	});
+</script>
+
+
