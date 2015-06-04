@@ -12,76 +12,47 @@ bodyClass: "communities"
             <div class="col-sm-8">
             <h4><span class="text-uppercase margin-right-10">Science News/Latest News</span></h4>
             <div class="col-sm-6 news-feature" style="margin-bottom: 40px;">
-                <!--Big Thumb-->
-                <!--<img class="img-responsive img-full" src="{{site.baseurl}}/img/sample/news_feature.png" alt="title">-->
-                <div class="news-feature-media embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/Yn-9Hz78FNw" frameborder="0"  allowfullscreen></iframe>
+                {% for post in site.posts limit:1 %}
+                <div class="media">
+                    <div class="media-body">
+                        <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                            <span class="indicator"></span>{{ post.categories }}
+                        </a>
+                        <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                        <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                        {{ post.excerpt limit: 50 }}
+                    </div>
+                    <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
                 </div>
-                <a href="#" class="text-uppercase tag tag-hyper"><span class="indicator"></span>Hypertension</a>
-                <a href="#"><h5>ATVB | PVD 2015 Expert Perspectives on This Year's Sessions</h5></a>
-                <p class="media-excerpt">Muredach P. Reilly, MBBCH, MSCE, program chair for ATVB/PVD 2015, Kathryn J. Moore, PhD, chair of the council for ATVB, and Michael Conte, MD, chair of the council for PVD, provide their expert perspectives on the science that was presented at the meeting this year in San Francisco with a focus on new approaches for translating science into new patient therapies.</p>
+
+                {% endfor %}
             </div>
-            <div class="col-sm-6 news-feature-list">
-                <div class="media">
-                    <div class="media-left">
-                        <a class="media-object" href="#">
-                            <img width="80" alt="" src="/mah/img/sample/ad_600x400.png">
-                        </a>
+                <div class="col-sm-6 news-feature-list">
+                    {% for post in site.posts limit:2 %}
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                                <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80"/>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
+                                <span class="indicator"></span>{{ post.categories }}
+                            </a>
+                            <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                            <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
+
+                            {{ post.excerpt limit: 50 }}
+                        </div>
+                        <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
                     </div>
-                    <div class="media-body">
-                        <a class="text-uppercase tag tag-hypertension" href="cardiology">
-                            <span class="indicator"></span>hypertension
-                        </a>
-                        <a href="/mah/cardiology/2015/05/30/AHA-ASA-Guideline.html"><h5>AHA/ASA Guideline</h5></a>
-                        <!--<p>Posted May 30, 2015</p>-->
 
-                        <p>Background and Purpose&mdash;The authors present an overview of the current evidence and management recommendations for evaluation and treatment of adults with acute ischemic stroke.</p>
+                    {% endfor %}
 
 
-                    </div>
-                    <!--<a href="/mah/cardiology/2015/05/30/AHA-ASA-Guideline.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
                 </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <a class="media-object" href="#">
-                            <img width="80" alt="" src="/mah/img/sample/ad_600x400.png">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <a class="text-uppercase tag tag-hypertension" href="cardiology">
-                            <span class="indicator"></span>hypertension
-                        </a>
-                        <a href="/mah/cardiology/2015/05/12/Feature-Journal.html"><h5>ATVB Call For Papers In Recognition Of National Cholesterol Month</h5></a>
-                        <!--<p>Posted May 12, 2015</p>-->
-
-                        <p>Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures.</p>
-
-
-                    </div>
-                    <!--<a href="/mah/cardiology/2015/05/12/Feature-Journal.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <a class="media-object" href="#">
-                            <img width="80" alt="" src="/mah/img/sample/ad_600x400.png">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <a class="text-uppercase tag tag-hypertension" href="stroke">
-                            <span class="indicator"></span>hypertension
-                        </a>
-                        <a href="/mah/stroke/2015/05/04/News-Conference.html"><h5>Acute Stroke Therapy Articles from Stroke</h5></a>
-                        <!--<p>Posted May 4, 2015</p>-->
-
-                        <p>The results of the four recently presented/published trials for acute ischemic stroke herald the dawn of a new era in the treatment of patients with large vessel occlusion amenable to endovascular intervention.</p>
-
-
-                    </div>
-                    <!--<a href="/mah/stroke/2015/05/04/News-Conference.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
-                </div>
-            </div>
             </div>
             <div class="col-sm-4 feature-meeting-lg">
                 <h4><span class="text-uppercase margin-right-10">Upcoming Event</span></h4>
@@ -118,78 +89,32 @@ bodyClass: "communities"
                     <h4><span class="text-uppercase margin-right-10">Journal</span></h4>
                     <div class="spacer"></div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-md-12">
+
+                    {% for post in site.categories.journals limit:1 %}
 
                     <div class="media">
                         <div class="media-left">
-                            <a class="media-object" href="/mah/journals/2015/03/20/Journal-3.html">
-                                <img width="80" alt="" src="/mah/img/sample/j_hyper.png">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                                <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80" />
                             </a>
                         </div>
                         <div class="media-body">
-                            <!--<a href="journals" class="text-uppercase tag tag-journals">-->
-                            <!--<span class="indicator"></span>journals-->
+                            <!--<a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">-->
+                            <!--<span class="indicator"></span>{{ post.categories }}-->
                             <!--</a>-->
-                            <a href="/mah/journals/2015/03/20/Journal-3.html"><h5>Hypertension Journal</h5></a>
-                            <!--<p>Posted Mar 20, 2015</p>-->
+                            <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                            <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
 
-                            <p class="media-excerpt"></p><p>Recent Clinical and Translational Advances in Pediatric Hypertension.</p>
-
-                            <p><a href="http://stroke.ahajournals.org/content/46/5/1167.full">Full Text</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">PDF</a></p>
-                            <p></p>
+                            <p class="media-excerpt">{{ post.content }}</p>
                         </div>
 
-                        <!--<a href="/mah/journals/2015/03/20/Journal-3.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+                        <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
 
 
                     </div>
 
-                    <div class="media">
-                        <div class="media-left">
-                            <a class="media-object" href="/mah/journals/2015/03/20/Journal-2.html">
-                                <img width="80" alt="" src="/mah/img/sample/j_atvb.png">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <!--<a href="journals" class="text-uppercase tag tag-journals">-->
-                            <!--<span class="indicator"></span>journals-->
-                            <!--</a>-->
-                            <a href="/mah/journals/2015/03/20/Journal-2.html"><h5>ATVB Journal</h5></a>
-                            <!--<p>Posted Mar 20, 2015</p>-->
-
-                            <p class="media-excerpt"></p><p>Central Nervous System Regulation of Intestinal Lipoprotein Metabolism by Glucagon-Like Peptide-1 via a Brain&ndash;Gut Axis</p>
-
-                            <p><a href="http://stroke.ahajournals.org/content/46/5/1167.full">Full Text</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">PDF</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">Data Supplement</a></p>
-                            <p></p>
-                        </div>
-
-                        <!--<a href="/mah/journals/2015/03/20/Journal-2.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
-
-                    </div>
-
-                    <div class="media">
-                        <div class="media-left">
-                            <a class="media-object" href="/mah/journals/2015/03/20/Journal-1.html">
-                                <img width="80" alt="" src="/mah/img/sample/j_circ.png">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <!--<a href="journals" class="text-uppercase tag tag-journals">-->
-                            <!--<span class="indicator"></span>journals-->
-                            <!--</a>-->
-                            <a href="/mah/journals/2015/03/20/Journal-1.html"><h5>Circulation Journal</h5></a>
-                            <!--<p>Posted Mar 20, 2015</p>-->
-
-                            <p class="media-excerpt"></p><p>Return to Work in Out-of-Hospital Cardiac Arrest Survivors: A Nationwide Register-Based Follow-Up Study</p>
-
-                            <p><a href="http://stroke.ahajournals.org/content/46/5/1167.full">Full Text</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">PDF</a> \ <a href="http://stroke.ahajournals.org/content/46/5/1167.full.pdf+html">Data Supplement</a></p>
-
-                            <p></p>
-                        </div>
-
-                        <!--<a href="/mah/journals/2015/03/20/Journal-1.html" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
-
-                    </div>
+                    {% endfor %}
 
                 </div>
                 <div class="col-sm-4">

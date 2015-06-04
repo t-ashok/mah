@@ -3,33 +3,33 @@
     {
       "name":"Communities",
       "class":"nav-1",
-      "link":communities.html
+      "link":"{{site.baseurl}}/communities.html"
     },
     {
       "name":"Guidelines & Statements",
       "class":"nav-2",
-      "link":"statement.html"
+      "link":"{{site.baseurl}}/statement.html"
     },
     {
       "name":"Journals",
       "class":"nav-4",
-      "link":"journals.html"
+      "link":"{{site.baseurl}}/journals.html"
     },
     {
       "name":"Meetings/Education",
       "class":"nav-3",
-      "link":"meetings.html"
+      "link":"{{site.baseurl}}/meetings.html"
     },
     {
       "name":"Professional Membership",
       "class":"nav-7",
-      "link":"membership.html"
+      "link":"{{site.baseurl}}/membership.html"
     },
 
     {
       "name":"Research Programs",
       "class":"nav-6",
-      "link":"research.html"
+      "link":"{{site.baseurl}}/research.html"
     }
 
   ]
