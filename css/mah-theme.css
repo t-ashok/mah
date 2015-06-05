@@ -26,6 +26,11 @@ light grey: #f7f7f7
 
 /* General */
 
+li {
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+
 pre {
   font-size: 11px;
 }
@@ -2811,4 +2816,40 @@ Waypoints
 .delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+
+.ui-sortable-handle {
+-webkit-transition: all 0.25s linear 0s;
+   -moz-transition: all 0.25s linear 0s;
+    -ms-transition: all 0.25s linear 0s;
+     -o-transition: all 0.25s linear 0s;
+        transition: all 0.25s linear 0s;
+margin-top: 10px;
+    border: 1px solid #D6E1E5;
+
+    background-color:#fff;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+.ui-sortable-handle:hover,.ui-sortable-handle.checked{
+    background-color: #d6e1e5;
+    /*height: 0px;*/
+}
+.ui-sortable-handle.disabled{
+    background-color: #fff;
+    opacity: 0.75;
+    height: 0px;
+    padding:0;
+    margin: 0;
+    border: 0;
+
+}
+label.checkbox > span {
+    /*font-family: serif;*/
+    /*font-style: italic;*/
 }
