@@ -202,7 +202,8 @@ a.list-group-item.active > .badge,
 }
 
 .text-muted {
-    color: #f7f7f7;
+    /*color: #f7f7f7;*/
+    color: #999;
 }
 
 .text-white {
@@ -1199,6 +1200,10 @@ label {
     line-height: 12px;
     margin-bottom: 0;
     color: #364347;
+}
+form .row {
+    margin-top:0px !important;
+    margin-bottom: 0px !important;
 }
 .form-control {
     border: 1px solid #eaeaea;
