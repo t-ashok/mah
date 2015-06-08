@@ -16,7 +16,7 @@
 
 
 /* -- Colors --
-Deep-red: #CC0000
+Deep-red: #a80000
 light-red: #F83538
 Deep-blue: #009ECD
 light-blue: #26A6CD
@@ -151,7 +151,7 @@ a:focus {
 }
 .alert-danger {
     background-color: rgba(248, 69, 69, 0.2);
-    color: #cc0000;
+    color: #a80000;
 }
 .alert-danger .alert-link {
     color: #990000;
@@ -361,8 +361,8 @@ fieldset[disabled] .btn-stroke.active {
 .btn-primary.active,
 .btn-primary.hover {
     color: #ffffff;
-    background-color: #cc0000;
-    border-color: #cc0000;
+    background-color: #a80000;
+    border-color: #a80000;
 }
 
 .btn-primary.disabled,
@@ -393,13 +393,13 @@ fieldset[disabled] .btn-primary.active {
 .btn-danger.active,
 .btn-danger.hover {
     color: #ffffff;
-    background-color: #cc0000;
+    background-color: #a80000;
     border-color: #dd0404;
 }
 .btn-danger:active,
 .btn-danger.active {
     background: #F20404;
-    border-color: #cc0000;
+    border-color: #a80000;
 }
 .btn-danger.disabled,
 .btn-danger[disabled],
@@ -645,37 +645,37 @@ fieldset[disabled] .btn-inverse.active {
     position: relative;
 }
 .btn-embossed.btn-primary {
-    -webkit-box-shadow: 0 3px #cc0000;
-    box-shadow: 0 3px #cc0000;
+    -webkit-box-shadow: 0 3px #a80000;
+    box-shadow: 0 3px #a80000;
 }
 .btn-embossed.btn-primary:hover,
 .btn-embossed.btn-primary:focus {
-    -webkit-box-shadow: 0 3px #cc0000;
-    box-shadow: 0 3px #cc0000;
+    -webkit-box-shadow: 0 3px #a80000;
+    box-shadow: 0 3px #a80000;
     background: #f20404;
 }
 .btn-embossed.btn-primary.active,
 .btn-embossed.btn-primary:active {
-    -webkit-box-shadow: 0 3px #cc0000;
-    box-shadow: 0 3px #cc0000;
+    -webkit-box-shadow: 0 3px #a80000;
+    box-shadow: 0 3px #a80000;
     top: 5px;
     background: #f20404;
     border-color: #f20404;
 }
 .btn-embossed.btn-danger {
-    -webkit-box-shadow: 0 5px #cc0000;
-    box-shadow: 0 5px #cc0000;
+    -webkit-box-shadow: 0 5px #a80000;
+    box-shadow: 0 5px #a80000;
 }
 .btn-embossed.btn-danger:hover,
 .btn-embossed.btn-danger:focus {
-    -webkit-box-shadow: 0 3px #cc0000;
-    box-shadow: 0 3px #cc0000;
+    -webkit-box-shadow: 0 3px #a80000;
+    box-shadow: 0 3px #a80000;
     background: #f20404;
 }
 .btn-embossed.btn-danger.active,
 .btn-embossed.btn-danger:active {
-    -webkit-box-shadow: 0 0 #cc0000;
-    box-shadow: 0 0 #cc0000;
+    -webkit-box-shadow: 0 0 #a80000;
+    box-shadow: 0 0 #a80000;
     top: 5px;
     background: #f20404;
     border-color: #f20404;
@@ -880,15 +880,15 @@ fieldset[disabled] .btn-inverse.active {
     /*color: #364347;*/
 }
 .btn-group-dropdown .btn-default:hover {
-    border-color: #ED0000;
+    /*border-color: #ED0000;*/
 }
 .btn-group-dropdown .btn-default:hover [class^="ss-"],
 .btn-group-dropdown .btn-default:hover [class^="fa-"] {
     color: #222;
 }
 .btn-group-dropdown .btn-default:active {
-    background: #ED0000;
-    border-color: #ED0000;
+    /*background: #ED0000;*/
+    /*border-color: #ED0000;*/
 }
 .btn-group-dropdown .btn-default:active [class^="ss-"],
 .btn-group-dropdown .btn-default:active [class^="fa-"] {
@@ -898,7 +898,7 @@ fieldset[disabled] .btn-inverse.active {
     /*border-left: 1px solid #009dcd;*/
 }
 .btn-group-dropdown .btn-danger.dropdown-toggle {
-    /*border-left: 1px solid #cc0000;*/
+    /*border-left: 1px solid #a80000;*/
 }
 .btn-group-dropdown .btn-inverse {
     color: #fff;
@@ -936,8 +936,8 @@ fieldset[disabled] .btn-inverse.active {
     color: #ffffff;
 }
 .btn-group-dropdown.open .dropdown-toggle.btn-danger {
-    background: #cc0000;
-    border-color: #cc0000;
+    background: #a80000;
+    border-color: #a80000;
     color: #ffffff;
 }
 .btn-group-dropdown.open .dropdown-toggle.btn-inverse {
@@ -1212,8 +1212,8 @@ form .row {
     /*line-height: 1.467;*/
     /*padding: 7px 12px;*/
     /*height: 40px;*/
-    -webkit-appearance: none;
-    border-radius: 0;
+    /*-webkit-appearance: none;*/
+    border-radius: 0 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
@@ -1859,7 +1859,7 @@ select[multiple].input-lg {
     background-color: #ED0000;
 }
 .palette-first-blood {
-    background-color: #cc0000;
+    background-color: #a80000;
 }
 .palette-banana {
     background-color: #fad46b;
@@ -2001,7 +2001,7 @@ select[multiple].input-lg {
     border-color: rgba(248, 69, 69, 0.2);
 }
 .panel-danger > .panel-heading {
-    color: #cc0000;
+    color: #a80000;
     background-color: rgba(248, 69, 69, 0.2);
     border-color: rgba(248, 69, 69, 0.2);
 }
