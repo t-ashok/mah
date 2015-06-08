@@ -1,0 +1,140 @@
+---
+layout: l_right_sidebar
+bodyClass: "membership-tiers"
+sidebar: "sidebar_membership_tiers.html"
+title: "Become a Member"
+showTitle: true
+---
+<h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
+
+<div class="row">
+<div class="col-sm-12">
+	<div class="col-sm-3">
+		<div class="membership-step-card panel  animated flipInY">
+			<div class="panel-body text-center">
+			   <h3 class="lead media-heading">
+				   Create Profile
+				   <br/>
+				   <i class="ion-ios-person"></i>
+			   </h3>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="membership-step-card panel animated flipInY delay-25s">
+			<div class="panel-body text-center">
+				<h3 class="lead media-heading">
+					Select Coucils
+					<br/><i class="ion-ios-people"></i>
+				</h3>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="membership-step-card panel animated flipInY delay-05s">
+			<div class="panel-body text-center">
+				<h3 class="lead media-heading">
+					Select Journals
+					<br/><i class="ion-ios-paper"></i>
+				</h3>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="membership-step-card active panel animated flipInY delay-75s">
+			<div class="panel-body text-center">
+				<h3 class="lead media-heading">
+					Checkout
+					<br/><i class="ion-ios-cart"></i>
+				</h3>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+
+
+
+<!-- Payment Form -->
+
+
+	<div class="col-sm-12">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+
+
+
+<form action="" method="post" role="form" id="card" autocomplete="off">
+	<!-- Payment -->
+
+	<div class="col-sm-12">
+		<div class="">
+			<div class="panel-body">
+				<div class="card-wrapper col-sm-6">
+					<!-- credit card here -->
+					<div class="form-group">
+						<label for="number">Number <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
+					</div>
+
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label for="first-name">First Name <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="first-name" id="first-name"
+								   placeholder="First Name">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="last-name">Last Name <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="last-name" id="last-name"
+								   placeholder="Last Name">
+						</div>
+					</div>
+
+					<input type="text" name="number">
+					<input type="text" name="name"/>
+					<input type="text" name="last-name"/>
+					<input type="text" name="expiry"/>
+					<input type="text" name="cvc"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<!--  Custom dropdown select with search capabilities  -->
+<link rel="stylesheet" href="http://static.heart.org/ahaanywhere/js/chosen/chosen.css"/>
+<script src="http://static.heart.org/ahaanywhere/js/chosen/chosen.jquery.min.js"></script>
+<script>
+	jQuery(document).ready(function() {
+		jQuery("select.form-control").chosen({
+			width:'100%',
+			"disable_search": true
+		});
+	});
+</script>
+
+<!-- Credit card validator -->
+<script src="js/jquery.card.js"></script>
+<script>
+	jQuery(function() {
+		//hook for credit card validation
+		$('form#card').card({
+			container: '.card-wrapper'
+
+			/*,formSelectors: {
+				numberInput: 'input#number', // optional — default input[name="number"]
+				expiryInput: 'input#expiry', // optional — default input[name="expiry"]
+				cvcInput: 'input#cvc', // optional — default input[name="cvc"]
+				nameInput: 'input#name' // optional - defaults input[name="name"]
+			}*/
+			/*,width: 200*/
+
+
+		});
+	});
+</script>

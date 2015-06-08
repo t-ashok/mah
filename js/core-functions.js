@@ -19,7 +19,7 @@ var page =  {
 	},
 	backToTop: function(){
 		var scrollPosition = $window.scrollTop();
-		console.log(scrollPosition);
+		//console.log(scrollPosition);
 		if (scrollPosition > 300) {
 			
 				jQuery('#back-to-top').stop().animate({
@@ -44,6 +44,7 @@ var reloadFunctions = {
 				jQuery('body,html').animate({scrollTop: 0}, 400, '');    
 				
 			});
+
 	}
 };
 
@@ -88,7 +89,7 @@ var onReady = {
 		 $('.submitBtn').on('click', function () {
 		    var $btn = $(this).button('loading');
 		    var redirect = $(this).attr('data-redirect-page');
-		    console.log(redirect);
+		    //console.log(redirect);
 		    // business logic...
 		    setTimeout(function(){
 		    		window.location ='/'+redirect;
@@ -106,11 +107,11 @@ var onReady = {
 		  }
 		});
 
-		console.log( $('.sidebar-affix').parent());
+		//console.log( $('.sidebar-affix').parent());
 
 		function width(){
 		  var width = Number($('.sidebar-affix').parent().width());
-			console.log(width);
+			//console.log(width);
 		  $('.sidebar-affix').css({"width": width});
 		}
 		$(window).on('resize scroll', function(){

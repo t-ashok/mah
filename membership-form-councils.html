@@ -5,6 +5,7 @@ sidebar: "sidebar_membership_tiers.html"
 title: "Become a Member"
 showTitle: true
 ---
+<h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
 
 <div class="row">
 <div class="col-sm-12">
@@ -60,60 +61,93 @@ showTitle: true
 
 
 
-<h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
+
 <!--Membership Form-->
 
-
+<h3 class="lead">Select 3 Councils</h3>
 
 <form action="" method="post" role="form">
 	<div class="list-group" id="sortable">
 		{% assign dataname = site.data.councils.councils %}
 		{% for council in dataname %}
-		<a href="#" class="list-group-item">
-			<h4 class="list-group-item-heading">{{council.id}}:{{council.name}}</h4>
-			<p class="list-group-item-text">
-				<label class="checkbox" for="checkbox1">
+		<div href="#" class="" id="{{council.councilCode}}">
+			<h4 class="lead ">{{council.councilCode}}: {{council.name}}</h4>
+			<p class="">
+				<label class="checkbox" for="{{council.councilCode}}">
 			<span class="icons">
 				<span class="first-icon"></span>
 				<span class="second-icon fa fa-check"></span>
 			</span>
-					<input value="" id="checkbox1" data-toggle="checkbox" type="checkbox">
+					<input value="" id="{{council.councilCode}}" name="{{council.councilCode}}" data-toggle="checkbox" type="checkbox">
 					<span class="">
 						{{council.snippet}}
 					</span>
 				</label>
 			</p>
-		</a>
+		</div>
 		{% endfor %}
 
 	</div>
 
-
-
-
-	<label class="checkbox" for="checkbox1">
-		<span class="icons"><span class="first-icon"></span><span class="second-icon fa fa-check"></span></span><input value="" id="checkbox1" data-toggle="checkbox" type="checkbox">
-		Oy! Me box is filled!
-	</label>
-
-	<ul id="sortables">
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-	</ul>
-
-
 </form>
 
+<a href="membership-form-checkout.html">checkout</a>
 
+<!--Activate the sort-->
 <script>
 	$(function() {
-		$( "#sortable" ).sortable();
-		$( "#sortable" ).disableSelection();
+		//On page load make sure all input checkbox is reset
+		$('input:checkbox').prop('checked',false);
+
+		//councilList obj to hold selected councils
+		var councilsList = {
+			_array: [],
+			makeList: function(){
+				councilsList._array = [];
+				$('.ui-sortable-handle.checked').each(function(){
+					councilsList._array.push($(this).attr('id'));
+				});
+				console.log(councilsList._array);
+			}
+		};
+
+		$( "#sortable" ).sortable({
+			update:function(){
+				councilsList.makeList();
+			}
+		});
+
+		//Checkbox
+		var hideMe = function(){
+			var $elems = $("input:checkbox:not(:checked)");
+			$elems.each(function(){
+				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled').parents('.ui-sortable-handle').addClass('disabled');
+				console.log($(this));
+			});
+			councilsList.makeList();
+		};
+		var showMe = function(){
+			var $elems = $("input:checkbox:not(:checked)");
+			$elems.each(function(){
+				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled').parents('.ui-sortable-handle').removeClass('disabled');
+				console.log($(this));
+			});
+		};
+		var countChecked = function() {
+			var n = $( "input:checkbox:checked" ).length;
+			setTimeout(function(){
+				if (n >= 3) {
+					hideMe();
+				}else{
+					showMe();
+				}
+			},200);
+		};
+
+		$('.checkbox').on('toggle',function(){
+			countChecked();
+			$(this).parents('.ui-sortable-handle').toggleClass('checked');
+		});
 	});
 </script>
 
