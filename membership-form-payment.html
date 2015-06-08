@@ -65,18 +65,22 @@ showTitle: true
 <!-- Payment Form -->
 
 
-	<div class="col-sm-12">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+
 
 
 
 <form action="" method="post" role="form" id="card" autocomplete="off">
 	<!-- Payment -->
 
-	<div class="col-sm-12">
-		<div class="">
+	<div class="col-sm-6">
+		<div class="panel bg-color-lightgrey">
 			<div class="panel-body">
-				<div class="card-wrapper col-sm-6">
+				<h3 class="lead media-heading">Payment</h3>
+				<div class="col-sm-12 small" style="color:#666;font-weight: 300;font-style: italic">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+				<div class="spacer"></div>
+				<div class="card-wrapper">
 					<!-- credit card here -->
+
 					<div class="form-group">
 						<label for="number">Number <span class="required">*</span></label>
 						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
@@ -94,12 +98,24 @@ showTitle: true
 								   placeholder="Last Name">
 						</div>
 					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label for="expiry">Expiration <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="cvc">CVC <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
+						</div>
+					</div>
 
-					<input type="text" name="number">
-					<input type="text" name="name"/>
-					<input type="text" name="last-name"/>
-					<input type="text" name="expiry"/>
-					<input type="text" name="cvc"/>
+
+
+				</div>
+				<div class="spacer"></div>
+				<div class="">
+					<button type="submit" class="btn btn-primary">Submit</button>
+
 				</div>
 			</div>
 		</div>
@@ -125,7 +141,7 @@ showTitle: true
 		//hook for credit card validation
 		$('form#card').card({
 			container: '.card-wrapper'
-
+			, formSelectors: {nameInput: 'input[name="first-name"], input[name="last-name"]'}
 			/*,formSelectors: {
 				numberInput: 'input#number', // optional — default input[name="number"]
 				expiryInput: 'input#expiry', // optional — default input[name="expiry"]
@@ -133,7 +149,12 @@ showTitle: true
 				nameInput: 'input#name' // optional - defaults input[name="name"]
 			}*/
 			/*,width: 200*/
-
+			, values: {
+				number: '**** **** **** ****',
+				name: 'Name',
+				expiry: '**/****',
+				cvc: '***'
+			}
 
 		});
 	});
