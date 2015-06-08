@@ -4,14 +4,14 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/communities.html" afterPath="$PROJECT_DIR$/communities.html" />
+    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="Tu: Additional membership pages - Payment&#10;&#10;" />
+    <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
     <ignored path="mah.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,48 +27,147 @@
     <favorites_list name="mah" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="communities.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/communities.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70264316">
-              <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-journals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/home-journals.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0">
-              <caret line="40" column="10" selection-start-line="13" selection-start-column="4" selection-end-line="40" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-science-news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/home-science-news.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-meetings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/home-meetings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="131" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47997034">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="membership-form-checkout.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-21.75">
+                  <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#i#0;n#span#1;n#label#0;n#div#2;n#form#0;n#!!top" expanded="true" />
+                    <marker date="1433792191000" expanded="true" signature="1949:2895" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-form.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/membership-form.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.4520548">
+                  <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-7.0588236">
+                  <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-form-tellusmore.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/membership-form-tellusmore.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="atg-add-class.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../Sites/ECC/v2/atg-add-class.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="383" column="35" selection-start-line="383" selection-start-column="35" selection-end-line="383" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-tiers.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/membership-tiers.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="249" column="49" selection-start-line="249" selection-start-column="49" selection-end-line="249" selection-end-column="49" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mah-theme.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/mah-theme.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="2869" column="20" selection-start-line="2869" selection-start-column="20" selection-end-line="2869" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="full-width-jumbotron-membership-tiers.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-form-councils.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.2941175">
+                  <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dropdown-states.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/components/dropdown-states.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="membership-form-checkout.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.53424656">
+                  <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#i#0;n#span#1;n#label#0;n#div#2;n#form#0;n#!!top" expanded="true" />
+                    <marker date="1433792191000" expanded="true" signature="1949:2895" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="form fields" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/form fields">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,19 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/components/science-news.html" />
-        <option value="$PROJECT_DIR$/_includes/components/jouranl-media-object.html" />
-        <option value="$PROJECT_DIR$/_includes/components/journal-media-object.html" />
-        <option value="$PROJECT_DIR$/_includes/components/home-journals.html" />
-        <option value="$PROJECT_DIR$/_includes/components/carousel.html" />
-        <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_includes/components/image-card.html" />
-        <option value="$PROJECT_DIR$/_data/style-navigation.json" />
-        <option value="$PROJECT_DIR$/styleguide.html" />
-        <option value="$PROJECT_DIR$/_data/mocks.json" />
-        <option value="$PROJECT_DIR$/_includes/sidebar_styleguide.html" />
-        <option value="$PROJECT_DIR$/widget-variations.html" />
         <option value="$PROJECT_DIR$/_data/dashboard-navigation.json" />
         <option value="$PROJECT_DIR$/_includes/mobile-menu.html" />
         <option value="$PROJECT_DIR$/_includes/sidebar_dashboard.html" />
@@ -113,33 +199,46 @@
         <option value="$PROJECT_DIR$/_layouts/l_home.html" />
         <option value="$PROJECT_DIR$/_layouts/l_home1.html" />
         <option value="$PROJECT_DIR$/_layouts/l_home2.html" />
-        <option value="$PROJECT_DIR$/_includes/allscripts.html" />
-        <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_layouts/l_full_width_no_title.html" />
+        <option value="$PROJECT_DIR$/communities.html" />
         <option value="$PROJECT_DIR$/content-sample.html" />
         <option value="$PROJECT_DIR$/_layouts/l_left_sidebar.html" />
         <option value="$PROJECT_DIR$/_includes/full-width-jumbotron-membership.html" />
         <option value="$PROJECT_DIR$/_includes/sidebar_membership-tiers.html" />
         <option value="$PROJECT_DIR$/_layouts/l_right_sidebar.html" />
         <option value="$PROJECT_DIR$/_includes/utility.html" />
-        <option value="$PROJECT_DIR$/js/core-functions.js" />
         <option value="$PROJECT_DIR$/css/flickity.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/core.css" />
-        <option value="$PROJECT_DIR$/_data/main-navigation.json" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
-        <option value="$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html" />
-        <option value="$PROJECT_DIR$/membership-tiers.html" />
-        <option value="$PROJECT_DIR$/css/mah-theme.css" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_posts/2015-05-11-News-Conference.markdown" />
-        <option value="$PROJECT_DIR$/membership.html" />
         <option value="$PROJECT_DIR$/_includes/sidebar_membership_tiers.html" />
         <option value="$PROJECT_DIR$/_includes/components/testimonials.html" />
-        <option value="$PROJECT_DIR$/membership-form.html" />
         <option value="$PROJECT_DIR$/_site/css/core.css" />
         <option value="$PROJECT_DIR$/_site/js/core-functions.js" />
-        <option value="$PROJECT_DIR$/communities.html" />
+        <option value="$PROJECT_DIR$/_includes/allscripts.html" />
+        <option value="$PROJECT_DIR$/_site/css/mah-theme.css" />
+        <option value="/Applications/MAMP/htdocs/index.html" />
+        <option value="/Applications/MAMP/htdocs/sitebuilder/elements/header-10.html" />
+        <option value="$PROJECT_DIR$/membership.html" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
+        <option value="$PROJECT_DIR$/_includes/header.html" />
+        <option value="$PROJECT_DIR$/_data/main-navigation.json" />
+        <option value="$PROJECT_DIR$/_data/councils.json" />
+        <option value="$PROJECT_DIR$/js/checkbox.js" />
+        <option value="$PROJECT_DIR$/js/core-functions.js" />
+        <option value="$PROJECT_DIR$/_includes/components/dropdown-states.html" />
+        <option value="$PROJECT_DIR$/_includes/components/dropdown-countries.html" />
+        <option value="$PROJECT_DIR$/../Sites/ECC/v2/atg-add-class.html" />
+        <option value="$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html" />
+        <option value="$PROJECT_DIR$/form fields" />
+        <option value="$PROJECT_DIR$/membership-form-tellusmore.html" />
+        <option value="$PROJECT_DIR$/membership-tiers.html" />
+        <option value="$PROJECT_DIR$/css/mah-theme.css" />
+        <option value="$PROJECT_DIR$/membership-form-councils.html" />
+        <option value="$PROJECT_DIR$/membership-form-payment.html" />
+        <option value="$PROJECT_DIR$/membership-form-checkout.html" />
+        <option value="$PROJECT_DIR$/membership-form.html" />
       </list>
     </option>
   </component>
@@ -151,10 +250,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="539" />
-    <option name="y" value="186" />
-    <option name="width" value="1920" />
-    <option name="height" value="1133" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,7 +293,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
@@ -220,101 +317,147 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mah">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sample">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mah">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="_includes">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mah">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="_includes">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="components">
+            <PATH_ELEMENT USER_OBJECT="css">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sites/AHADAM2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sites/ECC/v2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="260" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="276" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="280" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1074" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="271" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="273" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="276" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1070" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="PluginDummyText.Genre" value="cookery" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/_includes" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/_data" />
+      <recent name="/Applications/MAMP/htdocs/sitebuilder/elements" />
+      <recent name="/Applications/MAMP/htdocs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img/sample" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/membership-more-info.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -371,90 +514,6 @@
       <created>1430757209368</created>
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432659172599</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1432659172599</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432666684959</created>
-      <option name="number" value="00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1432666684959</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432670903385</created>
-      <option name="number" value="00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1432670903386</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432671891119</created>
-      <option name="number" value="00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1432671891119</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432672969876</created>
-      <option name="number" value="00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1432672969876</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Tu: Navigation fix &amp; Membership&#10;&#10;">
-      <created>1432744176697</created>
-      <option name="number" value="00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1432744176697</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Tu: communities page example">
-      <created>1432744749900</created>
-      <option name="number" value="00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1432744749900</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Tu: communities page example">
-      <created>1432749016752</created>
-      <option name="number" value="00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1432749016752</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Tu: communities page example">
-      <created>1432750550501</created>
-      <option name="number" value="00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1432750550501</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Tu: communities page example">
-      <created>1432750602256</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1432750602256</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Tu: Membership">
-      <created>1432755082742</created>
-      <option name="number" value="00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1432755082742</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Tu: Membership">
-      <created>1432762341705</created>
-      <option name="number" value="00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1432762341705</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Tu: Membership">
-      <created>1432764061054</created>
-      <option name="number" value="00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1432764061054</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Tu: Membership">
-      <created>1432774942659</created>
-      <option name="number" value="00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1432774942659</updated>
     </task>
     <task id="LOCAL-00062" summary="Tu: Membership">
       <created>1432793547619</created>
@@ -654,34 +713,118 @@
       <option name="project" value="LOCAL" />
       <updated>1433281989101</updated>
     </task>
-    <task id="LOCAL-00095" summary="Ann: fixing Communities page formatting">
-      <created>1433339936611</created>
+    <task id="LOCAL-00095" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
+      <created>1433282906286</created>
       <option name="number" value="00095" />
       <option name="project" value="LOCAL" />
-      <updated>1433339936615</updated>
+      <updated>1433282906286</updated>
     </task>
-    <task id="LOCAL-00096" summary="Ann: fixing Communities page formatting">
-      <created>1433435044799</created>
+    <task id="LOCAL-00096" summary="Tu: added .heading class&#10;">
+      <created>1433337829930</created>
       <option name="number" value="00096" />
       <option name="project" value="LOCAL" />
-      <updated>1433435044800</updated>
+      <updated>1433337829930</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Tu: added .heading class&#10;">
+      <created>1433427009623</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1433427009623</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Tu: added .heading class&#10;">
+      <created>1433430206877</created>
+      <option name="number" value="00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1433430206877</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Tu: added .heading class&#10;">
+      <created>1433431553818</created>
+      <option name="number" value="00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1433431553818</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Tu: added .heading class&#10;">
+      <created>1433437207896</created>
+      <option name="number" value="00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1433437207896</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Tu: added .heading class&#10;">
+      <created>1433488830592</created>
+      <option name="number" value="00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1433488830593</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Tu: added .heading class&#10;">
+      <created>1433688544594</created>
+      <option name="number" value="00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1433688544594</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Tu: Additional membership pages">
+      <created>1433772834351</created>
+      <option name="number" value="00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1433772834351</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433776299162</created>
+      <option name="number" value="00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1433776299162</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433788596661</created>
+      <option name="number" value="00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1433788596661</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433789895707</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1433789895707</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433791056236</created>
+      <option name="number" value="00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1433791056236</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433791604713</created>
+      <option name="number" value="00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1433791604713</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433791961222</created>
+      <option name="number" value="00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1433791961222</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Tu: Additional membership pages - Tell Us More">
+      <created>1433792251747</created>
+      <option name="number" value="00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1433792251747</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="539" y="186" width="1920" height="1133" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="987" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849163" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.077809796" sideWeight="0.4827366" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12625699" sideWeight="0.4827366" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28691983" sideWeight="0.4968153" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24170616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18746233" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28751975" sideWeight="0.50318474" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2858684" sideWeight="0.5172634" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12872238" sideWeight="0.4900568" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32402235" sideWeight="0.4900568" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,11 +873,15 @@
     <MESSAGE value="Tu: Membership Tiers" />
     <MESSAGE value="Tu: Update mah-theme, label class for line-height and margin-bottom&#10;" />
     <MESSAGE value="Tu: added .heading class to make h1,h2, etc. thin and red&#10;" />
-    <MESSAGE value="Ann: fixing Communities page formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ann: fixing Communities page formatting" />
+    <MESSAGE value="Tu: added .heading class&#10;" />
+    <MESSAGE value="Tu: Additional membership pages" />
+    <MESSAGE value="Tu: Additional membership pages - Tell Us More" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tu: Additional membership pages - Tell Us More" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -750,102 +897,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/sample/bg_people.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/waypoints.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/flickity.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/allscripts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/l_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/l_home1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/l_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p_membership.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content-sample.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/l_home2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -902,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/core-functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69285715">
-          <caret line="168" column="28" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/flickity.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.073800735">
@@ -920,6 +964,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -934,20 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24074075">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/main-navigation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057251908">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7592593">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -979,27 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mah-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2254" column="0" selection-start-line="2254" selection-start-column="0" selection-end-line="2254" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-05-11-News-Conference.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1012,100 +1022,254 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/membership.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/css/mah-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="773" column="0" selection-start-line="773" selection-start-column="0" selection-end-line="773" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/css/core.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1016" column="5" selection-start-line="1016" selection-start-column="5" selection-end-line="1016" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/js/core-functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/membership-tiers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/sidebar_membership_tiers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10892116">
+        <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/testimonials.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.560166">
+        <state vertical-scroll-proportion="-22.5">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/home-journals.html">
+    <entry file="file://$PROJECT_DIR$/_site/css/core.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0">
-          <caret line="40" column="10" selection-start-line="13" selection-start-column="4" selection-end-line="40" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1020" column="5" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/js/core-functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="40" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/allscripts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/css/mah-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2808" column="24" selection-start-line="2808" selection-start-column="24" selection-end-line="2808" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/MAMP/htdocs/sitebuilder/elements/header-10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39276809">
+          <caret line="60" column="108" selection-start-line="60" selection-start-column="108" selection-end-line="60" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Themes/themeforest-8986248-allec-bootstrapless-template-with-site-builder/site_builder_1.8 (require PHP server)/elements/header-8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.708334">
+          <caret line="109" column="14" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/membership.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="64.375">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.25">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2846975">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/main-navigation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9045226">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/councils.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5081967">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/checkbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/core-functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/dropdown-countries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="55" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66091955">
+          <caret line="1222" column="47" selection-start-line="1222" selection-start-column="47" selection-end-line="1222" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/home-science-news.html">
+    <entry file="file://$PROJECT_DIR$/../Sites/ECC/v2/atg-add-class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="383" column="35" selection-start-line="383" selection-start-column="35" selection-end-line="383" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/home-meetings.html">
+    <entry file="file://$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="131" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communities.html">
+    <entry file="file://$PROJECT_DIR$/membership-tiers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70264316">
-          <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="49" selection-start-line="249" selection-start-column="49" selection-end-line="249" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-tellusmore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/dropdown-states.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mah-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2869" column="20" selection-start-line="2869" selection-start-column="20" selection-end-line="2869" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2941175">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0588236">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.75">
+          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#span#1;n#label#0;n#div#2;n#form#0;n#!!top" expanded="true" />
+            <marker date="1433792191000" expanded="true" signature="1949:2895" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4520548">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
