@@ -5,55 +5,175 @@ sidebar: "sidebar_membership_tiers.html"
 title: "Become a Member"
 showTitle: true
 ---
-<h2 class="heading border-1-bottom text-primary">Tell Us More</h2>
+
+
 
 <div class="row">
 <div class="col-sm-12">
-	<div class="col-sm-3">
-		<div class="membership-step-card panel  animated flipInY">
-			<div class="panel-body text-center">
-			   <h3 class="lead media-heading">
-				   Create Profile
-				   <br/>
-				   <i class="ion-ios-person"></i>
-			   </h3>
+	
 
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="membership-step-card panel animated flipInY delay-25s">
-			<div class="panel-body text-center">
-				<h3 class="lead media-heading">
-					Select Coucils
-					<br/><i class="ion-ios-people"></i>
-				</h3>
+			<!-- Tell Us More Form -->
+			<form action="" method="post" role="form" autocomplete="off">
 
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="membership-step-card panel animated flipInY delay-05s">
-			<div class="panel-body text-center">
-				<h3 class="lead media-heading">
-					Select Journals
-					<br/><i class="ion-ios-paper"></i>
-				</h3>
 
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="membership-step-card active panel animated flipInY delay-75s">
-			<div class="panel-body text-center">
-				<h3 class="lead media-heading">
-					Checkout
-					<br/><i class="ion-ios-cart"></i>
-				</h3>
+				<div class="form-group">
+					<label for="title">Title</label>
+					<input type="text" class="form-control " name="title" id="title" placeholder="Title">
+				</div>
 
-			</div>
-		</div>
-	</div>
+				<div class="form-group">
+					<label for="middleName">Middle Name</label>
+					<input type="text" class="form-control" name="middleName" id="middleName" placeholder="Middle Name">
+				</div>
+
+				<div class="form-group">
+					<label for="suffix">Suffix</label>
+					<input type="text" class="form-control" name="suffix" id="suffix" placeholder="Suffix">
+				</div>
+
+				<div class="form-group">
+					<label for="altEmail">Alternate Email</label>
+					<input type="text" class="form-control" name="altEmail" id="altEmail" placeholder="joe@gmail.com">
+				</div>
+
+				<div>
+					<label for="gender">Gender</label>
+					<select name="gender" id="gender" class="form-control">
+						<option value=""> Select gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div>
+					<label for="ethnicity">Ethnicity</label>
+					<select name="ethnicity" id="ethnicity" class="form-control">
+						<option value=""> Select ethnicity </option>
+						<!-- this file included statitically -->
+						<option value="Alaskan Native">Alaskan Native
+						</option><option value="Black">Black</option>
+						<option value="Hispanic">Hispanic</option>
+						<option value="American Indian">American Indian</option>
+						<option value="Pacific Islander">Pacific Islander</option>
+						<option value="Asian">Asian</option>
+						<option value="White">White</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div>
+					<label for="degree">Degree</label>
+					<select name="degree" id="degree" class="form-control">
+						<option value=""> Select degree </option>
+						<option value=""> High School </option>
+						<option value=""> College </option>
+					</select>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div>
+					<label for="advdegree">Advanced Degree</label>
+					<select name="advdegree" id="advdegree" class="form-control">
+						<option value=""> Select advanced degree </option>
+					</select>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="form-group">
+					<label for="cert1">Certification 1</label>
+					<input type="text" class="form-control" name="cert1" id="cert1" placeholder="Certification 1">
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="form-group">
+					<label for="cert2">Certification 2</label>
+					<input type="text" class="form-control" name="cert2" id="cert2" placeholder="Certification 2">
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="form-group">
+					<label for="primaryClassification">Primary Classification</label>
+					<input type="text" class="form-control" name="primaryClassification" id="primaryClassification" placeholder="Primary Classification">
+				</div>
+
+				<div class="form-group">
+					<label for="secondaryClassification">Secondary Classification</label>
+					<input type="text" class="form-control" name="secondaryClassification" id="secondaryClassification" placeholder="Secondary Classification">
+				</div>
+
+
+				<div>
+					<label for="secondaryClassification">Secondary Specialty</label>
+					<select name="secSpecialty" id="secSpecialty" class="form-control">
+						<option value=""> Select secondary specialty </option>
+						<option value=""> Specialty 1 </option>
+						<option value=""> Specialty 2 </option>
+					</select>
+				</div>
+
+
+
+
+				<div class="spacer"></div>
+
+				<div class="form-group">
+					<label for="jobTitle">Job Title</label>
+					<input type="text" class="form-control" name="jobTitle" id="jobTitle" placeholder="Job Title">
+				</div>
+
+				<div class="form-group">
+					<label for="primaryInst">Primary Instution</label>
+					<input type="text" class="form-control" name="primaryInst" id="primaryInst" placeholder="Primary Instution">
+				</div>
+
+				<div class="form-group">
+					<label for="homePhone">Home Phone</label>
+					<input type="text" class="form-control" name="homePhone" id="homePhone" placeholder="Home Phone">
+				</div>
+
+				<div class="form-group">
+					<label for="workPhone">WorkPhone</label>
+					<input type="text" class="form-control" name="workPhone" id="workPhone" placeholder="Work Phone">
+				</div>
+
+				<div class="form-group">
+					<label for="mobilePhone">Mobile Phone</label>
+					<input type="text" class="form-control" name="mobilePhone" id="mobilePhone" placeholder="Mobile Phone">
+				</div>
+
+				<div class="form-group">
+					<label for="fax">Fax</label>
+					<input type="text" class="form-control" name="fax" id="fax" placeholder="Fax">
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				<div class="spacer"></div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
 
 
 </div>
@@ -62,65 +182,11 @@ showTitle: true
 
 
 
-<!-- Payment Form -->
 
 
 
 
 
-
-<form action="" method="post" role="form" id="card" autocomplete="off">
-	<!-- Payment -->
-
-	<div class="col-sm-6">
-		<div class="panel bg-color-lightgrey">
-			<div class="panel-body">
-				<h3 class="lead media-heading">Payment</h3>
-				<div class="col-sm-12 small" style="color:#666;font-weight: 300;font-style: italic">(<span class="required" style="line-height: 12px">*</span> = required )</div>
-				<div class="spacer"></div>
-				<div class="card-wrapper">
-					<!-- credit card here -->
-
-					<div class="form-group">
-						<label for="number">Number <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
-					</div>
-
-					<div class="row">
-						<div class="form-group col-sm-6">
-							<label for="first-name">First Name <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="first-name" id="first-name"
-								   placeholder="First Name">
-						</div>
-						<div class="form-group col-sm-6">
-							<label for="last-name">Last Name <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="last-name" id="last-name"
-								   placeholder="Last Name">
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-sm-6">
-							<label for="expiry">Expiration <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
-						</div>
-						<div class="form-group col-sm-6">
-							<label for="cvc">CVC <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
-						</div>
-					</div>
-
-
-
-				</div>
-				<div class="spacer"></div>
-				<div class="">
-					<button type="submit" class="btn btn-primary">Submit</button>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</form>
 
 <!--  Custom dropdown select with search capabilities  -->
 <link rel="stylesheet" href="http://static.heart.org/ahaanywhere/js/chosen/chosen.css"/>
@@ -134,28 +200,3 @@ showTitle: true
 	});
 </script>
 
-<!-- Credit card validator -->
-<script src="js/jquery.card.js"></script>
-<script>
-	jQuery(function() {
-		//hook for credit card validation
-		$('form#card').card({
-			container: '.card-wrapper'
-			, formSelectors: {nameInput: 'input[name="first-name"], input[name="last-name"]'}
-			/*,formSelectors: {
-				numberInput: 'input#number', // optional — default input[name="number"]
-				expiryInput: 'input#expiry', // optional — default input[name="expiry"]
-				cvcInput: 'input#cvc', // optional — default input[name="cvc"]
-				nameInput: 'input#name' // optional - defaults input[name="name"]
-			}*/
-			/*,width: 200*/
-			, values: {
-				number: '**** **** **** ****',
-				name: 'Name',
-				expiry: '**/****',
-				cvc: '***'
-			}
-
-		});
-	});
-</script>
