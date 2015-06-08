@@ -63,16 +63,12 @@ showTitle: true
 </div>
 
 
-
-
-
-
 <form action="" method="post" role="form">
 	<!--<legend>General Membership</legend>-->
 	<div class="col-sm-12">
 
 		<div class="spacer"></div>
-		<h3 class="media-heading heading">Address</h3>
+		<h3 class="media-heading heading">Profile</h3>
 
 		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 	</div>
@@ -201,7 +197,6 @@ showTitle: true
 			<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Address 2">
 			<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Address 3">
 		</div>
-
 	</div>
 
 	<div class=" col-sm-6">
@@ -225,8 +220,8 @@ showTitle: true
 				</div>
 			</div>
 			<div class="col-sm-10">
-				<label for="state"> State <span class="required">*</span></label>
-				{% include components/dropdown-states.html %}
+				<label for="country"> Country <span class="required">*</span></label>
+				{% include components/dropdown-countries.html %}
 			</div>
 		</div>
 	</div>
@@ -237,7 +232,8 @@ showTitle: true
 
 	<!--Submit-->
 
-	<div class="col-sm-12">
+	<div class="col-sm-12 spacer">
+
 		<a href="membership-form-councils.html" type="submit" class="btn btn-primary"> Next </a>
 	</div>
 </form>

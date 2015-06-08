@@ -2867,7 +2867,7 @@ Chosen
 /*==========  Chosen Plugin ==========*/
 
 .chosen-container-single .chosen-single {
-    background: none !important;
+    background: #fff !important;
     border-radius: 0 !important;
     height: 34px !important;
     line-height: 34px !important;
