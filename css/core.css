@@ -1023,7 +1023,7 @@ visibility: hidden;
 /*Bootstrap LG*/
 @media(min-width:1200px){
     nav#main-navigation .menu > li > a {
-        font-size: 1.1em;
+        font-size: 1em;
         padding-left: 7px;
         padding-right: 7px;
     }
