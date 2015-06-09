@@ -15,9 +15,9 @@ bodyClass: "communities"
                 {% for post in site.posts limit:1 %}
                 <div class="media">
                     <div class="media-body">
-                        <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
-                            <span class="indicator"></span>{{ post.categories }}
-                        </a>
+                        <p class="text-uppercase tag tag-{{ post.date }}">
+                            {{ post.date  | date: '%B %d, %Y'}}
+                        </p>
                         <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
                         <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
 
@@ -35,14 +35,11 @@ bodyClass: "communities"
                     {% for post in site.posts limit:2 %}
                     <div class="media">
                         <div class="media-left">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
-                                <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80"/>
-                            </a>
                         </div>
                         <div class="media-body">
-                            <a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">
-                                <span class="indicator"></span>{{ post.categories }}
-                            </a>
+                            <p class="text-uppercase tag tag-{{ post.date }}">
+                                {{ post.date  | date: '%B %d, %Y'}}
+                            </p>
                             <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
                             <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
 
@@ -84,7 +81,7 @@ bodyClass: "communities"
 <!-- Ad Space END -->
 
 <!-- Journal START -->
-<div class="container-fluid community-journal bg-color-lightgrey">
+<div class="container-fluid community-journal">
     <div class="row">
         <div class="container">
             <div class="col-sm-12">
@@ -161,8 +158,17 @@ bodyClass: "communities"
                 </div>
                 <div class="col-sm-6">
                     <h4><span class="text-uppercase margin-right-10">Research Updates</span></h4>
-                    <a href="#" >Lorem ipsum dolor sit amet</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos pariatur ratione repellat! Deserunt et fuga fugit incidunt ipsum, labore mollitia nemo non quam quas, quasi velit veniam? Corporis, labore!</p>
+                    <div class="update">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h5>Sequential Hybrid Procedure for Persistent Atrial Fibrillation</h5>
+                                <p>
+                                    Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures. The hybrid approach has recently emerged as a technique that overcomes the limitations of both surgical and catheter procedures alone.
+                                </p>
+                                <p><a href="#" class="btn btn-primary" role="button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="spacer"></div>
             </div>
