@@ -2674,6 +2674,10 @@ a.tag {
     vertical-align: middle;
     padding-left: 20px;
 }
+a.membership-step-card {
+    display: block;
+}
+
 .membership-step-card {
     background-color: #d6e1e5;
 }
