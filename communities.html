@@ -58,7 +58,7 @@ bodyClass: "communities"
                 <h4><span class="text-uppercase margin-right-10">Upcoming Event</span></h4>
                     <!--Big Thumb-->
                     <div class="">
-                        <img class="img-responsive img-full img-border" src="{{site.baseurl}}/img/sample/c_hyper.png" alt="title" height="140"/>
+                        <img class="img-responsive img-full img-border" src="{{site.baseurl}}/img/sample/c_hyper.png" alt="title" height="120"/>
                         <!--<div class="tag tag-{{ post.categories }}"><span class="indicator"></span>Cardiology</div>-->
                         <h5>Hypertension Scientific Sessions<div class="small"><strong>Washington D.C.</strong> // Sept 16-19, 2015</div></h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis deleniti eius eligendi facere fuga, in ipsa iste nam nisi, qui rerum tempore! Deleniti deserunt facilis saepe vitae! Fugiat, provident.</p>
@@ -88,16 +88,16 @@ bodyClass: "communities"
                     <h4><span class="text-uppercase margin-right-10">Journal</span></h4>
                     <div class="spacer"></div>
                 </div>
-                <div class="col-md-12">
+            <div class="col-sm-3">
+                <img class="img-responsive img-full img-border" src="{{site.baseurl}}/img/sample/j_hyper.png" alt="title" height="120"/>
+            </div>
+                <div class="col-md-8">
+                    <h3 class="color-primary" style="margin-top: 0 !important;">May 2015</h3>
 
-                    {% for post in site.categories.journals limit:1 %}
+                    {% for post in site.categories.journals limit:3 %}
 
                     <div class="media">
-                        <div class="media-left">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
-                                <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80" />
-                            </a>
-                        </div>
+
                         <div class="media-body">
                             <!--<a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">-->
                             <!--<span class="indicator"></span>{{ post.categories }}-->
@@ -188,19 +188,14 @@ bodyClass: "communities"
     </div>
 </div>
 
-<div class="container-fluid bg-color-lightgrey padding-10">
+<div class="container-fluid bg-color-grey padding-10 community-promo">
     <div class="row">
         <div class="container">
-            <div class="col-md-8 col-xs-12 pull-left">
-                <div class="editContent">
-                    <p>Sign up for eTOC and select Hypertension to have the Clinical Implications section emailed directly to you each month when the new issue posts.</p>
-                </div>
+            <div class="col-md-12">
+                <h3>Sign up for eTOC and select Hypertension to have the Clinical Implications section emailed directly to you each month when the new issue posts.</h3>
+                <button type="button" class="btn btn-primary promo">Sign Up</button>
+                <div class="spacer"></div>
             </div>
-            <div class="col-md-3 col-xs-12 pull-right">
-                <button type="button" class="btn btn-primary">Sign Up</button>
-            </div>
-        </div>
-    </div>
         </div>
     </div>
 </div>
@@ -325,6 +320,7 @@ bodyClass: "communities"
     </div>
 </div>
 <div class="spacer"></div>
+
 
 
 <!-- End Section * * * * * * * * * * * * * * * * * * * * * * * * * -->
