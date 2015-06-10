@@ -223,12 +223,20 @@ showTitle: true
 </script>
 <script>
 
-
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-	var getSelectedStateIndex = function(){
-		var i =  $("select#billing_state").get(0).selectedIndex;
-		return i;
-	};
+
+	var getSelectedIndex = function(stateOrCountry) {
+		var i = String(stateOrCountry);
+		switch (i){
+			case "state":
+				return $("select#billing_state").get(0).selectedIndex;
+				break;
+			case "country":
+				return $("select#billing_country").get(0).selectedIndex;
+				break;
+		}
+	}
+
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	var matchBillingAndShippingState = function(selectedIndex){
 
@@ -239,10 +247,9 @@ showTitle: true
 
 	};
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
-	var getSelectedCountryIndex = function(){
-		var i =  $("select#billing_country").get(0).selectedIndex;
-		return i;
-	};
+
+
+
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	var matchBillingAndShippingCountries = function(selectedIndex){
 
@@ -257,8 +264,8 @@ showTitle: true
 	$("select#billing_state").on('change',function(evt,params){
 		if($('#same_as_billing').prop('checked')){
 
-			matchBillingAndShippingState(getSelectedStateIndex());
-			matchBillingAndShippingCountries(getSelectedCountryIndex());
+			matchBillingAndShippingState(getSelectedIndex("state"));
+			matchBillingAndShippingCountries(getSelectedIndex("country"));
 		}
 	});
 
@@ -285,8 +292,8 @@ showTitle: true
 			$("[name='shipping_address2']").val($("[name='billing_address2']").val());
 			$("[name='shipping_address3']").val($("[name='billing_address3']").val());
 			$("[name='shipping_city']").val($("[name='billing_city']").val());
-			matchBillingAndShippingState(getSelectedStateIndex());
-			matchBillingAndShippingCountries(getSelectedCountryIndex());
+			matchBillingAndShippingState(getSelectedIndex("state"));
+			matchBillingAndShippingCountries(getSelectedIndex("country"));
 
 
 			$("[name='shipping_zip']").val($("[name='billing_zip']").val());
