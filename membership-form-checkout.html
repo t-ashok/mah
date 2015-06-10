@@ -72,7 +72,7 @@ showTitle: true
 
 <!--Membership Form-->
 
-<form action="" method="post" role="form">
+<form action="" method="post" role="form" autocomplete="off">
 
 	<div class="col-sm-12">
 
@@ -90,10 +90,10 @@ showTitle: true
 
 				<div class="col-sm-12">
 					<div class="form-group">
-						<label for="address1">Address <span class="required">*</span></label>
-						<input type="text" class="form-control margin-bottom-10" name="address1" id="address1" placeholder="Address 1">
-						<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Address 2">
-						<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Address 3">
+						<label for="bill_address">Address <span class="required">*</span></label>
+						<input type="text" class="form-control margin-bottom-10" name="billing_address1" id="billing_address1" placeholder="Address 1">
+						<input type="text" class="form-control margin-bottom-10" name="billing_address2" id="billing_address2" placeholder="Address 2">
+						<input type="text" class="form-control margin-bottom-10" name="billing_address3" id="billing_address3" placeholder="Address 3">
 					</div>
 				</div>
 
@@ -101,27 +101,30 @@ showTitle: true
 
 				<div class=" col-sm-6">
 					<div class="form-group">
-						<label for="city">City <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="city" id="city" placeholder="City">
+						<label for="bill_city">City <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="bill_city" id="bill_city" placeholder="City">
 					</div>
 				</div>
 
 				<div class="col-sm-6 margin-bottom-10">
-					<label for="state"> State <span class="required">*</span></label>
-					{% include components/dropdown-states.html %}
+					<label for="bill_state"> State <span class="required">*</span></label>
+					{% include components/dropdown-billing-states.html %}
 				</div>
 
 				<div class="col-sm-12">
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="form-group">
-								<label for="zip">Zip <span class="required">*</span></label>
-								<input type="text" class="form-control " required name="zip" id="zip" placeholder="Zip">
+								<label for="bill_zip">Zip <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="bill_zip" id="bill_zip" placeholder="Zip">
 							</div>
 						</div>
 						<div class="col-sm-10">
-							<label for="country"> Country <span class="required">*</span></label>
-							{% include components/dropdown-countries.html %}
+							<label for="bill_country"> Country <span class="required">*</span></label>
+							{% include components/dropdown-billing-countries.html %}
+
+
+
 						</div>
 					</div>
 				</div>
@@ -132,14 +135,14 @@ showTitle: true
 
 
 		<div class="col-sm-12">
-			<label class="checkbox" for="sameAsBiiling">
+			<label id="" class="checkbox" for="same_as_billing">
 							<span class="icons">
 								<span class="first-icon"></span>
 								<span class="second-icon fa fa-check"></span>
 							</span>
-				<input value="sameAsBilling" id="sameAsBiiling" name="sameAsBiiling" data-toggle="checkbox" type="checkbox">
+				<input value="" id="same_as_billing" name="same_as_billing" data-toggle="checkbox" type="checkbox">
 							<span class="">
-								<i class="fa fa-truck" style="transform: scaleX(-1)"></i> Same As Billing
+								<i class="fa fa-truck" style="transform: scaleX(-1)"></i> Same As Billing tu
 							</span>
 			</label>
 		</div>
@@ -159,10 +162,10 @@ showTitle: true
 
 				<div class="col-sm-12">
 					<div class="form-group">
-						<label for="address1">Address <span class="required">*</span></label>
-						<input type="text" class="form-control margin-bottom-10" name="address1" id="address1" placeholder="Address 1">
-						<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Address 2">
-						<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Address 3">
+						<label for="ship_address">Address <span class="required">*</span></label>
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address1" id="shipping_address1" placeholder="Address 1">
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address2" id="shipping_address2" placeholder="Address 2">
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address3" id="shipping_address3" placeholder="Address 3">
 					</div>
 				</div>
 
@@ -170,27 +173,27 @@ showTitle: true
 
 				<div class=" col-sm-6">
 					<div class="form-group">
-						<label for="city">City <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="city" id="city" placeholder="City">
+						<label for="shipping_city">City <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="shipping_city" id="shipping_city" placeholder="City">
 					</div>
 				</div>
 
 				<div class="col-sm-6 margin-bottom-10">
-					<label for="state"> State <span class="required">*</span></label>
-					{% include components/dropdown-states.html %}
+					<label for="shipping_state"> State <span class="required">*</span></label>
+					{% include components/dropdown-shipping-states.html %}
 				</div>
 
 				<div class="col-sm-12">
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="form-group">
-								<label for="zip">Zip <span class="required">*</span></label>
-								<input type="text" class="form-control " required name="zip" id="zip" placeholder="Zip">
+								<label for="shipping_zip">Zip <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="shipping_zip" id="shipping_zip" placeholder="Zip">
 							</div>
 						</div>
 						<div class="col-sm-10">
 							<label for="country"> Country <span class="required">*</span></label>
-							{% include components/dropdown-countries.html %}
+							{% include components/dropdown-shipping-countries.html %}
 						</div>
 					</div>
 				</div>
@@ -218,6 +221,90 @@ showTitle: true
 			width:'100%',
 			"disable_search": true
 		});
+
 	});
 </script>
+<script>
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var getSelectedStateIndex = function(){
+		var i =  $("select#billing_state").get(0).selectedIndex;
+		return i;
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var matchBillingAndShippingState = function(selectedIndex){
+
+		if($('#same_as_billing').prop('checked')){
+			$("select#shipping_state")[0].selectedIndex = selectedIndex;
+			$("select#shipping_state").trigger("chosen:updated");
+		}
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var getSelectedCountryIndex = function(){
+		var i =  $("select#billing_country").get(0).selectedIndex;
+		return i;
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var matchBillingAndShippingCountries = function(selectedIndex){
+
+		if($('#same_as_billing').prop('checked')){
+			$("select#shipping_country")[0].selectedIndex = selectedIndex;
+			$("select#shipping_country").trigger("chosen:updated");
+		}
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	$("select#billing_state").on('change',function(evt,params){
+		if($('#same_as_billing').prop('checked')){
+
+			matchBillingAndShippingState(getSelectedStateIndex());
+			matchBillingAndShippingCountries(getSelectedCountryIndex());
+		}
+	});
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var resetStateAndCountry = function(){
+
+
+		$("select#shipping_state")[0].selectedIndex = 0;
+		$("select#shipping_state").trigger("chosen:updated");
+
+		$("select#shipping_country")[0].selectedIndex = 0;
+		$("select#shipping_country").trigger("chosen:updated");
+
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	// checkbox
+	$("#same_as_billing").on("change", function(){
+
+		if (this.checked) {
+			console.log("checked");
+
+			$("[name='shipping_address1']").val($("[name='billing_address1']").val());
+			$("[name='shipping_address2']").val($("[name='billing_address2']").val());
+			$("[name='shipping_address3']").val($("[name='billing_address3']").val());
+			$("[name='shipping_city']").val($("[name='billing_city']").val());
+			matchBillingAndShippingState(getSelectedStateIndex());
+			matchBillingAndShippingCountries(getSelectedCountryIndex());
+
+
+			$("[name='shipping_zip']").val($("[name='billing_zip']").val());
+			$("[name='shipping_country']").val($("[name='billing_country']").val());
+		}else{
+			$("[name='shipping_address1']").val('');
+			$("[name='shipping_address2']").val('');
+			$("[name='shipping_address3']").val('');
+			$("[name='shipping_city']").val('');
+
+			$("[name='shipping_zip']").val('');
+			resetStateAndCountry();
+
+		}
+	});
+</script>
+
 
