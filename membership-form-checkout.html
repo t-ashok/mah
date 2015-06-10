@@ -101,8 +101,8 @@ showTitle: true
 
 				<div class=" col-sm-6">
 					<div class="form-group">
-						<label for="bill_city">City <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="bill_city" id="bill_city" placeholder="City">
+						<label for="billing_city">City <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="billing_city" id="billing_city" placeholder="City">
 					</div>
 				</div>
 
@@ -115,16 +115,13 @@ showTitle: true
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="form-group">
-								<label for="bill_zip">Zip <span class="required">*</span></label>
-								<input type="text" class="form-control " required name="bill_zip" id="bill_zip" placeholder="Zip">
+								<label for="billing_zip">Zip <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="billing_zip" id="billing_zip" placeholder="Zip">
 							</div>
 						</div>
 						<div class="col-sm-10">
 							<label for="bill_country"> Country <span class="required">*</span></label>
 							{% include components/dropdown-billing-countries.html %}
-
-
-
 						</div>
 					</div>
 				</div>
@@ -293,7 +290,7 @@ showTitle: true
 
 
 			$("[name='shipping_zip']").val($("[name='billing_zip']").val());
-			$("[name='shipping_country']").val($("[name='billing_country']").val());
+
 		}else{
 			$("[name='shipping_address1']").val('');
 			$("[name='shipping_address2']").val('');
