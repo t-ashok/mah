@@ -7,11 +7,12 @@
     <meta content="{{page.title}}" property="og:title" />
     <meta property=”og:type” content=”article”/>
     <meta property=”og:image” content=”{{page.featureimage}}”/>
+    <meta name=”og:description” content=”{{page.excerpt}}”>
     <meta name=”description” content=”{{page.excerpt}}”>
-    <meta property=”og:url” content=”{{page.url}}”/>
+    <meta property=”og:url” content=”{{site.url}}{{page.baseurl}}{{page.url}}”/>
 
     <meta name=”twitter:card” content=”summary_large_image”>
-    <meta name=”twitter:url” content=”{{page.url}}”>
+
     <link rel=”publisher” href=”https://plus.google.com/+AmericanHeart”/>
 
     <title>{{site.title}} - {{page.title}}</title>
