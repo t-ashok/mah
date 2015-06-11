@@ -30,14 +30,33 @@
                                     </a>
                                 {% endif %}
 
-                                    <p class="pull-right">
-                                        <!-- Twitter -->
-                                        <a href="http://twitter.com/home?status={{page.title}} - {{site.url}}{{site.baseurl}}{{page.url}}" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i></a>
-                                        <!-- Facebook -->
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{page.title}} - {{site.baseurl}}{{page.url}}" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
-                                        <!-- Google+ -->
-                                        <a href="https://plus.google.com/share?url={{page.title}} - {{site.baseurl}}{{page.url}}" title="Share on Google+" target="_blank" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></a>
-                                    </p>
+                                    <!--<p class="pull-right">-->
+                                        <!--&lt;!&ndash; Twitter &ndash;&gt;-->
+                                        <!--<a href="http://twitter.com/home?status={{page.title}} - {{site.url}}{{site.baseurl}}{{page.url}}" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i></a>-->
+                                        <!--&lt;!&ndash; Facebook &ndash;&gt;-->
+                                        <!--<a href="https://www.facebook.com/sharer/sharer.php?u={{page.title}} - {{site.url}}{{site.baseurl}}{{page.url}}" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i></a>-->
+                                        <!--&lt;!&ndash; Google+ &ndash;&gt;-->
+                                        <!--<a href="https://plus.google.com/share?url={{page.title}} - {{site.url}}{{site.baseurl}}{{page.url}}" title="Share on Google+" target="_blank" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></a>-->
+                                    <!--</p>-->
+
+                                <div class="share-button share-button-left pull-right"></div>
+
+                                <script src='{{site.baseurl}}/js/share.js'></script>
+                                <script>
+                                    var share_button_top = new Share(".share-button-left", {
+                                        title: "{{page.title}}",
+                                        description:"{{Description of the page goes here}}",
+                                        ui: {
+                                            flyout: "top left"
+                                        },
+                                        networks: {
+                                            facebook: {
+                                                app_id: "602752456409826",
+                                            }
+                                        }
+                                    });
+
+                                </script>
 
 
                             </div>
