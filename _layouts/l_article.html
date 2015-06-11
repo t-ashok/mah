@@ -45,16 +45,20 @@
                                 <script>
                                     var share_button_top = new Share(".share-button-left", {
                                         title: "{{page.title}}",
-                                        description:"{{Description of the page goes here}}",
+                                        description:"{{page.excerpt}}",
+
+                                        image:"{{page.featureimage}}",
                                         ui: {
                                             flyout: "top left"
                                         },
                                         networks: {
                                             facebook: {
-                                                app_id: "602752456409826",
+                                                app_id: "",
                                             }
                                         }
                                     });
+
+
 
                                 </script>
 
