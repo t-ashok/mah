@@ -4,6 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="{{page.title}}" property="og:title" />
+    <meta property=”og:type” content=”article”/>
+    <meta property=”og:image” content=”{{page.featureimage}}”/>
+    <meta name=”description” content=”{{page.excerpt}}”>
+    <meta property=”og:url” content=”{{page.url}}”/>
+
+    <meta name=”twitter:card” content=”summary_large_image”>
+    <meta name=”twitter:url” content=”{{page.url}}”>
+    <link rel=”publisher” href=”https://plus.google.com/+AmericanHeart”/>
+
     <title>{{site.title}} - {{page.title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
@@ -17,6 +27,7 @@
     <script src="{{site.baseurl}}/js/jquery-ui.min.js"></script>
 
     <link href="{{site.baseurl}}/css/core.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{site.baseurl}}/css/animate.css" rel="stylesheet" type="text/css" media="all"/>
 
 
     <!-- HTML5 Polyfill for IE9 -->
@@ -25,6 +36,6 @@
         <script src="{{site.baseurl}}/js/respond.min.js"></script>
     <![endif]-->
     <link href="{{site.baseurl}}/css/mah-theme.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="{{site.baseurl}}/css/animate.css" rel="stylesheet" type="text/css" media="all"/>
+
 
 </head>
