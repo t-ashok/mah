@@ -7,7 +7,7 @@ excerpt: The results of the four recently presented/published trials for acute i
 excerpt_separator: <!--more-->
 showTitle: true
 
-featureimage: /img/sample/j_stroke.png
+featureimage: /img/sample/feature.jpg
 banner: /img/sample/j_stroke.png
 image1: /img/sample/feature.jpg
 image2: /img/sample/journal.png
