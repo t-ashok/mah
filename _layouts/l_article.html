@@ -15,7 +15,7 @@
                     <div class="row has-left-sidebar inner-page-wrap ">
 
                         <div class="col-md-3">
-                            {% include sidebar_membership_tiers.html %}
+                            {% include sidebar_article.html %}
                         </div>
                         <div class="col-md-9">
                             {{ content }}
@@ -29,6 +29,27 @@
                                         <span class="indicator"></span>{{ page.categories }}
                                     </a>
                                 {% endif %}
+
+                                    <div class="share-button share-button-left pull-right"></div>
+
+                                    <script src='{{site.baseurl}}/js/share.js'></script>
+                                    <script>
+                                        var share_button_top = new Share(".share-button-left", {
+                                            title: "{{page.title}}",
+                                            description:"{{Description of the page goes here}}",
+                                            ui: {
+                                                flyout: "top left"
+                                            },
+                                            networks: {
+                                                facebook: {
+                                                    app_id: "602752456409826",
+                                                }
+                                            }
+                                        });
+
+                                    </script>
+
+
                             </div>
                         </div>
 
@@ -43,6 +64,7 @@
         </div>
     <!-- All js scripts -->
     {% include allscripts.html %}
+
 
     </body>
 

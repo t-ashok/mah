@@ -11,13 +11,22 @@
             <!-- Navigation created from main-navigation.json -->
             <div class="nav" id="">
                 <!--<h5>Navigation</h5>-->
-                <ul class="list-unstyled menu">
+                <ul class="list-unstyled menu ">
 
                     {% for nav in site.data.main-navigation.mainnavs %}
 
                     <!--<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>-->
                     <li class="menu-item">
-                        <a class="page-link" href="{{ nav.link }}">{{ nav.name }}</a>
+                        <a class="page-link dropdown-toggle" href="{{ nav.link }}">{{ nav.name }}</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
                     </li>
 
                     {% endfor %}

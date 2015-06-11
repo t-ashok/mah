@@ -957,9 +957,35 @@ fieldset[disabled] .btn-inverse.active {
 .btn-group-dropdown .btn-dropdown {
     min-width: 170px;
 }
-.componant-dropdowns [class^="col-md-"] {
+.component-dropdown [class^="col-md-"] {
     padding: 0px 10px;
 }
+
+/*Social Button Colors*/
+.btn-twitter {
+    color: #fff !important;
+    background-color: #23b7e5;
+    border-color: #23b7e5;
+}
+
+.btn-google-plus {
+    color: #fff !important;
+    background-color: #f05050;
+    border-color: #f05050;
+}
+
+.btn-facebook {
+    color: #fff !important;
+    background-color: #49649d;
+    border-color: #49649d;
+}
+
+.btn-twitter:hover, .btn-facebook:hover, .btn-google-plus:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+
 .checkbox,
 .radio {
     position: relative;
