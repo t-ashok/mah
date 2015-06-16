@@ -176,7 +176,23 @@ var onReady = {
 	}
 };
 
+//Navigation Dropdown on Hover
+	jQuery(function($) {
+		if($(window).width()>769){
+			$('.navbar .dropdown').hover(function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).delay(0).fadeIn();
 
+			}, function() {
+				$(this).find('.dropdown-menu').first().stop(true, true).delay(50).fadeOut();
+
+			});
+
+			$('.navbar .dropdown > a').click(function(){
+				location.href = this.href;
+			});
+
+		}
+	});
 
 
 

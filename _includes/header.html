@@ -71,9 +71,9 @@
           {% else %}
             {% assign active = '' %}
           {% endif %}
-          <li class="{{active}}">
+          <li class="{{active}} dropdown">
 
-            <a href="{{ nav.link }}" class="{{ nav.class }}">{{ nav.name }}
+            <a href="{{site.baseurl}}/{{ nav.link }}" class="{{ nav.class }} dropdown-toggle js-activated" data-hover="dropdown" target="_self" >{{ nav.name }} <b class="caret"></b>
               <span class="nav-line" > </span>
             </a>
 
@@ -89,9 +89,24 @@
 
           </li>
 
-
-
           {% endfor %}
+
+
+          <!--Dropdown separated from Nav POC-->
+          <!--<div class="btn-group">-->
+            <!--<button type="button" class="btn btn-danger">Action</button>-->
+            <!--<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">-->
+              <!--<span class="sr-only">Toggle Dropdown</span>-->
+            <!--</button>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+              <!--<li><a href="#">Action</a></li>-->
+              <!--<li><a href="#">Another action</a></li>-->
+              <!--<li><a href="#">Something else here</a></li>-->
+              <!--<li class="divider"></li>-->
+              <!--<li><a href="#">Separated link</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
+
 
         </ul>
       </div>

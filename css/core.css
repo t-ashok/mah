@@ -516,7 +516,7 @@ width: 350px;
 }
 
 .navbar-nav>li>.dropdown-menu {
-    margin-top: 10px;
+    margin-top: -1px;
 }
 
 .avatar-wrapper {
