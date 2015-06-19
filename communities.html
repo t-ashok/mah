@@ -6,12 +6,24 @@ bodyClass: "communities"
 <!-- Section * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div class="page type-page" role="main">
 <!--Content-->
+<div class="container-fluid" style="background-image: url(img/sample/bkgrd_shattered.png);">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="text-primary" style="font-weight: 100 !important; font-size: 48px !important;">Hypertension / Nephrology</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="container-fluid latest-news-events">
     <div class="row">
         <div class="container">
-            <div class="col-sm-8">
-            <h3><span class="margin-right-10 text-uppercase">Latest Science News</span></h3>
-            <div class="col-sm-6 news-feature" style="margin-bottom: 40px;">
+
+
+            <div class="col-sm-4 news-feature">
+                <h3><span class="margin-right-10 text-uppercase">Latest Science News</span></h3>
                 {% for post in site.posts limit:3 %}
                 <div class="media">
                     <div class="media-body">
@@ -28,12 +40,14 @@ bodyClass: "communities"
 
                 {% endfor %}
             </div>
-                <div class="col-sm-6 news-feature-list">
+                <div class="col-sm-4 1col-ad-space">
+                    <h3><span class="text-uppercase margin-right-10"></span></h3>
                     <div>
-                        <img class="img-responsive img-full img-border" src="{{site.baseurl}}/img/sample/ad_600x400.png" alt="title" height="140"/>
+                        <img class="img-responsive img-full img-border" src="img/sample/bannerV_hyper.png" alt="title" height="140"/>
                     </div>
                 </div>
-            </div>
+
+
             <div class="col-sm-4 feature-meeting-lg">
                 <h3><span class="text-uppercase margin-right-10">Upcoming Meeting</span></h3>
                     <!--Big Thumb-->
@@ -54,68 +68,67 @@ bodyClass: "communities"
 <div class="container-fluid community-promo">
     <div class="row">
         <div class="container">
-            <img class="img-full img-responsive" src="img/sample/ad_1400x200.png">
+            <img class="img-full img-responsive" src="img/sample/banner_hyper.jpg">
         </div>
     </div>
 </div>
 <!-- Ad Space END -->
 
 <!-- Journal START -->
-<div class="container-fluid community-journal">
+<div class="container-fluid community-journals">
     <div class="row">
         <div class="container">
-            <h4><span class="text-uppercase margin-right-10">Journals</span></h4>
-                <div class="col-md-6">
-                    <h5 class="color-primary" style="margin-top: 0 !important;">May 2015</h5>
+            <div class="col-md-6">
+                <h4><span class="text-uppercase margin-right-10">Journals</span></h4>
+                {% for post in site.categories.journals limit:3 %}
 
-                    {% for post in site.categories.journals limit:3 %}
+                <div class="media">
+                    <div class="media-left">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
+                            <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <!--<a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">-->
+                        <!--<span class="indicator"></span>{{ post.categories }}-->
+                        <!--</a>-->
+                        <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
+                        <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
 
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="media-object">
-                                <img src="{{ post.banner | prepend: site.baseurl }}" alt="" width="80" />
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <!--<a href="{{ post.categories }}" class="text-uppercase tag tag-{{ post.categories }}">-->
-                            <!--<span class="indicator"></span>{{ post.categories }}-->
-                            <!--</a>-->
-                            <a href="{{ post.url | prepend: site.baseurl }}"><h5>{{ post.title }}</h5></a>
-                            <!--<p>Posted {{ post.date | date: "%b %-d, %Y" }}</p>-->
-
-                            <p class="media-excerpt">{{ post.content }}</p>
-                        </div>
-
-                        <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
-
-
+                        <p class="media-excerpt">{{ post.content }}</p>
                     </div>
 
-                    {% endfor %}
-            </div>
-            <h4><span class="text-uppercase margin-right-10">Research Updates</span></h4>
-              <div class="col-sm-6>
-                    <div>
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h5>Sequential Hybrid Procedure for Persistent Atrial Fibrillation</h5>
-                                <p>
-                                    Catheter ablation of persistent atrial fibrillation yields an unsatisfactorily high number of failures. The hybrid approach has recently emerged as a technique that overcomes the limitations of both surgical and catheter procedures alone.
-                                </p>
-                                <p><a href="#" class="btn btn-primary" role="button">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-sm btn-default">Continue Reading <i class="fa fa-chevron-right"></i></a>-->
+
+
                 </div>
+
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <h4><span class="text-uppercase margin-right-10">Clinical Updates</span></h4>
+                <ul class="list-unstyled">
+                    <li class="padding-10 bg-color-lightgrey "><a href="#">Trends in Incidence, Severity, and Outcome of Hospitalized Myocardial Infarction</a><br/>
+                        Jan 28, 2011 | Source (Learning Library)</li>
+                    <li class="padding-10"><a href="">Routine versus Selective Strategies in Patients with Non-ST-Segment Elevation Acute Coronary Syndrome: How Do the Long-Term Outcomes Compare?</a><br/>
+                        Jan 18, 2011 | Source (Learning Library)</li>
+                    <li class="padding-10 bg-color-lightgrey ">
+                        <a href="">Lack of Association between Migraine Headache and Patent Foramen Ovale: Results of a Case-Control Study</a><br/>
+                        Sep 13, 2010 | Source (Learning Library)
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary">View All</button>
             </div>
         </div>
     </div>
 </div>
 
+
+
 <div class="container-fluid bg-color-grey padding-10 community-promo">
     <div class="row">
         <div class="container">
-            <div class="col-sm-2"><i class="fa fa-newspaper-o" style="font-size:125px;padding-top:25px;"></i></div>
+            <div class="col-sm-2"><i class="fa fa-newspaper-o img-responsive" style="font-size:125px;padding-top:25px;"></i></div>
             <div class="col-md-10">
                 <h3>Sign up for eTOC and select Hypertension to have the Clinical Implications section emailed directly to you each month when the new issue posts.</h3>
                 <button type="button" class="btn btn-primary promo">Sign Up</button>
@@ -136,36 +149,39 @@ bodyClass: "communities"
                     <li class="media">
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                                <img class="media-object" alt="avatar1" src="img/sample/pon_av1.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
                             </a>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading" id="media-heading">Media heading<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-                            <!-- Nested media object -->
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#">
-                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading" id="nested-media-heading">Nested media heading<a class="anchorjs-link" href="#nested-media-heading"><span class="anchorjs-icon"></span></a></h4>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                    <!-- Nested media object -->
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2MDkzNzUiIHk9IjMyIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="width: 64px; height: 64px;">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading" id="nested-media-heading">Nested media heading<a class="anchorjs-link" href="#nested-media-heading"><span class="anchorjs-icon"></span></a></h4>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <h5 class="media-heading" id="media-heading"><a href="#">Purushotham Kotha</a> posted <a href=#">Re: why cholesterol said no longer a threat to health?</a><a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+                            <small>in <a href="#">Introduce Yourself</a> on	Jun 16 at 11:03am CDT</small>
+                            <p>please lookup the new guidelines by AHA/ACC,somewhat confusing! Best regards,Purushotham Kotha. M.D., FACC
+                                email: pkotha@heartsmart.info
+                                website: www.heartsmartinfo.comheartsmart apps: http://www.heartsmartinfo.com...</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" alt="avatar2" src="img/sample/pon_av2.png" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading" id="media-heading"><a href="#">Gayle Steiner</a> posted <a href=#">Re: why cholesterol said no longer a threat to health?</a><a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+                            <small>in <a href="#">Introduce Yourself</a> on Jun 16 at 9:17am CDT</small>
+                            <p>Is there an AHA article or scientific publication on the topic of reversing the stance on cholesterol restriction?</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" alt="avatar3" src="img/sample/pon_av3.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading" id="media-heading"><a href="#">Stacy AHA Science</a> posted <a href=#">American Heart Association - Vice President for Science and Medicine</a><a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+                            <small>in <a href="#">Work at AHA</a> on	Jun 15 at 12:41pm CDT</small>
+                            <p>Vice President for Science and Medicine The American Heart Association (AHA) is seeking a dynamic and effective physician to lead its Office of Science and Medicine (OSM). This Department, with a staff of 8 science and medicine prof...</p>
                         </div>
                     </li>
                 </ul>
@@ -176,13 +192,29 @@ bodyClass: "communities"
                     <tbody>
                     <tr>
                         <td>
-                            <p><strong>Condimentum a cras magnis urna id nec ullamcorper - Montes Adipiscing</strong></p>
-                            <p>Ut scelerisque consectetur himenaeos at in viverra quisque parturient primis hac fames curabitur a feugiat vulputate eros consequat interdum turpis a. </p>
+                            <p><strong><a href="https://learn.heart.org/Activity/2733339/Detail.aspx">Emerging Science Series - Nutrition and Heart Health: Evidence From the AHA/ACC Lifestyle Guideline</a></strong></p>
+                            <p>Beginning in 2014, the Emerging Science Series Program will feature a fee-per-view webinar presentation of some of the most recent Major Bench-to-Bedside Advances, Major Conference Proceedings, ...</p>
                             <ul class="list-unstyled">
-                                <li>0.75 Credit(s) Quam potenti cubilia parturient fermentum nam</li>
-                                <li>0.75 Credit(s) Habitant a placerat</li>
-                                <li>0.75 Credit(s) Habitant a placerat</li>
+                                <li>Credit(s):	NONACCR</li>
                             </ul>
+                        <td>
+                            <button type="submit" class="btn btn-primary btn-sm">Register</button>
+                            <p class="align-center"><strong>$9.99</strong><br>Activity Price</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong><a href="https://learn.heart.org/Activity/3016147/Detail.aspx">Spotlight Series: Racial & Ethnic Disparities in Treatment of Hypertension (TGA Webinar)</a></strong></p>
+                            <p>This webinar focuses on Case based, live education addressing racial and ethnic disparities in hypertension. African Americans are significantly more likely than whites to be diagnosed with hyp ...</p>
+                            <img src="img/sample/ce_computer.jpg" alt="" />
+                            <ul class="list-unstyled pull-right">
+                                <li>0.75 Credit(s) ACCME > AMA PRA Category 1 Credit™</li>
+                                <li>0.75 Contact Hour(s) ANCC > ANCC</li>
+                                <li>0.75 Contact Hour(s) ACPE > ACPE</li>
+                                <li> 0.75 Credit(s) ACCME > Attendance Credit</li>
+                                <li>AHA > AHA</li>
+                            </ul>
+                        </td>
                         <td>
                             <button type="submit" class="btn btn-primary btn-sm">Register</button>
                             <p class="align-center"><strong>FREE</strong><br>Activity Price</p>
@@ -190,23 +222,15 @@ bodyClass: "communities"
                     </tr>
                     <tr>
                         <td>
-                            <p><strong>Suspendisse cursus etiam magna in ut suspendisse cursus - Porta Nunc</strong></p>
-                            <p>Ut scelerisque consectetur himenaeos at in viverra quisque parturient primis hac fames curabitur a feugiat vulputate eros consequat interdum turpis a. </p>
-                            <ul class="list-unstyled">
-                                <li>0.75 Credit(s) Habitant a placerat</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <button type="submit" class="btn btn-primary btn-sm">Register</button>
-                            <p class="align-center"><strong>FREE</strong><br>Activity Price</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><strong>Cras sit amet nibh libero - Mi Vel</strong></p>
-                            <p>Ut scelerisque consectetur himenaeos at in viverra quisque parturient primis hac fames curabitur a feugiat vulputate eros consequat interdum turpis a. </p>
-                            <ul class="list-unstyled">
-                                <li>0.75 Credit(s) Habitant a placerat</li>
+                            <p><strong><a href="https://learn.heart.org/Activity/3366206/Detail.aspx">Northern New England Stroke Boot Camp and Best Practices 2015</a></strong></p>
+                            <p>This one-day program is a professional education event to advance the existing stroke systems of care in northern New England, enhance analytic use of Get With The Guidelines - Stroke data, sha ...
+                            </p>
+                            <img src="img/sample/ce_brain.jpg" alt="" class="pull-left"/>
+                            <ul class="list-unstyled pull-right">
+                                <li>0.75 Credit(s) ACCME > AMA PRA Category 1 Credit™</li>
+                                <li>0.75 Contact Hour(s) ANCC > ANCC</li>
+                                <li> 0.75 Credit(s) ACCME > Attendance Credit</li>
+                                <li>AHA > AHA</li>
                             </ul>
                         </td>
                         <td>
@@ -227,24 +251,22 @@ bodyClass: "communities"
     <div class="row">
         <div class="container">
             <div class="col-sm-12">
-                <h3 class="text-uppercase margin-right-10">Councils</h3>
+                <h3 class="text-uppercase margin-right-10">Council on Hypertension - Message from the Chair</h3>
             </div>
-                <div class="col-sm-3">
-                    <img class="img-responsive pull-right img-border" src="http://fillmurray.com/g/200/300" alt="title" height="120"/>
+            <div class="col-sm-2">
+                <img class="img-responsive pull-right img-border" src="img/sample/bio_md.jpg" alt="title" height="120"/>
+            </div>
+            <div class="col-sm-10">
+                <div>
+                    <p class="lead">The mission of the Council on Hypertension is "to foster excellence in hypertension research and education" in order to achieve the American Heart Association’s goal “to build healthier lives, free of cardiovascular diseases and stroke".</p>
+                    <p><strong>Christopher S. Wilcox</strong>, MD, Ph.D., FRCP (UK), FACP, FAHA<br>Chair, Council on Hypertension</p>
+                    <a href="#" class="btn btn-sm btn-default">Read More from the Chariman <i class="fa fa-chevron-right"></i></a>
                 </div>
-                <div class="col-sm-9">
-                    <div>
-                        <p class="lead">The mission of the Council on Hypertension is "to foster excellence in hypertension research and education" in order to achieve the American Heart Association’s goal “to build healthier lives, free of cardiovascular diseases and stroke".</p>
-                        <p><strong>Christopher S. Wilcox</strong>, MD, Ph.D., FRCP (UK), FACP, FAHA<br>Chair, Council on Hypertension
-                        <p class="bg-color-lightgrey padding-10"><strong>Council's recent name change:</strong><br>
-                        <a href="#">Read the HBPR Name Change Frequently Asked Questions (PDF) for more information</a></p>
-                        <a href="#" class="btn btn-sm btn-default">Council on Hypertension <i class="fa fa-chevron-right"></i></a>
-                    </div>
-                </div>
+            </div>
 
-            </div>
         </div>
     </div>
+</div>
 </div>
 <div class="spacer"></div>
 
