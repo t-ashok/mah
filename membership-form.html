@@ -39,6 +39,9 @@ card: "membership-form"
 					<div class="form-group">
 						<label for="email">Email <span class="required">*</span></label>
 						<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
+						<label id="" class="checkbox" for="emailUpdates">
+							<input value="" id="emailUpdates" name="Email Update" data-toggle="checkbox" type="checkbox">Please update me via email
+						</label>
 					</div>
 				</div>
 
@@ -72,23 +75,34 @@ card: "membership-form"
 		</div>
 	</div>
 
-	<div class="col-sm-4">
-		<div class="form-group">
-			<label for="firstName">First Name <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
-		</div>
-	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="firstName">First Name <span class="required">*</span></label>
+					<input type="text" class="form-control " required name="firstName" id="firstName" placeholder="First Name">
+				</div>
+			</div>
 
-	<div class="col-sm-4">
-		<div class="form-group">
-			<label for="lastname">Last Name <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
-		</div>
-	</div>
-	<div class="col-sm-2">
-		<div class="form-group">
-			<label for="suffix">Suffix</label>
-			<input type="text" class="form-control " required name="suffix" id="suffix" placeholder="Suffix">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="middleName">Middle Name</label>
+					<input type="text" class="form-control" name="middleName" id="middleName" placeholder="Middle Name">
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="lastname">Last Name <span class="required">*</span></label>
+					<input type="text" class="form-control " required name="lastname" id="lastname" placeholder="Last Name"><span></span>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="suffix">Suffix</label>
+					<input type="text" class="form-control " required name="suffix" id="suffix" placeholder="Suffix">
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -144,9 +158,9 @@ card: "membership-form"
 	<div class="col-sm-12">
 		<div class="form-group">
 			<label for="address1">Address</label>
-			<input type="text" class="form-control margin-bottom-10" name="address1" id="address1" placeholder="Address 1">
-			<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Address 2">
-			<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Address 3">
+			<input type="text" class="form-control margin-bottom-10" name="address1" id="address1" placeholder="Street Address (required)">
+			<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Department">
+			<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Building number, Suite Number or Apartment number">
 		</div>
 	</div>
 
@@ -158,19 +172,19 @@ card: "membership-form"
 	</div>
 
 	<div class="col-sm-6 margin-bottom-10">
-		<label for="state"> State <span class="required">*</span></label>
+		<label for="state"> State/Province <span class="required">*</span></label>
 		{% include components/dropdown-billing-states.html %}
 	</div>
 
 	<div class="col-sm-12">
 		<div class="row">
-			<div class="col-sm-2">
+			<div class="col-sm-3">
 				<div class="form-group">
-					<label for="zip">Zip <span class="required">*</span></label>
-					<input type="text" class="form-control " required name="zip" id="zip" placeholder="Zip">
+					<label for="zip">Zip/Postal Code <span class="required">*</span></label>
+					<input type="text" class="form-control " required name="zip" id="zip" placeholder="Zip/Postal Code">
 				</div>
 			</div>
-			<div class="col-sm-10">
+			<div class="col-sm-9">
 				<label for="country"> Country <span class="required">*</span></label>
 				{% include components/dropdown-countries.html %}
 			</div>
