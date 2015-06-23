@@ -190,6 +190,12 @@ a.list-group-item.active > .badge,
     color: #364347;
 }
 
+/* ==========================================================================
+Typography
+========================================================================== */
+.text-serif {
+    font-family: serif;
+}
 
 /*Text Color*/
 .text-danger,
@@ -986,6 +992,8 @@ fieldset[disabled] .btn-inverse.active {
 }
 
 
+
+
 .checkbox,
 .radio {
     position: relative;
@@ -996,6 +1004,7 @@ fieldset[disabled] .btn-inverse.active {
     line-height: 1.6;
     min-height: 20px;
 }
+
 .checkbox input,
 .radio input {
     outline: none !important;
@@ -2853,7 +2862,9 @@ Waypoints
     animation-delay: 1s;
 }
 
-
+/* ==========================================================================
+Membership - Councils
+========================================================================== */
 .ui-sortable-handle {
 -webkit-transition: all 0.25s linear 0s;
    -moz-transition: all 0.25s linear 0s;
@@ -2884,6 +2895,17 @@ margin-top: 10px;
     border: 0;
 
 }
+
+.panel .list-group-item label.checkbox {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.list-group-item.checked {
+    background-color: #F7F7F7;
+}
+
 label.checkbox > span {
     /*font-family: serif;*/
     /*font-style: italic;*/
