@@ -6,7 +6,11 @@
     "society": true,
     "sku": "sku1006",
     "councilCode" : "ATVB",
-    "snippet": "The Council on Arteriosclerosis, Thrombosis and Vascular Biology (ATVB) works to advance and coordinate research, improve prevention, improve methods for diagnosis and treatment, and disseminate reliable and state-of-the-art information. ATVB sponsors an interdisciplinary annual conference and a scientific journal. Recognizes and supports junior and senior investigators with special activities and awards."},
+    "snippet": "The Council on Arteriosclerosis, Thrombosis and Vascular Biology (ATVB) works to advance and coordinate research, improve prevention, improve methods for diagnosis and treatment, and disseminate reliable and state-of-the-art information. ATVB sponsors an interdisciplinary annual conference and a scientific journal. Recognizes and supports junior and senior investigators with special activities and awards.",
+    "addonid":"IART",
+    "addonname":"International Arteriosclerotic Society",
+    "addonprice":"3.00"
+  },
   {"name": "Basic Cardiovascular Sciences",
     "id": "BCV",
     "model": "council2",
@@ -111,7 +115,11 @@
     "society": false,
     "sku": "sku1021",
     "councilCode" : "STROKE",
-    "snippet": "The Stroke Council works to help prevent, identify, and treat cerebrovascular disease and rehabilitate those who have it. The Council helps publish Stroke, awards scholarships and conducts the International Stroke Conference, one of the most successful and prestigious conferences in the world."}
+    "snippet": "The Stroke Council works to help prevent, identify, and treat cerebrovascular disease and rehabilitate those who have it. The Council helps publish Stroke, awards scholarships and conducts the International Stroke Conference, one of the most successful and prestigious conferences in the world.",
+    "addonid":"WSO",
+    "addonname":"World Stroke Organization",
+    "addonprice":"20.00"
+  }
 
 ]
 }

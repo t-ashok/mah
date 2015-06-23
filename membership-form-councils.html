@@ -38,16 +38,37 @@ card: "membership-form-councils"
 			{% assign councils = site.data.councils.councils %}
 			{% for council in councils %}
 			<li class="list-group-item">
-				<label class="checkbox" for="{{council.councilCode}}">
+				<label class="checkbox checkbox-council" for="{{council.councilCode}}">
 				<span class="icons">
 					<span class="first-icon"></span>
 					<span class="second-icon fa fa-check"></span>
 				</span>
-					<input value="" id="{{council.councilCode}}" name="{{council.councilCode}}" data-toggle="checkbox" type="checkbox">
+					<input data-type="checkbox-council" value="{{council.councilCode}}" id="{{council.councilCode}}" name="checkbox-council" data-toggle="checkbox" type="checkbox">
 					<strong>{{council.councilCode}}</strong>: {{council.name}}
 
 				</label>
 				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
+
+				{% if council.addonid%}
+					<!-- Default disabled -->
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-11">
+							<label class="checkbox checkbox-addon" for="{{council.addonid}}">
+								<span class="icons">
+									<span class="first-icon"></span>
+									<span class="second-icon fa fa-check"></span>
+								</span>
+									<input value="{{council.addonid}}" data-type="checkbox-addon" id="{{council.addonid}}" name="checkbox-addon" data-toggle="checkbox" type="checkbox">
+									<strong>{{council.addonname}}</strong>
+
+								<span class="pull-right margin-left-10">(add) ${{council.addonprice}}</span>
+							</label>
+						</div>
+					</div>
+				
+
+				{% endif %}
 
 			</li>
 			{% endfor %}
@@ -55,7 +76,7 @@ card: "membership-form-councils"
 	</div><!-- //.panel -->
 
 	<!--Submit-->
-	<a href="membership-form-checkout.html" type="submit" class="btn btn-primary"> Next </a>
+	<a href="membership-form-councils-rank.html" type="submit" class="btn btn-primary"> Next </a>
 	</form>
 
 </div>
@@ -111,7 +132,7 @@ card: "membership-form-councils"
 
 
 
-<!--Activate the sort-->
+<!-- Activate the sort -->
 <script>
 	$(function() {
 		//On page load make sure all input checkbox is reset to unchecked
@@ -125,7 +146,7 @@ card: "membership-form-councils"
 				$('.ui-sortable-handle.checked').each(function(){
 					councilsList._array.push($(this).attr('id'));
 				});
-				console.log(councilsList._array);
+				//console.log(councilsList._array);
 			}
 		};
 
@@ -137,38 +158,68 @@ card: "membership-form-councils"
 
 		//Checkbox
 		var hideMe = function(){
-			var $elems = $("input:checkbox:not(:checked)");
+			var $elems = $("input[name='checkbox-council']:checkbox:not(:checked)");
 			$elems.each(function(){
-				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled').parents('.ui-sortable-handle').addClass('disabled');
-				console.log($(this));
+				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled');
+				//console.log($(this));
 			});
 			councilsList.makeList();
 		};
-		var showMe = function(){
+		var showMeAll = function(){
 			var $elems = $("input:checkbox:not(:checked)");
 			$elems.each(function(){
-				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled').parents('.ui-sortable-handle').removeClass('disabled');
-				console.log($(this));
+				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled');
+				//console.log($(this));
 			});
 		};
 		var countChecked = function() {
-			var n = $( "input:checkbox:checked" ).length;
+			var n = $( "input[name='checkbox-council']:checkbox:checked" ).length;
 			var numberCouncilAllowMax = 3;
 			setTimeout(function(){
 				if (n >= numberCouncilAllowMax) {
 					hideMe();
+					hideAllAddons();
 					//trigger warning modal, warningModal
 					$('#warningModal').modal('show')
 
 				}else{
-					showMe();
+					showMeAll();
 				}
 			},200);
 		};
 
-		$('.checkbox').on('toggle',function(){
+		var hideAllAddons = function() {
+			//$("input[name=checkbox-addon]").prop('disabled',true) && $("input[name=checkbox-addon]").parent().addClass('disabled');
+			var $elems = $("input[name=checkbox-addon]");
+			$elems.each(function(i){
+				//sibling checkbox value
+				var isParentChecked = $(this).parents('li').find('input[name=checkbox-council]').prop('checked');
+				if(!isParentChecked){
+					//disable
+					$(this).prop('disabled',true) && $(this).parent().addClass('disabled');
+
+
+				};
+			});
+
+		};
+
+
+		$('.checkbox.checkbox-council').on('toggle',function(){
 			countChecked();
-			$(this).parent().toggleClass('checked');
+			$(this).parent().toggleClass('checked');//for li element to highlight
+			//alert("check council");
+			//if have addon
+			var isChecked = ($(this).find('input:checkbox').prop('checked'));
+			if(!isChecked){
+				//not checked, then uncheck addon
+				$(this).parents('li').find('input[name=checkbox-addon]').checkbox('uncheck');
+			}
+
+
+		});
+		$('.checkbox.checkbox-addon').on('toggle',function(){
+
 		});
 	});
 </script>
