@@ -138,6 +138,7 @@ card: "membership-form-councils"
 		//On page load make sure all input checkbox is reset to unchecked
 		$('input:checkbox').prop('checked',false);
 
+
 		//councilList obj to hold selected councils
 		var councilsList = {
 			_array: [],
@@ -205,6 +206,7 @@ card: "membership-form-councils"
 		};
 
 
+
 		$('.checkbox.checkbox-council').on('toggle',function(){
 			countChecked();
 			$(this).parent().toggleClass('checked');//for li element to highlight
@@ -213,13 +215,21 @@ card: "membership-form-councils"
 			var isChecked = ($(this).find('input:checkbox').prop('checked'));
 			if(!isChecked){
 				//not checked, then uncheck addon
-				$(this).parents('li').find('input[name=checkbox-addon]').checkbox('uncheck');
+				var $checkboxAddon = $(this).parents('li').find('input[name=checkbox-addon]');
+				$checkboxAddon.checkbox('uncheck');
+
 			}
 
 
 		});
 		$('.checkbox.checkbox-addon').on('toggle',function(){
-
+			//get parent checkbox
+			var $parentCheckbox = $(this).parents('li').find('input[name=checkbox-council]');
+			var isParentChecked = $parentCheckbox.prop('checked');//checked:true, unchecked:false
+			if(!isParentChecked){
+				$parentCheckbox.checkbox('toggle');
+			}
+			//
 		});
 	});
 </script>

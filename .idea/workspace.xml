@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership.html" afterPath="$PROJECT_DIR$/membership.html" />
+    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-councils.html" afterPath="$PROJECT_DIR$/membership-form-councils.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-councils.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="membership-form-councils.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.923077">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6902655">
+              <caret line="229" column="48" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="councils.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="councils.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/councils.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8360656">
+            <state vertical-scroll-proportion="-25.5">
               <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding />
             </state>
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/_includes/components/testimonials.html" />
         <option value="$PROJECT_DIR$/css/mah-theme.css" />
         <option value="$PROJECT_DIR$/membership-form-councils-rank.html" />
-        <option value="$PROJECT_DIR$/membership-form-councils.html" />
         <option value="$PROJECT_DIR$/_data/councils.json" />
+        <option value="$PROJECT_DIR$/membership-form-councils.html" />
       </list>
     </option>
   </component>
@@ -558,12 +558,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00070" summary="Tu: Change all templates to include allscripts.html">
-      <created>1432850936915</created>
-      <option name="number" value="00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1432850936915</updated>
-    </task>
     <task id="LOCAL-00071" summary="Tu: Change all templates to include allscripts.html">
       <created>1432851173308</created>
       <option name="number" value="00071" />
@@ -852,7 +846,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435094110533</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
+      <created>1435094126841</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1435094126842</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1298,18 +1298,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
+    <entry file="file://$PROJECT_DIR$/_data/councils.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.923077">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state vertical-scroll-proportion="-25.5">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/councils.json">
+    <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8360656">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6902655">
+          <caret line="229" column="48" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
           <folding />
         </state>
       </provider>
