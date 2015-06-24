@@ -77,7 +77,8 @@ card: "membership-form-councils"
 	</div><!-- //.panel -->
 
 	<!--Submit-->
-	<a href="membership-form-councils-rank.html" type="submit" class="btn btn-primary"> Next </a>
+	<a href="#" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#councilsSelectedModal"> Next </a>
+
 	</form>
 
 </div>
@@ -131,32 +132,64 @@ card: "membership-form-councils"
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<!-- Modal: List of Councils -->
 
+<div class="modal fade" id="councilsSelectedModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Selected Councils</h4>
+			</div>
+			<div class="modal-body">
+				<ul class="list-unstyled">
+
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Edit My Councils</button>
+				<a href="membership-form-councils-rank.html" class="btn btn-primary"> Next </a>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!-- Activate the sort -->
 <script>
 	$(function() {
+
+		var councilsList = {
+			"councils":[
+				 {"value":"ATVB","name":"Arteriosclerosis, Thrombosis, and Vascular Biology"}
+				,{"value":"BCVS","name":"Basic Cardiovascular Sciences"}
+				,{"value":"3CPR","name":"Cardiopulmonary, Critical Care, Perioperative and Resuscitation"}
+				,{"value":"CVDY","name":"Cardiovascular Disease in the Young"}
+				,{"value":"CVSN","name":"Cardiovascular and Stroke Nursing"}
+				,{"value":"CVRI","name":"Cardiovascular Radiology and Intervention"}
+				,{"value":"CVSA","name":"Cardiovascular Surgery and Anesthesia"}
+				,{"value":"CLCD","name":"Clinical Cardiology"}
+				,{"value":"EPI","name":"Epidemiology and Prevention"}
+				,{"value":"FGTB","name":"Functional Genomics and Translational Biology"}
+				,{"value":"HBPR","name":"Hypertension"}
+				,{"value":"KCVD","name":"Kidney in Cardiovascular Disease"}
+				,{"value":"LCD","name":"Lifestyle and Cardiometabolic Health"}
+				,{"value":"PVD","name":"Peripheral Vascular Disease"}
+				,{"value":"QCOR","name":"Quality of Care and Outcomes Research"}
+				,{"value":"STROKE","name":"Stroke Council"}
+
+			]
+		};
+		var selectedCouncilsRaw;//just a serialize array from jquery of selected council
+		var selectCouncilsClean = [];//clean list with formatted string
+
+
+		var selectedCouncils = [];
+
 		//On page load make sure all input checkbox is reset to unchecked
 		$('input:checkbox').prop('checked',false);
 
 
-		//councilList obj to hold selected councils
-		var councilsList = {
-			_array: [],
-			makeList: function(){
-				councilsList._array = [];
-				$('.ui-sortable-handle.checked').each(function(){
-					councilsList._array.push($(this).attr('id'));
-				});
-				//console.log(councilsList._array);
-			}
-		};
 
-		/*$( "#sortable" ).sortable({
-			update:function(){
-				councilsList.makeList();
-			}
-		});*/
 
 		//Checkbox
 		var hideMe = function(){
@@ -165,7 +198,7 @@ card: "membership-form-councils"
 				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled');
 				//console.log($(this));
 			});
-			councilsList.makeList();
+
 		};
 		var showMeAll = function(){
 			var $elems = $("input:checkbox:not(:checked)");
@@ -205,8 +238,52 @@ card: "membership-form-councils"
 			});
 
 		};
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+		var createSelectedCouncilsList = function (){
+			selectCouncilsClean = [];//clean array
+
+			console.log("from function ");
+			console.dir(selectedCouncilsRaw);
+			var i = null;
+			for (i = 0; i < selectedCouncilsRaw.length; i++){
+				console.log(selectedCouncilsRaw[i].value);
+				var searchValue = selectedCouncilsRaw[i].value;
+
+				for (j = 0; councilsList.councils.length > j; j += 1) {
+					if (councilsList.councils[j].value === searchValue) {
+						//return councilsList.councils[i];
+						//console.log(councilsList.councils[j].name);
+						var councilName = String(councilsList.councils[j].value + ': ' + councilsList.councils[j].name);
+						selectCouncilsClean.push(councilName);
+					}
+				}
+
+			}
+			console.log(selectCouncilsClean);
+			console.log("end from function ");
+
+		};
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+		var writeCouncilListToModal = function(){
+			var $theModal = $('#councilsSelectedModal'),
+				$theModalList = $theModal.find('ul');
+			var i = null;
+			$theModalList.empty();
+			for(i = 0; i < selectCouncilsClean.length; i++){
+				$theModalList.append(
+						$('<li>').append(
+								'<strong>' + selectCouncilsClean[i] + '</strong>'
+						)
+				);
+			}
 
 
+		};
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 		$('.checkbox.checkbox-council').on('toggle',function(){
 			countChecked();
@@ -219,10 +296,26 @@ card: "membership-form-councils"
 				var $checkboxAddon = $(this).parents('li').find('input[name=checkbox-addon]');
 				$checkboxAddon.checkbox('uncheck');
 
+			}else{
+				// checked
+
+						//var tu = $(this).find('input[name=checkbox-council]:checked').val();
+
+
 			}
+
+			selectedCouncilsRaw = $( "input[name=checkbox-council]:checked" ).serializeArray();
+			console.dir(selectedCouncilsRaw);
+			console.log("Selected councils");
+
+			createSelectedCouncilsList();
+
+			writeCouncilListToModal();
 
 
 		});
+
+
 		$('.checkbox.checkbox-addon').on('toggle',function(){
 			//get parent checkbox
 			var $parentCheckbox = $(this).parents('li').find('input[name=checkbox-council]');
