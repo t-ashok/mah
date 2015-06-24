@@ -2,7 +2,7 @@
 layout: l_article
 title:  "Acute Stroke Therapy Articles from Stroke"
 date:   2015-05-04 11:26:01
-categories: Hypertension
+categories: Stroke
 excerpt: The results of the four recently presented/published trials for acute ischemic stroke herald the dawn of a new era in the treatment of patients with large vessel occlusion amenable to endovascular intervention.
 excerpt_separator: <!--more-->
 showTitle: true
