@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-checkout.html" afterPath="$PROJECT_DIR$/membership-form-checkout.html" />
+    <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-journals.html" afterPath="$PROJECT_DIR$/membership-form-journals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -43,7 +43,7 @@
           <file leaf-file-name="membership-form-councils.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6681416">
+                <state vertical-scroll-proportion="0.906">
                   <caret line="48" column="170" selection-start-line="48" selection-start-column="170" selection-end-line="48" selection-end-column="170" />
                   <folding />
                 </state>
@@ -128,10 +128,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="membership-form-checkout.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="membership-form-checkout.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33333334">
+                <state vertical-scroll-proportion="-11.372549">
                   <caret line="84" column="105" selection-start-line="84" selection-start-column="105" selection-end-line="84" selection-end-column="105" />
                   <folding />
                 </state>
@@ -148,11 +148,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="membership-form-journals.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="membership-form-journals.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.5769231">
-                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.54">
+                  <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
                   <folding />
                 </state>
               </provider>
@@ -240,8 +240,8 @@
         <option value="$PROJECT_DIR$/_data/journals.json" />
         <option value="$PROJECT_DIR$/css/mah-theme.css" />
         <option value="$PROJECT_DIR$/membership-form-councils.html" />
-        <option value="$PROJECT_DIR$/membership-form-journals.html" />
         <option value="$PROJECT_DIR$/membership-form-checkout.html" />
+        <option value="$PROJECT_DIR$/membership-form-journals.html" />
       </list>
     </option>
   </component>
@@ -454,7 +454,13 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/membership-form.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/_includes/mobile-menu.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/_layouts/l_article.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/_posts/2015-05-11-News-Conference.markdown</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/core.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/mah-theme.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/membership.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -605,12 +611,6 @@
       <created>1430757209368</created>
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Tu: Utility bar">
-      <created>1432872242158</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1432872242158</updated>
     </task>
     <task id="LOCAL-00077" summary="Tu: Utility bar">
       <created>1432908276780</created>
@@ -900,7 +900,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435164657880</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
+      <created>1435165088693</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1435165088693</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -908,7 +914,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849163" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12402235" sideWeight="0.4827366" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12402235" sideWeight="0.4827366" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28691983" sideWeight="0.4968153" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -917,7 +923,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28751975" sideWeight="0.50318474" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2858684" sideWeight="0.5172634" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32290503" sideWeight="0.4900568" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32290503" sideWeight="0.4900568" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1333,7 +1339,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6681416">
+        <state vertical-scroll-proportion="0.906">
           <caret line="48" column="170" selection-start-line="48" selection-start-column="170" selection-end-line="48" selection-end-column="170" />
           <folding />
         </state>
@@ -1347,18 +1353,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
+    <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5769231">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.372549">
+          <caret line="84" column="105" selection-start-line="84" selection-start-column="105" selection-end-line="84" selection-end-column="105" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
+    <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="84" column="105" selection-start-line="84" selection-start-column="105" selection-end-line="84" selection-end-column="105" />
+        <state vertical-scroll-proportion="0.54">
+          <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
           <folding />
         </state>
       </provider>
