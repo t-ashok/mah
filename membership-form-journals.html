@@ -4,7 +4,7 @@ bodyClass: "membership-tiers"
 sidebar: "sidebar_membership_tiers.html"
 title: "Become a Member"
 showTitle: true
-card: "membership-form-councils"
+card: "membership-form-journals"
 ---
 <h2 class="heading border-1-bottom text-primary">Premium Professional Plus</h2>
 
@@ -12,63 +12,51 @@ card: "membership-form-councils"
 
 {% include components/step-card.html %}
 
-
+<!-- Alert -->
+<!-- This journal selection page is for GENERAL membership only -->
+<div class="col-sm-12">
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>DEVELOPER NOTE: </strong> This journals selection page is for <strong>GENERAL MEMBERSHIP</strong> only!. (À la carte)
+	</div>
+</div>
 <!--Membership Form-->
 
 <div class="col-sm-12">
 	<form action="" method="post" role="form">
 	<div class="panel panel-default">
 		<!-- Default panel contents -->
-		<div class="panel-heading">Please select the Councils you are interested in affiliating with</div>
+		<div class="panel-heading">Please select the journals you are interested in receiving either online only or in print:</div>
 		<div class="panel-body">
-			<!--<ul>-->
-				<!--<li>The AHA/ASA Professional Membership program is comprised of 16 Scientific Councils.</li>-->
-				<!--<li>Each Council represents specific specialty fields contributing to the mission of the association.</li>-->
-				<!--<li>By affiliating with these groups you will help support and contribute to scientific and medical advances in the councils' specified fields.</li>-->
-			<!--</ul>-->
-			<p>Members may affiliate with <strong>two</strong> Scientific Councils, and an optional third council for an additional <strong>$60.00</strong>.</p>
-			<p>Council Affiliation Distribution Definitions
-				By choosing one Primary council, that council will receive 100% of the dues distribution calculation
-				By choosing a Primary and Secondary councils the dues distribution calculation is split approximately 60/40%
-			</p>
+			<ul>
+				<li>The journal prices listed below reflect the discount for the membership level you have selected. (Sales tax and shipping are not included in the prices listed below.)</li>
+				<li>Print subscriptions will be delivered to the mailing address associated with your membership profile.</li>
+				<li>At checkout, the journal subscription rates will be matched to the mailing address provided with your membership profile, and you will be charged a U.S. or International rate accordingly.</li>
+				<li>You must select the "Outside U.S." to see International rates.</li>
+				
+			</ul>
+
 		</div>
 
 		<!-- List group -->
 		<ul class="list-group">
-			{% assign councils = site.data.councils.councils %}
-			{% for council in councils %}
+			{% assign journals = site.data.journals.journals %}
+			{% for journal in journals %}
 			<li class="list-group-item">
-				<label class="checkbox checkbox-council" for="{{council.councilCode}}">
+				<label class="checkbox checkbox-council" for="{{journal.journalCode}}">
 				<span class="icons">
 					<span class="first-icon"></span>
 					<span class="second-icon fa fa-check"></span>
 				</span>
-					<input data-type="checkbox-council" value="{{council.councilCode}}" id="{{council.councilCode}}" name="checkbox-council" data-toggle="checkbox" type="checkbox">
-					<strong>{{council.councilCode}}</strong>: {{council.name}}
+					<input data-type="checkbox-journal" value="{{journal.journalCode}}" id="{{journal.journalCode}}" name="checkbox-journal" data-toggle="checkbox" type="checkbox">
+					<strong>{{journal.name}}</strong>
+				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}"><em>(description)</em></a>
+
+					<span class="pull-right"><strong>{{journal.price}}</strong></span>
 
 				</label>
-				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
-
-				{% if council.addonid%}
-					<!-- Default disabled -->
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-11">
-							<label class="checkbox checkbox-addon" for="{{council.addonid}}">
-								<span class="icons">
-									<span class="first-icon"></span>
-									<span class="second-icon fa fa-check"></span>
-								</span>
-									<input value="{{council.addonid}}" data-type="checkbox-addon" id="{{council.addonid}}" name="checkbox-addon" data-toggle="checkbox" type="checkbox">
-									<strong>{{council.addonname}}</strong>
-
-								<span class="pull-right margin-left-10">(add) ${{council.addonprice}}</span>
-							</label>
-						</div>
-					</div>
 
 
-				{% endif %}
 
 			</li>
 			{% endfor %}
@@ -76,7 +64,7 @@ card: "membership-form-councils"
 	</div><!-- //.panel -->
 
 	<!--Submit-->
-	<a href="membership-form-councils-rank.html" type="submit" class="btn btn-primary"> Next </a>
+	<a href="membership-form-summary.html" type="submit" class="btn btn-primary"> Next </a>
 	</form>
 
 </div>
@@ -85,19 +73,19 @@ card: "membership-form-councils"
 <!--//{{council.snippet}}-->
 
 <!-- Modals for council descriptions -->
-{% assign councils = site.data.councils.councils %}
-{% for council in councils %}
+{% assign journals = site.data.journals.journals %}
+{% for journal in journals %}
 <!-- Modal -->
-<div class="modal fade" id="{{council.councilCode | append:'Modal'}}" tabindex="-1" role="dialog" aria-labelledby="{{council.councilCode | append:'Modal'}}">
+<div class="modal fade" id="{{journal.journalCode | append:'Modal'}}" tabindex="-1" role="dialog" aria-labelledby="{{journal.journalCode | append:'Modal'}}">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="{{council.councilCode | append:'ModalLabel'}}">{{council.name}}</h4>
+				<h4 class="modal-title" id="{{journal.journalCode | append:'ModalLabel'}}">{{journal.name}}</h4>
 			</div>
 			<div class="modal-body">
 				<p>
-					{{council.snippet}}
+					{{journal.snippet}}
 				</p>
 
 			</div>
@@ -140,13 +128,13 @@ card: "membership-form-councils"
 
 
 		//councilList obj to hold selected councils
-		var councilsList = {
+		var journalsList = {
 			_array: [],
 			makeList: function(){
 				councilsList._array = [];
-				$('.ui-sortable-handle.checked').each(function(){
+				/*$('.ui-sortable-handle.checked').each(function(){
 					councilsList._array.push($(this).attr('id'));
-				});
+				});*/
 				//console.log(councilsList._array);
 			}
 		};

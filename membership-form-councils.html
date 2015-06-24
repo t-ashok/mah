@@ -46,8 +46,9 @@ card: "membership-form-councils"
 					<input data-type="checkbox-council" value="{{council.councilCode}}" id="{{council.councilCode}}" name="checkbox-council" data-toggle="checkbox" type="checkbox">
 					<strong>{{council.councilCode}}</strong>: {{council.name}}
 
+					<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
 				</label>
-				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
+
 
 				{% if council.addonid%}
 					<!-- Default disabled -->
