@@ -54,13 +54,13 @@ card: "membership-form-journals"
 				{% if journal.print %}
 				<div class="row">
 					<div class="col-sm-12">
-						<label class="checkbox" for="print">
+						<label class="checkbox checkbox-print" for="{{journal.journalCode | append:'-PR'}}">
 							<span class="icons">
 								<span class="first-icon"></span>
 								<span class="second-icon fa fa-check"></span>
 							</span>
-							<input value="" id="print" name="print" data-toggle="checkbox" type="checkbox">
-						<span class="col-sm-10" style="margin-left: -15px">Print subscription (online subscription included) </span>
+							<input data-type="checkbox-print"  value="{{journal.journalCode | append:'-PR'}}" id="{{journal.journalCode | append:'-PR'}}" name="checkbox-print" data-toggle="checkbox" type="checkbox">
+						<span class="col-sm-9" style="margin-left: -15px">Print subscription (online subscription included) </span>
 						<span class="pull-right col-sm-3 col-xs-12">
 							<div class="row">
 							<span class="col-sm-6 col-xs-6 text-right padding-0">
@@ -129,14 +129,65 @@ card: "membership-form-journals"
 <!-- Script -->
 <script>
 	$(function() {
+		//li.list-group-item
+			//.checkbox.checkbox-journal, input[name=checkbox-journal]
+			//.checbox.checkbox-print, input[name=checkbox-print]
+
 		//On page load make sure all input checkbox is reset to unchecked
 		$('input:checkbox').prop('checked',false);
 
-		//Checkbox
+		//Checkbox journal
 		$('.checkbox.checkbox-journal').on('toggle',function(){
-
-				$(this).parent().toggleClass('checked');//for li element to highlight
+			$(this).parents('li.list-group-item').toggleClass('checked');//for li element to highlight
 		});
+
+		//Checkbox journal-print
+		$('.checkbox.checkbox-print').on('toggle',function(){
+			// Variables
+			var $parent = $(this).parents('li.list-group-item'),
+				$onlineJournal = $(this).parents('li.list-group-item').find('.checkbox.checkbox-journal'),
+				isOnlineJournalChecked = $onlineJournal.find('input[name=checkbox-journal]').prop('checked'),
+				getPrintSelectedState = $(this).find('input[name=checkbox-print]').prop('checked');
+
+			// Function
+			var disableOnlineJournal = function(){
+				$onlineJournal.find('input[name=checkbox-journal]').prop('disabled',true) && $onlineJournal.addClass('disabled text-muted');
+			};
+			var restoreOnlineJournal = function(){
+				$onlineJournal.find('input[name=checkbox-journal]').prop('disabled',false) && $onlineJournal.removeClass('disabled text-muted');
+			};
+
+			// Conditions
+			if(getPrintSelectedState){
+				//print selected:true
+				// 1.B if selected then unselected
+				if(isOnlineJournalChecked){
+					//unchecked
+					$onlineJournal.find('input[name=checkbox-journal]').checkbox('uncheck');
+					disableOnlineJournal();
+				}else {
+					disableOnlineJournal();
+				};
+				if(!$parent.hasClass('checked')){
+					$(this).parents('li.list-group-item').addClass('checked');
+
+				}
+
+			}else{
+				//print unselected:false
+				restoreOnlineJournal();
+				if(!isOnlineJournalChecked){
+					// if online journal is not checked
+				}
+				if($parent.hasClass('checked')){
+					$(this).parents('li.list-group-item').removeClass('checked');
+
+				}
+
+			}
+
+		});
+
 	});
 </script>
 
