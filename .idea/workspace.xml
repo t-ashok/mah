@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mah-theme.css" afterPath="$PROJECT_DIR$/css/mah-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-councils-rank.html" afterPath="$PROJECT_DIR$/membership-form-councils-rank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-councils.html" afterPath="$PROJECT_DIR$/membership-form-councils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-journals.html" afterPath="$PROJECT_DIR$/membership-form-journals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/step-card.html" afterPath="$PROJECT_DIR$/_includes/components/step-card.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -141,10 +138,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="membership-form-journals.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="membership-form-journals.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36121672">
+                <state vertical-scroll-proportion="-3.6538463">
                   <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
                   <folding>
                     <element signature="n#style#0;n#span#1;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
@@ -153,11 +150,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="step-card.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="step-card.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_includes/components/step-card.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-17.5">
-                  <caret line="28" column="130" selection-start-line="28" selection-start-column="130" selection-end-line="28" selection-end-column="130" />
+                <state vertical-scroll-proportion="0.3380783">
+                  <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -230,13 +227,13 @@
         <option value="$PROJECT_DIR$/_site/membership.html" />
         <option value="$PROJECT_DIR$/_includes/components/testimonials.html" />
         <option value="$PROJECT_DIR$/_data/councils.json" />
-        <option value="$PROJECT_DIR$/_includes/components/step-card.html" />
         <option value="$PROJECT_DIR$/membership-form-checkout.html" />
         <option value="$PROJECT_DIR$/_data/journals.json" />
         <option value="$PROJECT_DIR$/membership-form-councils.html" />
         <option value="$PROJECT_DIR$/membership-form-councils-rank.html" />
         <option value="$PROJECT_DIR$/membership-form-journals.html" />
         <option value="$PROJECT_DIR$/css/mah-theme.css" />
+        <option value="$PROJECT_DIR$/_includes/components/step-card.html" />
       </list>
     </option>
   </component>
@@ -621,12 +618,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00083" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
-      <created>1433190873184</created>
-      <option name="number" value="00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1433190873184</updated>
-    </task>
     <task id="LOCAL-00084" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
       <created>1433192175219</created>
       <option name="number" value="00084" />
@@ -915,7 +906,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435185092368</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Tu: Additional membership pages - Journals&#10;&#10;">
+      <created>1435186337203</created>
+      <option name="number" value="00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1435186337203</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1304,14 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/step-card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="28" column="130" selection-start-line="28" selection-start-column="130" selection-end-line="28" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-checkout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.44730392">
@@ -1364,7 +1353,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36121672">
+        <state vertical-scroll-proportion="-3.6538463">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#span#1;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
@@ -1376,6 +1365,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60714287">
           <caret line="2914" column="31" selection-start-line="2914" selection-start-column="31" selection-end-line="2914" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/step-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3380783">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding />
         </state>
       </provider>
