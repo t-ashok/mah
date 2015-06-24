@@ -1,0 +1,194 @@
+---
+layout: l_right_sidebar
+bodyClass: "membership-tiers"
+sidebar: "sidebar_membership_tiers.html"
+title: "Become a Member"
+showTitle: true
+card: "membership-form-journals"
+---
+<h2 class="heading border-1-bottom text-primary">Premium Professional Plus</h2>
+
+
+
+{% include components/step-card.html %}
+
+
+<!--Membership Form-->
+
+<div class="col-sm-12">
+	<form action="" method="post" role="form">
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">Please select the journals you are interested in receiving either online only or in print:</div>
+		<div class="panel-body">
+			<ul>
+				<li>The journal prices listed below reflect the discount for the membership level you have selected. (Sales tax and shipping are not included in the prices listed below.)</li>
+				<li>Print subscriptions will be delivered to the mailing address associated with your membership profile.</li>
+				<li>At checkout, the journal subscription rates will be matched to the mailing address provided with your membership profile, and you will be charged a U.S. or International rate accordingly.</li>
+				<li>You must select the "Outside U.S." to see International rates.</li>
+				
+			</ul>
+
+		</div>
+
+		<!-- List group -->
+		<ul class="list-group">
+			{% assign journals = site.data.journals.journals %}
+			{% for journal in journals %}
+			<li class="list-group-item">
+				<strong>{{journal.name}}</strong>
+				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}"><em>(description)</em></a>
+				<label class="checkbox checkbox-journal" for="{{journal.journalCode}}">
+				<span class="icons">
+					<span class="first-icon"></span>
+					<span class="second-icon fa fa-check"></span>
+				</span>
+					<input data-type="checkbox-journal" value="{{journal.journalCode}}" id="{{journal.journalCode}}" name="checkbox-journal" data-toggle="checkbox" type="checkbox">
+
+					<span class="">Online subscription</span>
+					<span class="pull-right"><strong>{{journal.price}}</strong></span>
+
+				</label>
+				<!-- if print is available -->
+				<!-- show -->
+				{% if journal.print %}
+				<div class="row">
+					<div class="col-sm-12">
+						<label class="checkbox checkbox-print" for="{{journal.journalCode | append:'-PR'}}">
+							<span class="icons">
+								<span class="first-icon"></span>
+								<span class="second-icon fa fa-check"></span>
+							</span>
+							<input data-type="checkbox-print"  value="{{journal.journalCode | append:'-PR'}}" id="{{journal.journalCode | append:'-PR'}}" name="checkbox-print" data-toggle="checkbox" type="checkbox">
+						<span class="col-sm-9" style="margin-left: -15px">Print subscription (online subscription included) </span>
+						<span class="pull-right col-sm-3 col-xs-12">
+							<div class="row">
+							<span class="col-sm-6 col-xs-6 text-right padding-0">
+								<strong>{{journal.inside}}</strong><br/>
+								<span class="text-muted text-serif"><em>Domestic</em></span>
+							</span>
+
+							<span class="col-sm-6 col-xs-6 text-right padding-0">
+								<strong>{{journal.outside}}</strong><br/>
+								<span class="text-muted text-serif"><em>International</em></span>
+							</span>
+							</div>
+						</span>
+
+						</label>
+
+					</div>
+				</div>
+				{% endif %}
+
+
+			</li>
+			{% endfor %}
+		</ul>
+	</div><!-- //.panel -->
+
+	<!--Submit-->
+	<a href="membership-form-summary.html" type="submit" class="btn btn-primary"> Next </a>
+	</form>
+
+</div>
+
+
+<!--//{{council.snippet}}-->
+
+<!-- Modals for council descriptions -->
+{% assign journals = site.data.journals.journals %}
+{% for journal in journals %}
+<!-- Modal -->
+<div class="modal fade" id="{{journal.journalCode | append:'Modal'}}" tabindex="-1" role="dialog" aria-labelledby="{{journal.journalCode | append:'Modal'}}">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="{{journal.journalCode | append:'ModalLabel'}}">{{journal.name}}</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+					{{journal.snippet}}
+				</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+
+
+
+
+<!-- Script -->
+<script>
+	$(function() {
+		//li.list-group-item
+			//.checkbox.checkbox-journal, input[name=checkbox-journal]
+			//.checbox.checkbox-print, input[name=checkbox-print]
+
+		//On page load make sure all input checkbox is reset to unchecked
+		$('input:checkbox').prop('checked',false);
+
+		//Checkbox journal
+		$('.checkbox.checkbox-journal').on('toggle',function(){
+			$(this).parents('li.list-group-item').toggleClass('checked');//for li element to highlight
+		});
+
+		//Checkbox journal-print
+		$('.checkbox.checkbox-print').on('toggle',function(){
+			// Variables
+			var $parent = $(this).parents('li.list-group-item'),
+				$onlineJournal = $(this).parents('li.list-group-item').find('.checkbox.checkbox-journal'),
+				isOnlineJournalChecked = $onlineJournal.find('input[name=checkbox-journal]').prop('checked'),
+				getPrintSelectedState = $(this).find('input[name=checkbox-print]').prop('checked');
+
+			// Function
+			var disableOnlineJournal = function(){
+				$onlineJournal.find('input[name=checkbox-journal]').prop('disabled',true) && $onlineJournal.addClass('disabled text-muted');
+			};
+			var restoreOnlineJournal = function(){
+				$onlineJournal.find('input[name=checkbox-journal]').prop('disabled',false) && $onlineJournal.removeClass('disabled text-muted');
+			};
+
+			// Conditions
+			if(getPrintSelectedState){
+				//print selected:true
+				// 1.B if selected then unselected
+				if(isOnlineJournalChecked){
+					//unchecked
+					$onlineJournal.find('input[name=checkbox-journal]').checkbox('uncheck');
+					disableOnlineJournal();
+				}else {
+					disableOnlineJournal();
+				};
+				if(!$parent.hasClass('checked')){
+					$(this).parents('li.list-group-item').addClass('checked');
+
+				}
+
+			}else{
+				//print unselected:false
+				restoreOnlineJournal();
+				if(!isOnlineJournalChecked){
+					// if online journal is not checked
+				}
+				if($parent.hasClass('checked')){
+					$(this).parents('li.list-group-item').removeClass('checked');
+
+				}
+
+			}
+
+		});
+
+	});
+</script>
+
+

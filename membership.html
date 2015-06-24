@@ -5,7 +5,7 @@ bodyClass: "membership"
 ---
 <div class="page page-type" role="main">
 <!--Content-->
- <div class="container-fluid jumbotron" style="background: url('img/sample/bg_people.jpg') repeat-x #000;background-position: cover; min-height: 400px; ">
+ <div class="container-fluid jumbotron" style="background: url('img/sample/bg_people.jpg') repeat-x #000;background-position: cover; min-height: 300px; ">
      <script>
          $(function(){
              var x = 0;
@@ -15,78 +15,29 @@ bodyClass: "membership"
              }, 60);
          })
      </script>
+
      <div class="row">
          <div class="container">
 
             <div class="col-md-10 col-sm-12">
-                 <h1 class="media-heading animated fadeInLeft" style="margin-top: 40px;color:#fff;font-weight: 100;">Join or Renew Today!</h3>
+                 <h1 class="media-heading animated fadeInLeft" style="margin-top: 20px;color:#fff;font-weight: 100;">Join or Renew Today!</h3>
                  <p style="color:#f7f7f7;">
                      Joining as an AHA/ASA Professional Member puts you in touch with more than 32,000 like-minded individuals and brings you closer to the heart and soul of the AHA and its mission of building healthier lives, free of cardiovascular diseases and stroke.
                  </p>
-                 <p>
-                     <a href="membership-tiers.html" role="button" class="btn btn-primary btn-md animated fadeInUp"> Become A Member</a>
-                     <a data-toggle="collapse" href="#login" aria-expanded="false" aria-controls="login" role="button" class="btn btn-default btn-md animated fadeInUp text-white" style="white-space: normal;"> Renew Your Membership</a>
-                     <!--Login-->
-                     <div class="collapse col-sm-10" id="login" style="margin-left: -10px;">
-                         <div class="well">
+                     <p><a href="#join_membership" class="btn btn-primary" role="button">Join Now</a>
+                     <a href="membership-form.html" class="btn btn-default" role="button">Renew Your Membership</a></p>
 
-
-                             <button type="button" class="close" data-toggle="collapse" data-target="#login" aria-expanded="false" aria-controls="login"><span aria-hidden="true">&times;</span></button>
-                             <h3 class="lead media-heading">Login</h3>
-
-                             <form class="form-inline">
-
-                                 <div class="form-group">
-                                     <label for="exampleInputName2">Username</label>
-                                     <input type="text" class="form-control" id="exampleInputName2" placeholder="jane.doe@example.com">
-                                 </div>
-                                 <div class="form-group margin-left-10">
-                                     <label for="exampleInputEmail2">Password</label>
-                                     <input type="password" class="form-control" id="exampleInputEmail2" placeholder="">
-                                 </div>
-                                 <a href="#" type="submit" class="btn btn-sm btn-primary margin-left-10"> Log In</a>
-                             </form>
-                         </div>
-                     </div>
-                 </p>
             </div>
          </div>
      </div>
  </div>
 
-    <div class="container-fluid benefits border-1-bottom border-color-grey margin-top-10 margin-bottom-10">
-        <div class="row">
-            <div class="container">
-                <div class="col-md-4">
-                    {% include components/testimonials.html %}
-                </div>
-                <div class="col-md-8">
-                    <h3 class="text-primary" style="text-transform: uppercase;">Access to our career enhancing benefits, including:</h3>
 
-                    <ul class="">
-                        <li>Up to $400 in savings on Scientific Sessions registration and International Stroke Conference registration plus savings at AHA’s other scientific conferences</li>
-                        <li>Customized access to research and clinical information across multiple specialties</li>
-                        <li>Leadership Opportunities</li>
-                        <li>Be a part of our AHA Professional Online Network — connect with peers and leaders in your specialty</li>
-                        <li>Research grant application fee waived for members. You can apply at my.americanheart.org/research</li>
-                        <li>Online access to AHA scientific journals</li>
-                        <li>Affiliate with our Scientific Councils</li>
-                    </ul>
-
-                </div><!-- end col -->
-
-            </div>
-
-
-
-        </div><!-- end row -->
-    </div><!-- end container -->
-    <div class="spacer"></div>
 
 
 
 <!-- Table -->
-<div class="container-fluid">
+<div id="join_membership" class="container-fluid">
     <div class="row">
         <div class="container">
             <div class="col-md-12">
@@ -105,107 +56,11 @@ bodyClass: "membership"
                         <tbody>
                         <tr>
                             <td>
-                                <h4 class="text-primary media-heading">General</h4>
-                                <h5 class="lead media-heading">
-                                    $75<span class="small">/YEAR</span>
-                                </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
-                                <br/>
-                                <a href="" style="font-family: serif;"><em>More Details</em></a>
-                            </td>
-                            <td>
-                                1 Council
-                            </td>
-                            <td>
-                                Additional cost
-                            </td>
-                            <td>
-                                Email updates tailored to deliver subspecialty content dealing with clinical and/or research  topics, news releases, recent articles, "hot" news, etc.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="text-primary media-heading">Student/Trainee</h4>
-                                <h5 class="lead media-heading">
-                                    $75<span class="small">/YEAR</span>
-                                </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
-                                <br/>
-                                <a href="" style="font-family: serif;"><em>More Details</em></a>
-                            </td>
-                            <td>
-                                2 Councils
-                            </td>
-                            <td>
-                                XX% Discount on <strong>printed</strong> journal
-                            </td>
-                            <td>
-                                Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="text-primary media-heading">Early Career</h4>
-                                <h5 class="lead media-heading">
-                                    $75<span class="small">/YEAR</span>
-                                </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
-                                <br/>
-                                <a href="" style="font-family: serif;"><em>More Details</em></a>
-                            </td>
-                            <td>
-                                2 Councils
-                            </td>
-                            <td>
-                                XX% Discount on <strong>printed</strong> journal
-                            </td>
-                            <td>
-                                Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="text-primary media-heading">Professional</h4>
-                                <h5 class="lead media-heading">
-                                    $250<span class="small">/YEAR</span>
-                                </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
-                                <br/>
-                                <a href="" style="font-family: serif;"><em>More Details</em></a>
-                            </td>
-                            <td>
-                                3 Councils
-                            </td>
-                            <td>
-                                7 Free Online Journal
-                            </td>
-                            <td>
-                                <ul class="list-unstyled">
-                                    <li><u>Conferences and Education</u></li>
-                                    <li>Up to <strong>$370</strong> off Scientific Sessions</li>
-                                    <li>Up to <strong>$300</strong> off specialty conference</li>
-                                    <li>Up to <strong>$300</strong> off International Stroke Conference</li>
-                                    <li>Up to <strong>$200</strong> off symposia</li>
-                                </ul>
-
-                                <ul class="list-unstyled">
-                                    <li><u>Scientific Publications</u></li>
-                                    <li>Substantial discounts to print AHA scientific journal subscriptions</li>
-                                    <li><strong>20%</strong> off on a selection of LWW Titles</li>
-                                    <li><strong>25%</strong> off Wiley-Blackwell books, including books in the AHA Clinical Series</li>
-                                </ul>
-
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <h4 class="text-primary media-heading">Professional Plus</h4>
+                                <h4 class="text-primary media-heading">Professional Premium Plus</h4>
                                 <h5 class="lead media-heading">
                                     $450<span class="small">/YEAR</span>
                                 </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
                                 <br/>
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
@@ -234,11 +89,104 @@ bodyClass: "membership"
                         </tr>
                         <tr>
                             <td>
+                                <h4 class="text-primary media-heading">Professional Premium</h4>
+                                <h5 class="lead media-heading">
+                                    $250<span class="small">/YEAR</span>
+                                </h5>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <br/>
+                                <a href="" style="font-family: serif;"><em>More Details</em></a>
+                            </td>
+                            <td>
+                                3 Councils
+                            </td>
+                            <td>
+                                7 Free Online Journal
+                            </td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li><u>Conferences and Education</u></li>
+                                    <li>Up to <strong>$370</strong> off Scientific Sessions</li>
+                                    <li>Up to <strong>$300</strong> off specialty conference</li>
+                                    <li>Up to <strong>$300</strong> off International Stroke Conference</li>
+                                    <li>Up to <strong>$200</strong> off symposia</li>
+                                </ul>
+
+                                <ul class="list-unstyled">
+                                    <li><u>Scientific Publications</u></li>
+                                    <li>Substantial discounts to print AHA scientific journal subscriptions</li>
+                                    <li><strong>20%</strong> off on a selection of LWW Titles</li>
+                                    <li><strong>25%</strong> off Wiley-Blackwell books, including books in the AHA Clinical Series</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="text-primary media-heading">General</h4>
+                                <h5 class="lead media-heading">
+                                    $75<span class="small">/YEAR</span>
+                                </h5>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <br/>
+                                <a href="" style="font-family: serif;"><em>More Details</em></a>
+                            </td>
+                            <td>
+                                1 Council
+                            </td>
+                            <td>
+                                Additional cost
+                            </td>
+                            <td>
+                                Email updates tailored to deliver subspecialty content dealing with clinical and/or research  topics, news releases, recent articles, "hot" news, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="text-primary media-heading">Early Career</h4>
+                                <h5 class="lead media-heading">
+                                    $75<span class="small">/YEAR</span>
+                                </h5>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <br/>
+                                <a href="" style="font-family: serif;"><em>More Details</em></a>
+                            </td>
+                            <td>
+                                2 Councils
+                            </td>
+                            <td>
+                                XX% Discount on <strong>printed</strong> journal
+                            </td>
+                            <td>
+                                Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="text-primary media-heading">Student/Trainee</h4>
+                                <h5 class="lead media-heading">
+                                    $75<span class="small">/YEAR</span>
+                                </h5>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <br/>
+                                <a href="" style="font-family: serif;"><em>More Details</em></a>
+                            </td>
+                            <td>
+                                2 Councils
+                            </td>
+                            <td>
+                                XX% Discount on <strong>printed</strong> journal
+                            </td>
+                            <td>
+                                Online access to non-AHA affiliated journals 24-hour cardiovascular news feed Up to 36 tokens to apply towards CME courses available online through Circulation, Stroke, and Hypertension with subscription to one or more of those journals
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <h4 class="text-primary media-heading">Guest</h4>
                                 <h5 class="lead media-heading">
 
                                 </h5>
-                                <a href="" role="button" class="btn btn-primary btn-sm"> Join Now </a>
+                                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm"> Join Now </a>
                                 <br/>
                                 <a href="" style="font-family: serif;"><em>More Details</em></a>
                             </td>
@@ -256,57 +204,17 @@ bodyClass: "membership"
                     </table>
                 </div>
             </div>
+
+
+
+
         </div>
     </div>
 
 </div>
 <!-- -->
 
-<!-- -->
-<div class="container-fluid pricing-option bg-color-lightgrey">
-    <div class="row">
-        <div class="container">
-                <!-- col -->
-                <div class="col-md-6">
-                    <div class="card">
-                        <h2>Multi-Year Membership</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
-                        </p>
-                        <ul>
-                            <li>List item 01</li>
-                            <li>List item 02</li>
-                            <li>List item 03</li>
-                            <li>List item 04</li>
 
-                        </ul>
-                        <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
-                    </div>
-                </div>
-                <!-- col -->
-                <div class="col-md-6">
-                    <div class="card">
-                        <h2>Group Membership</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet ipsam itaque quod temporibus ullam vitae! Dolor earum, eos, expedita explicabo in magni qui quisquam similique suscipit tempora temporibus, voluptas?
-                        </p>
-                        <ul>
-                            <li>List item 01</li>
-                            <li>List item 02</li>
-                            <li>List item 03</li>
-                            <li>List item 04</li>
-                        </ul>
-                        <a href="#" role="button" class="btn btn-primary"> Contact Us </a>
-                    </div>
-                </div>
-
-            <!--//.container-->
-        </div>
-        <!--//.row -->
-    </div>
-    <!--//.container-fluid-->
-</div>
-<!-- -->
     <!-- 3 cards -->
     <div class="container-fluid sectionName">
         <div class="row">
