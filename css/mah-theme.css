@@ -2911,6 +2911,10 @@ label.checkbox > span {
     /*font-style: italic;*/
 }
 
+.panel .list-group-item .row {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
 
 /* ==========================================================================
 Chosen
