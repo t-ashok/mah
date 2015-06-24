@@ -1039,3 +1039,42 @@ visibility: hidden;
 .img-responsive {
     width: 100%;
 }
+
+/*Privacy Statement*/
+.privacyStatement{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.tier,
+.councilSummary{
+    padding-left:0px;
+}
+.cost{
+    float:right;
+}
+.careerCost{
+    float:right;
+    padding-left:73px;
+}
+.councilCost{
+    float:right;
+    padding-left: 85px;
+}
+.paginationSummary{
+    float:right;
+}
+.buttonEdit{
+    margin-top:8px;
+}
+.purchaseSummaryContent1{
+    width:15%;
+}
+.addressMargin{
+    margin-top:5px;
+}
+.note{
+    margin-top:10px;
+}
+.memberProfileMargin{
+    margin-bottom:10px
+}
