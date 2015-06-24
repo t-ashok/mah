@@ -12,14 +12,7 @@ card: "membership-form-journals"
 
 {% include components/step-card.html %}
 
-<!-- Alert -->
-<!-- This journal selection page is for GENERAL membership only -->
-<div class="col-sm-12">
-	<div class="alert alert-success">
-		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-		<strong>DEVELOPER NOTE: </strong> This journals selection page is for <strong>GENERAL MEMBERSHIP</strong> only!. (À la carte)
-	</div>
-</div>
+
 <!--Membership Form-->
 
 <div class="col-sm-12">
@@ -43,19 +36,50 @@ card: "membership-form-journals"
 			{% assign journals = site.data.journals.journals %}
 			{% for journal in journals %}
 			<li class="list-group-item">
-				<label class="checkbox checkbox-council" for="{{journal.journalCode}}">
+				<strong>{{journal.name}}</strong>
+				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}"><em>(description)</em></a>
+				<label class="checkbox checkbox-journal" for="{{journal.journalCode}}">
 				<span class="icons">
 					<span class="first-icon"></span>
 					<span class="second-icon fa fa-check"></span>
 				</span>
 					<input data-type="checkbox-journal" value="{{journal.journalCode}}" id="{{journal.journalCode}}" name="checkbox-journal" data-toggle="checkbox" type="checkbox">
-					<strong>{{journal.name}}</strong>
-				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}"><em>(description)</em></a>
 
+					<span class="">Online subscription</span>
 					<span class="pull-right"><strong>{{journal.price}}</strong></span>
 
 				</label>
+				<!-- if print is available -->
+				<!-- show -->
+				{% if journal.print %}
+				<div class="row">
+					<div class="col-sm-12">
+						<label class="checkbox" for="print">
+							<span class="icons">
+								<span class="first-icon"></span>
+								<span class="second-icon fa fa-check"></span>
+							</span>
+							<input value="" id="print" name="print" data-toggle="checkbox" type="checkbox">
+						<span class="">Print subscription (online subscription included) </span>
+						<span class="pull-right col-sm-3">
+							<div class="row">
+							<span class="col-sm-6 text-right padding-0">
+								<strong>{{journal.inside}}</strong><br/>
+								<span class="text-muted text-serif"><em>Domestic</em></span>
+							</span>
 
+							<span class="col-sm-6 text-right padding-0">
+								<strong>{{journal.outside}}</strong><br/>
+								<span class="text-muted text-serif"><em>International</em></span>
+							</span>
+							</div>
+						</span>
+
+						</label>
+
+					</div>
+				</div>
+				{% endif %}
 
 
 			</li>
@@ -98,126 +122,20 @@ card: "membership-form-journals"
 </div>
 {% endfor %}
 
-<!-- Modal: Warning -->
-
-<div class="modal fade" id="warningModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Warning</h4>
-			</div>
-			<div class="modal-body">
-				<strong>Please Note</strong>: You have chosen to add a third council and an additional <strong>$60.00</strong> will be added to your total.
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 
 
-<!-- Activate the sort -->
+
+<!-- Script -->
 <script>
 	$(function() {
 		//On page load make sure all input checkbox is reset to unchecked
 		$('input:checkbox').prop('checked',false);
 
-
-		//councilList obj to hold selected councils
-		var journalsList = {
-			_array: [],
-			makeList: function(){
-				councilsList._array = [];
-				/*$('.ui-sortable-handle.checked').each(function(){
-					councilsList._array.push($(this).attr('id'));
-				});*/
-				//console.log(councilsList._array);
-			}
-		};
-
-		/*$( "#sortable" ).sortable({
-			update:function(){
-				councilsList.makeList();
-			}
-		});*/
-
 		//Checkbox
-		var hideMe = function(){
-			var $elems = $("input[name='checkbox-council']:checkbox:not(:checked)");
-			$elems.each(function(){
-				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled');
-				//console.log($(this));
-			});
-			councilsList.makeList();
-		};
-		var showMeAll = function(){
-			var $elems = $("input:checkbox:not(:checked)");
-			$elems.each(function(){
-				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled');
-				//console.log($(this));
-			});
-		};
-		var countChecked = function() {
-			var n = $( "input[name='checkbox-council']:checkbox:checked" ).length;
-			var numberCouncilAllowMax = 3;
-			setTimeout(function(){
-				if (n >= numberCouncilAllowMax) {
-					hideMe();
-					hideAllAddons();
-					//trigger warning modal, warningModal
-					$('#warningModal').modal('show')
+		$('.checkbox.checkbox-journal').on('toggle',function(){
 
-				}else{
-					showMeAll();
-				}
-			},200);
-		};
-
-		var hideAllAddons = function() {
-			//$("input[name=checkbox-addon]").prop('disabled',true) && $("input[name=checkbox-addon]").parent().addClass('disabled');
-			var $elems = $("input[name=checkbox-addon]");
-			$elems.each(function(i){
-				//sibling checkbox value
-				var isParentChecked = $(this).parents('li').find('input[name=checkbox-council]').prop('checked');
-				if(!isParentChecked){
-					//disable
-					$(this).prop('disabled',true) && $(this).parent().addClass('disabled');
-
-
-				};
-			});
-
-		};
-
-
-
-		$('.checkbox.checkbox-council').on('toggle',function(){
-			countChecked();
-			$(this).parent().toggleClass('checked');//for li element to highlight
-			//alert("check council");
-			//if have addon
-			var isChecked = ($(this).find('input:checkbox').prop('checked'));
-			if(!isChecked){
-				//not checked, then uncheck addon
-				var $checkboxAddon = $(this).parents('li').find('input[name=checkbox-addon]');
-				$checkboxAddon.checkbox('uncheck');
-
-			}
-
-
-		});
-		$('.checkbox.checkbox-addon').on('toggle',function(){
-			//get parent checkbox
-			var $parentCheckbox = $(this).parents('li').find('input[name=checkbox-council]');
-			var isParentChecked = $parentCheckbox.prop('checked');//checked:true, unchecked:false
-			if(!isParentChecked){
-				$parentCheckbox.checkbox('toggle');
-			}
-			//
+				$(this).parent().toggleClass('checked');//for li element to highlight
 		});
 	});
 </script>
