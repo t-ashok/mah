@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/step-card.html" afterPath="$PROJECT_DIR$/_includes/components/step-card.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -618,12 +617,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00084" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
-      <created>1433192175219</created>
-      <option name="number" value="00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1433192175219</updated>
-    </task>
     <task id="LOCAL-00085" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
       <created>1433258701571</created>
       <option name="number" value="00085" />
@@ -912,7 +905,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435186337203</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Tu: Additional membership pages - Journals&#10;&#10;">
+      <created>1435186453479</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1435186453479</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="ToolWindowManager">
