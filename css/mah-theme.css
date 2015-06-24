@@ -1472,7 +1472,7 @@ select[multiple].input-lg {
         right: 2px;
     }
     .has-left-sidebar .sidebar {
-        float: none;
+        /*float: none;*/
     }
 
 
