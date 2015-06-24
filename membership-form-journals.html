@@ -1,0 +1,237 @@
+---
+layout: l_right_sidebar
+bodyClass: "membership-tiers"
+sidebar: "sidebar_membership_tiers.html"
+title: "Become a Member"
+showTitle: true
+card: "membership-form-councils"
+---
+<h2 class="heading border-1-bottom text-primary">Premium Professional Plus</h2>
+
+
+
+{% include components/step-card.html %}
+
+
+<!--Membership Form-->
+
+<div class="col-sm-12">
+	<form action="" method="post" role="form">
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">Please select the Councils you are interested in affiliating with</div>
+		<div class="panel-body">
+			<!--<ul>-->
+				<!--<li>The AHA/ASA Professional Membership program is comprised of 16 Scientific Councils.</li>-->
+				<!--<li>Each Council represents specific specialty fields contributing to the mission of the association.</li>-->
+				<!--<li>By affiliating with these groups you will help support and contribute to scientific and medical advances in the councils' specified fields.</li>-->
+			<!--</ul>-->
+			<p>Members may affiliate with <strong>two</strong> Scientific Councils, and an optional third council for an additional <strong>$60.00</strong>.</p>
+			<p>Council Affiliation Distribution Definitions
+				By choosing one Primary council, that council will receive 100% of the dues distribution calculation
+				By choosing a Primary and Secondary councils the dues distribution calculation is split approximately 60/40%
+			</p>
+		</div>
+
+		<!-- List group -->
+		<ul class="list-group">
+			{% assign councils = site.data.councils.councils %}
+			{% for council in councils %}
+			<li class="list-group-item">
+				<label class="checkbox checkbox-council" for="{{council.councilCode}}">
+				<span class="icons">
+					<span class="first-icon"></span>
+					<span class="second-icon fa fa-check"></span>
+				</span>
+					<input data-type="checkbox-council" value="{{council.councilCode}}" id="{{council.councilCode}}" name="checkbox-council" data-toggle="checkbox" type="checkbox">
+					<strong>{{council.councilCode}}</strong>: {{council.name}}
+
+				</label>
+				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
+
+				{% if council.addonid%}
+					<!-- Default disabled -->
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-11">
+							<label class="checkbox checkbox-addon" for="{{council.addonid}}">
+								<span class="icons">
+									<span class="first-icon"></span>
+									<span class="second-icon fa fa-check"></span>
+								</span>
+									<input value="{{council.addonid}}" data-type="checkbox-addon" id="{{council.addonid}}" name="checkbox-addon" data-toggle="checkbox" type="checkbox">
+									<strong>{{council.addonname}}</strong>
+
+								<span class="pull-right margin-left-10">(add) ${{council.addonprice}}</span>
+							</label>
+						</div>
+					</div>
+
+
+				{% endif %}
+
+			</li>
+			{% endfor %}
+		</ul>
+	</div><!-- //.panel -->
+
+	<!--Submit-->
+	<a href="membership-form-councils-rank.html" type="submit" class="btn btn-primary"> Next </a>
+	</form>
+
+</div>
+
+
+<!--//{{council.snippet}}-->
+
+<!-- Modals for council descriptions -->
+{% assign councils = site.data.councils.councils %}
+{% for council in councils %}
+<!-- Modal -->
+<div class="modal fade" id="{{council.councilCode | append:'Modal'}}" tabindex="-1" role="dialog" aria-labelledby="{{council.councilCode | append:'Modal'}}">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="{{council.councilCode | append:'ModalLabel'}}">{{council.name}}</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+					{{council.snippet}}
+				</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+<!-- Modal: Warning -->
+
+<div class="modal fade" id="warningModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Warning</h4>
+			</div>
+			<div class="modal-body">
+				<strong>Please Note</strong>: You have chosen to add a third council and an additional <strong>$60.00</strong> will be added to your total.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Activate the sort -->
+<script>
+	$(function() {
+		//On page load make sure all input checkbox is reset to unchecked
+		$('input:checkbox').prop('checked',false);
+
+
+		//councilList obj to hold selected councils
+		var councilsList = {
+			_array: [],
+			makeList: function(){
+				councilsList._array = [];
+				$('.ui-sortable-handle.checked').each(function(){
+					councilsList._array.push($(this).attr('id'));
+				});
+				//console.log(councilsList._array);
+			}
+		};
+
+		/*$( "#sortable" ).sortable({
+			update:function(){
+				councilsList.makeList();
+			}
+		});*/
+
+		//Checkbox
+		var hideMe = function(){
+			var $elems = $("input[name='checkbox-council']:checkbox:not(:checked)");
+			$elems.each(function(){
+				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled');
+				//console.log($(this));
+			});
+			councilsList.makeList();
+		};
+		var showMeAll = function(){
+			var $elems = $("input:checkbox:not(:checked)");
+			$elems.each(function(){
+				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled');
+				//console.log($(this));
+			});
+		};
+		var countChecked = function() {
+			var n = $( "input[name='checkbox-council']:checkbox:checked" ).length;
+			var numberCouncilAllowMax = 3;
+			setTimeout(function(){
+				if (n >= numberCouncilAllowMax) {
+					hideMe();
+					hideAllAddons();
+					//trigger warning modal, warningModal
+					$('#warningModal').modal('show')
+
+				}else{
+					showMeAll();
+				}
+			},200);
+		};
+
+		var hideAllAddons = function() {
+			//$("input[name=checkbox-addon]").prop('disabled',true) && $("input[name=checkbox-addon]").parent().addClass('disabled');
+			var $elems = $("input[name=checkbox-addon]");
+			$elems.each(function(i){
+				//sibling checkbox value
+				var isParentChecked = $(this).parents('li').find('input[name=checkbox-council]').prop('checked');
+				if(!isParentChecked){
+					//disable
+					$(this).prop('disabled',true) && $(this).parent().addClass('disabled');
+
+
+				};
+			});
+
+		};
+
+
+
+		$('.checkbox.checkbox-council').on('toggle',function(){
+			countChecked();
+			$(this).parent().toggleClass('checked');//for li element to highlight
+			//alert("check council");
+			//if have addon
+			var isChecked = ($(this).find('input:checkbox').prop('checked'));
+			if(!isChecked){
+				//not checked, then uncheck addon
+				var $checkboxAddon = $(this).parents('li').find('input[name=checkbox-addon]');
+				$checkboxAddon.checkbox('uncheck');
+
+			}
+
+
+		});
+		$('.checkbox.checkbox-addon').on('toggle',function(){
+			//get parent checkbox
+			var $parentCheckbox = $(this).parents('li').find('input[name=checkbox-council]');
+			var isParentChecked = $parentCheckbox.prop('checked');//checked:true, unchecked:false
+			if(!isParentChecked){
+				$parentCheckbox.checkbox('toggle');
+			}
+			//
+		});
+	});
+</script>
+
+
