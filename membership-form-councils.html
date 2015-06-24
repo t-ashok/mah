@@ -182,16 +182,13 @@ card: "membership-form-councils"
 		var selectedCouncilsRaw;//just a serialize array from jquery of selected council
 		var selectCouncilsClean = [];//clean list with formatted string
 
-
 		var selectedCouncils = [];
 
 		//On page load make sure all input checkbox is reset to unchecked
 		$('input:checkbox').prop('checked',false);
 
-
-
-
-		//Checkbox
+		// CHECKBOXES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		// HIDE ALL CHECKBOXES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 		var hideMe = function(){
 			var $elems = $("input[name='checkbox-council']:checkbox:not(:checked)");
 			$elems.each(function(){
@@ -200,6 +197,9 @@ card: "membership-form-councils"
 			});
 
 		};
+
+		// SHOW ALL CHECKBOXES- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 		var showMeAll = function(){
 			var $elems = $("input:checkbox:not(:checked)");
 			$elems.each(function(){
@@ -207,6 +207,9 @@ card: "membership-form-councils"
 				//console.log($(this));
 			});
 		};
+
+		// COUNT ALL CHECKED CHECKBOXES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 		var countChecked = function() {
 			var n = $( "input[name='checkbox-council']:checkbox:checked" ).length;
 			var numberCouncilAllowMax = 3;
@@ -223,6 +226,8 @@ card: "membership-form-councils"
 			},200);
 		};
 
+		// HIDE ALL ADDON CHECKBOXES - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 		var hideAllAddons = function() {
 			//$("input[name=checkbox-addon]").prop('disabled',true) && $("input[name=checkbox-addon]").parent().addClass('disabled');
 			var $elems = $("input[name=checkbox-addon]");
@@ -238,7 +243,7 @@ card: "membership-form-councils"
 			});
 
 		};
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		// CREATE COUNCIL ARRAY LIST - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 		var createSelectedCouncilsList = function (){
 			selectCouncilsClean = [];//clean array
@@ -265,7 +270,7 @@ card: "membership-form-councils"
 
 		};
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		// WRITE TO MODAL FOR DISPLAY - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 		var writeCouncilListToModal = function(){
 			var $theModal = $('#councilsSelectedModal'),
@@ -283,7 +288,7 @@ card: "membership-form-councils"
 
 		};
 
-		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		// TRIGGER - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 		$('.checkbox.checkbox-council').on('toggle',function(){
 			countChecked();
@@ -305,13 +310,10 @@ card: "membership-form-councils"
 			}
 
 			selectedCouncilsRaw = $( "input[name=checkbox-council]:checked" ).serializeArray();
-			console.dir(selectedCouncilsRaw);
-			console.log("Selected councils");
 
 			createSelectedCouncilsList();
 
 			writeCouncilListToModal();
-
 
 		});
 
@@ -327,5 +329,3 @@ card: "membership-form-councils"
 		});
 	});
 </script>
-
-
