@@ -1086,12 +1086,32 @@ visibility: hidden;
     margin-left: 15px;
     margin-top: 10px;
 }
-.tier,
-.councilSummary{
-    padding-left:0px;
+
+/*Panels*/
+.panel-default {
+    border-color: #d6e1e5;
+}
+.panel-heading {
+    color: #364347;
+    background-color: #e1eef3;
+    border-color: #d6e1e5;
+}
+.panelHeight{
+    height:50px;
 }
 .cost{
     float:right;
+    padding-left:85px;
+}
+.buttonEdit{
+    margin-top:8px;
+    height: 22px;
+}
+.membershipTier{
+    padding-left: 0px;
+}
+.attachPanel{
+    margin-bottom:0px;
 }
 .careerCost{
     float:right;
@@ -1101,21 +1121,20 @@ visibility: hidden;
     float:right;
     padding-left: 85px;
 }
-.paginationSummary{
+.totalCost{
     float:right;
+    padding-left:75px;
 }
-.buttonEdit{
-    margin-top:8px;
+.total{
+    padding-left:0px;
 }
-.purchaseSummaryContent1{
-    width:15%;
+.councilSummary,
+.tier{
+    padding-left: 0px;
 }
-.addressMargin{
-    margin-top:5px;
+.profileSummary{
+    padding-left:40px;
 }
 .note{
-    margin-top:10px;
-}
-.memberProfileMargin{
-    margin-bottom:10px
+    margin-top: 10px;
 }
