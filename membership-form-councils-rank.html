@@ -2,20 +2,22 @@
 layout: l_right_sidebar
 bodyClass: "membership-tiers"
 sidebar: "sidebar_membership_tiers.html"
-title: "Become a Member"
+title: "Premium Professional Plus"
 showTitle: true
 card: "membership-form-councils"
 ---
-<h2 class="heading border-1-bottom text-primary">Premium Professional Plus</h2>
+<h2 class="heading text-primary text-uppercase">Rank Your Councils</h2>
 
 
-
+{% comment %}
 {% include components/step-card.html %}
+
+{% endcomment %}
 
 
 <!--Membership Form-->
 
-<div class="col-sm-12">
+<div class="">
 	<form action="" method="post" role="form">
 	<div class="panel panel-default">
 		<!-- Default panel contents -->
@@ -55,76 +57,9 @@ card: "membership-form-councils"
 	</div><!-- //.panel -->
 
 	<!--Submit-->
-	<a href="membership-form-checkout.html" type="submit" class="btn btn-primary"> Next </a>
+	<a href="membership-form-journals.html" type="submit" class="btn btn-primary"> Next </a>
 	</form>
 
 </div>
-
-
-<!--//{{council.snippet}}-->
-
-
-
-<!--Activate the sort-->
-<script>
-	$(function() {
-		//On page load make sure all input checkbox is reset to unchecked
-		$('input:checkbox').prop('checked',false);
-
-		//councilList obj to hold selected councils
-		var councilsList = {
-			_array: [],
-			makeList: function(){
-				councilsList._array = [];
-				$('.ui-sortable-handle.checked').each(function(){
-					councilsList._array.push($(this).attr('id'));
-				});
-				console.log(councilsList._array);
-			}
-		};
-
-		/*$( "#sortable" ).sortable({
-			update:function(){
-				councilsList.makeList();
-			}
-		});*/
-
-		//Checkbox
-		var hideMe = function(){
-			var $elems = $("input:checkbox:not(:checked)");
-			$elems.each(function(){
-				$(this).prop('disabled',true).closest('.checkbox').addClass('disabled').parents('.ui-sortable-handle').addClass('disabled');
-				console.log($(this));
-			});
-			councilsList.makeList();
-		};
-		var showMe = function(){
-			var $elems = $("input:checkbox:not(:checked)");
-			$elems.each(function(){
-				$(this).prop('disabled',false).closest('.checkbox').removeClass('disabled').parents('.ui-sortable-handle').removeClass('disabled');
-				console.log($(this));
-			});
-		};
-		var countChecked = function() {
-			var n = $( "input:checkbox:checked" ).length;
-			var numberCouncilAllowMax = 3;
-			setTimeout(function(){
-				if (n >= numberCouncilAllowMax) {
-					hideMe();
-					//trigger warning modal, warningModal
-					$('#warningModal').modal('show')
-
-				}else{
-					showMe();
-				}
-			},200);
-		};
-
-		$('.checkbox').on('toggle',function(){
-			countChecked();
-			$(this).parent().toggleClass('checked');
-		});
-	});
-</script>
 
 
