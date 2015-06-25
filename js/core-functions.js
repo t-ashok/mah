@@ -165,9 +165,10 @@ var onReady = {
 			cellAlign: 'left',
 			contain: true,
 			prevNextButtons: false,
-			autoPlay:true,
+			autoPlay:5000,
 			accessibility: true,
-			wrapAround: true
+			wrapAround: true,
+			pageDots: false
 		});
 
 		nav.init();

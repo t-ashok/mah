@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/core-functions.js" afterPath="$PROJECT_DIR$/js/core-functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-payment.html" afterPath="$PROJECT_DIR$/membership-form-payment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" afterPath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/sidebar_membership_tiers.html" afterPath="$PROJECT_DIR$/_includes/sidebar_membership_tiers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -26,7 +30,7 @@
     <favorites_list name="mah" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37833828">
+    <splitter split-orientation="horizontal" split-proportion="0.39719626">
       <split-first>
         <leaf>
           <file leaf-file-name="membership.html" pinned="false" current-in-tab="false">
@@ -93,20 +97,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="core.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/core.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.83870965">
+                <state vertical-scroll-proportion="-17.333334">
                   <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="testimonials.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="testimonials.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_includes/components/testimonials.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="1.0427808">
                   <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -154,8 +158,8 @@
           <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.0588236">
-                  <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+                <state vertical-scroll-proportion="-5.9615383">
+                  <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
                   <folding>
                     <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
                   </folding>
@@ -163,31 +167,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="membership-summary-widget.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="sidebar_membership_tiers.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/_includes/sidebar_membership_tiers.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-2.6470587">
+                  <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="core-functions.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/core-functions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.50537634">
+                  <caret line="167" column="22" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="membership-summary-widget.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6179775">
-                  <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="councils.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_data/councils.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.875">
-                  <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="47" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="journals.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/_data/journals.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.375">
-                  <caret line="31" column="57" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="57" />
+                <state vertical-scroll-proportion="-4.576923">
+                  <caret line="66" column="89" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
                   <folding />
                 </state>
               </provider>
@@ -234,7 +238,6 @@
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_data/main-navigation.json" />
         <option value="$PROJECT_DIR$/js/checkbox.js" />
-        <option value="$PROJECT_DIR$/js/core-functions.js" />
         <option value="$PROJECT_DIR$/_includes/components/dropdown-countries.html" />
         <option value="$PROJECT_DIR$/../Sites/ECC/v2/atg-add-class.html" />
         <option value="$PROJECT_DIR$/_includes/full-width-jumbotron-membership-tiers.html" />
@@ -259,14 +262,15 @@
         <option value="$PROJECT_DIR$/_includes/components/dropdown-payment-promotion-code-01.html" />
         <option value="$PROJECT_DIR$/_includes/components/dropdown-payment-promotion-code-02.html" />
         <option value="$PROJECT_DIR$/_data/journals.json" />
-        <option value="$PROJECT_DIR$/_includes/sidebar_membership_tiers.html" />
-        <option value="$PROJECT_DIR$/membership-form-payment.html" />
         <option value="$PROJECT_DIR$/membership-form-councils.html" />
         <option value="$PROJECT_DIR$/membership-form-journals.html" />
         <option value="$PROJECT_DIR$/membership-form.html" />
         <option value="$PROJECT_DIR$/membership-form-checkout.html" />
         <option value="$PROJECT_DIR$/css/core.css" />
         <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
+        <option value="$PROJECT_DIR$/membership-form-payment.html" />
+        <option value="$PROJECT_DIR$/_includes/sidebar_membership_tiers.html" />
+        <option value="$PROJECT_DIR$/js/core-functions.js" />
       </list>
     </option>
   </component>
@@ -494,7 +498,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/core.css</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/membership-form-summary.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -646,12 +649,6 @@
       <created>1430757209368</created>
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
-      <created>1433277948441</created>
-      <option name="number" value="00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1433277948441</updated>
     </task>
     <task id="LOCAL-00094" summary="Tu: added .heading class to make h1,h2, etc. thin and red&#10;">
       <created>1433281989101</created>
@@ -941,12 +938,18 @@
       <option name="project" value="LOCAL" />
       <updated>1435263128416</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Tu: Additional membership pages - Payment&#10;&#10;">
+      <created>1435263152502</created>
+      <option name="number" value="00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1435263152502</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="1616" height="987" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849163" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12402235" sideWeight="0.4827366" order="7" side_tool="false" content_ui="tabs" />
@@ -1184,13 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/core-functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/allscripts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32490975">
@@ -1224,16 +1220,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="638" column="32" selection-start-line="638" selection-start-column="32" selection-end-line="638" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/testimonials.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,22 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/sidebar_membership_tiers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20491803">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/councils.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/journals.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.375">
@@ -1394,26 +1364,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/core.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83870965">
+        <state vertical-scroll-proportion="-17.333334">
           <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_data/councils.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="66" column="89" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/testimonials.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0427808">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0588236">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state vertical-scroll-proportion="-5.9615383">
+          <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
+    <entry file="file://$PROJECT_DIR$/_includes/sidebar_membership_tiers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6179775">
-          <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+        <state vertical-scroll-proportion="-2.6470587">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/core-functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50537634">
+          <caret line="167" column="22" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
           <folding />
         </state>
       </provider>
