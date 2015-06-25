@@ -118,7 +118,8 @@
     "snippet": "The Stroke Council works to help prevent, identify, and treat cerebrovascular disease and rehabilitate those who have it. The Council helps publish Stroke, awards scholarships and conducts the International Stroke Conference, one of the most successful and prestigious conferences in the world.",
     "addonid":"WSO",
     "addonname":"World Stroke Organization",
-    "addonprice":"20.00"
+    "addonprice":"20.00",
+    "addonnote":"Developer Note: For General membership only"
   }
 ]
 }
