@@ -29,16 +29,17 @@ card: "membership-form"
 <!--Membership Tier-->
 <div class="panel panel-default attachPanel">
     <div class="panel-heading panelHeight">
-        <div>
-            <h5 class="col-sm-3 membershipTier">Membership Tier</h5>
-            <button class="col-sm-1 buttonEdit">Edit</button>
-            <h5 class="col-sm-2 cost">COST</h5>
-        </div>
+        <h5 class="col-sm-3 membershipTier">Membership Tier</h5>
+        <h5 class="col-sm-2 cost">COST</h5>
+        <form action="membership-tiers.html" class="buttonEdit">
+            <input type="submit" value="Edit">
+        </form>
     </div>
 
     <div class="panel-body">
-        <div><b>Early Career</b></div>
-        <div class="careerCost">$75.00</div>
+        <div><b>Early Career</b>
+            <div class="careerCost">$75.00</div>
+        </div>
         <div class="note">Valid Through: 6/30/2016</div>
         <div class="note">*NOTE: All membership terms are automatically set to expire in June or December. If you need further explanation about
             the renewal process, please call Customer Service at 1-800-787-8984 (inside U.S.) or 1-301-223-2307 (outide U.S.)
@@ -52,8 +53,10 @@ card: "membership-form"
 <div class="panel panel-default attachPanel">
     <div class="panel-heading panelHeight">
         <h5 class="councilSummary col-sm-5">Scientific Council Affiliation(s) Summary</h5>
-        <button class="buttonEdit col-sm-1">Edit</button>
         <h5 class="col-sm-2 cost">COST</h5>
+        <form action="membership-form-councils.html" class="buttonEdit">
+            <input type="submit" value="Edit">
+        </form>
     </div>
 
     <div class="panel-body">
@@ -75,11 +78,83 @@ card: "membership-form"
 </div>
 <!--Council Summary Ends-->
 
+<!--Journals-->
+<div class="panel panel-default attachPanel">
+    <div class="panel-heading panelHeight">
+        <h5 class="col-sm-2">Journals</h5>
+        <h5 class="col-sm-2 cost">COST</h5>
+        <form action="membership-form-journals.html" class="buttonEdit">
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Circulation</strong>
+                <a href="#" class="small text-muted text-serif"><em>(description)</em></a>
+                <label class="checkbox checkbox-journal">
+                    <span class="icons">
+                        <span class="first-icon"></span>
+                        <span class="second-icon fa fa-check"></span>
+                    </span>
+                    <span class="icons">
+                        <span class="first-icon"></span>
+                        <span class="second-icon fa fa-check"></span>
+                    </span>
+                    <input data-type="checkbox-journal" name="checkbox-journal" data-toggle="checkbox" type="checkbox">
+                    <span class="">Online subscription</span>
+                    <span class="pull-right">
+                        <strong>$615.00</strong>
+                    </span>
+                </label>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="checkbox checkbox-print">
+							<span class="icons">
+								<span class="first-icon"></span>
+								<span class="second-icon fa fa-check"></span>
+							</span>
+                            <span class="icons">
+                                <span class="first-icon"></span>
+                                <span class="second-icon fa fa-check"></span>
+                            </span>
+                            <input data-type="checkbox-print" name="checkbox-print" data-toggle="checkbox" type="checkbox">
+                            <span class="col-sm-9 print">Print subscription (online subscription included) </span>
+						<span class="pull-right col-sm-3 col-xs-12">
+							<div class="row">
+							<span class="col-sm-6 col-xs-6 text-right padding-0">
+								<strong>$623.00</strong><br>
+								<span class="text-muted text-serif"><em>Domestic</em></span>
+							</span>
+
+							<span class="col-sm-6 col-xs-6 text-right padding-0">
+								<strong>$954.00</strong><br>
+								<span class="text-muted text-serif"><em>International</em></span>
+							</span>
+                            </div>
+						</span>
+
+                        </label>
+
+                    </div>
+                </div>
+
+
+
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Journal Ends-->
+
 <!--Member Profile Summary-->
 <div class="panel panel-default attachPanel">
     <div class="panel-heading panelHeight">
         <h5 class="col-sm-2 tier">Member Profile</h5>
-        <button class="col-sm-1 buttonEdit">Edit</button>
+        <form action="membership-form.html" class="buttonEdit">
+            <input type="submit" value="Edit">
+        </form>
     </div>
     <div class="row">
         <div class="col-sm-3 profileSummary">
