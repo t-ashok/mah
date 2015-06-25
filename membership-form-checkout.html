@@ -2,30 +2,32 @@
 layout: l_right_sidebar
 bodyClass: "membership-tiers"
 sidebar: "sidebar_membership_tiers.html"
-title: "Become a Member"
+title: "Premium Professional Plus"
 showTitle: true
 card: "membership-form-checkout"
 ---
-<h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
+<h2 class="heading text-primary">Billing / Shipping</h2>
 
 {% include components/step-card.html %}
 
 <!--Temporary Space while breadcrumb-->
-<div class="spacer"></div>
+
 
 <!--Membership Form-->
 
 <form action="" method="post" role="form" autocomplete="off">
 
-	<div class="col-sm-12">
-
-		<h3 class="media-heading heading">Billing</h3>
-
+	<div class="">
 		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 	</div>
 
+	<div class="clearfix">
 
-	<div class="col-sm-12">
+
+		<h3 class="media-heading heading">Billing</h3>
+
+	</div>
+	<div class="">
 		<div class="panel panel-default bg-color-lightgrey">
 
 			<div class="panel-body">
@@ -74,27 +76,27 @@ card: "membership-form-checkout"
 	</div><!-- //.col -->
 
 
-		<div class="col-sm-12">
+		<div class="">
 			<label id="" class="checkbox" for="same_as_billing">
-							<span class="icons">
-								<span class="first-icon"></span>
-								<span class="second-icon fa fa-check"></span>
-							</span>
+				<span class="icons">
+					<span class="first-icon"></span>
+					<span class="second-icon fa fa-check"></span>
+				</span>
 				<input value="" id="same_as_billing" name="same_as_billing" data-toggle="checkbox" type="checkbox">
-							<span class="">
-								<i class="fa fa-truck" style="transform: scaleX(-1)"></i> Same As Billing
-							</span>
+				<span class="">
+					<i class="fa fa-truck" style="transform: scaleX(-1)"></i> Same As Billing
+				</span>
 			</label>
 		</div>
 
-	<div class="col-sm-12">
+	<div class="clearfix">
 
 
 		<h3 class="media-heading heading">Shipping</h3>
 
 	</div>
 
-	<div class="col-sm-12">
+	<div class="">
 		<div class="panel panel-default bg-color-lightgrey">
 
 			<div class="panel-body">
@@ -108,8 +110,6 @@ card: "membership-form-checkout"
 						<input type="text" class="form-control margin-bottom-10" name="shipping_address3" id="shipping_address3" placeholder="Address 3">
 					</div>
 				</div>
-
-
 
 				<div class=" col-sm-6">
 					<div class="form-group">
@@ -143,7 +143,7 @@ card: "membership-form-checkout"
 	</div><!-- //.col -->
 
 
-	<div class="col-sm-12 spacer">
+	<div class="spacer">
 
 		<a href="membership-form-summary.html" type="submit" class="btn btn-primary"> Next </a>
 	</div>

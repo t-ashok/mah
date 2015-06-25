@@ -2,95 +2,36 @@
 layout: l_right_sidebar
 bodyClass: "membership-tiers"
 sidebar: "sidebar_membership_tiers.html"
-title: "Become a Member"
+title: "Premium Professional Plus"
 showTitle: true
 ---
-<h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
+<h2 class="heading text-primary">Payment</h2>
 
 <!--Temporary Space while breadcrumb-->
-<div class="spacer"></div>
 
-<!--<div class="row">
-	<div class="col-sm-12">
-		<div class="col-sm-3">
-			<div class="membership-step-card panel  animated flipInY">
-				<div class="panel-body text-center">
-				   <h3 class="lead media-heading">
-					   <a href="membership-form.html">
-						   Create Profile
-					   </a>
-					   <br/>
-					   <i class="ion-ios-person"></i>
-				   </h3>
-
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="membership-step-card panel animated flipInY delay-25s">
-				<div class="panel-body text-center">
-					<h3 class="lead media-heading">
-						<a href="membership-form-councils.html">
-							Select Councils
-						</a>
-						<br/><i class="ion-ios-people"></i>
-					</h3>
-
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="membership-step-card panel animated flipInY delay-05s">
-				<div class="panel-body text-center">
-					<h3 class="lead media-heading">
-						<a href="membership-journal.html">
-							Select Journals
-						</a>
-						<br/><i class="ion-ios-paper"></i>
-					</h3>
-
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="membership-step-card active panel animated flipInY delay-75s">
-				<div class="panel-body text-center">
-					<h3 class="lead media-heading">
-						<a href="membership-form-checkout.html">
-							Checkout
-						</a>
-						<br/><i class="ion-ios-cart"></i>
-					</h3>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>-->
-
-
-
-
-<!-- Payment Form -->
-
-
-
-
-
+<div>
+	<p>
+		All payment information below is required. Click on the 'PURCHASE' button to complete your order.
+	</p>
+</div>
 
 <form action="membership-form-more-info.html" method="post" role="form" id="card" autocomplete="off">
-	<!-- Payment -->
+<div class="row">
+	<div class="col-sm-6">
+			<div class="">
 
-	<div class="col-sm-6 col-md-offset-3">
-		<h3 class="lead media-heading">Payment</h3>
 		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 
 		<div class="panel bg-color-lightgrey">
 			<div class="panel-body">
+			<h3 class="heading media-heading">Credit Card Info</h3>
 
 				<div class="card-wrapper">
+					<div class="alert alert-info">
+						<strong>Total</strong><span class="pull-right"><strong>$510.00</strong></span>
+					</div>
 					<!-- credit card here -->
-
+					
 					<div class="form-group">
 						<label for="number">Number <span class="required">*</span></label>
 						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
@@ -118,7 +59,18 @@ showTitle: true
 							<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<label for="promoCode">Promotion Code <span class="required">*</span></label>
+							<!-- dropdown -->
+							{% include components/dropdown-payment-promotion-code-01.html %}
+							<br/><br/>
+							<!-- dropdown -->
+							{% include components/dropdown-payment-promotion-code-02.html %}
 
+						</div>
+					</div>
+					<div class="spacer"></div>
 
 
 				</div>
@@ -127,13 +79,177 @@ showTitle: true
 
 
 		</div>
+
+	</div>
+
+	</div>
+	<div class="col-sm-6">
+		<!-- Auto renew -->
+		<div class="col-sm-12">
+			<h3 class="heading">Auto Renewal</h3>
+			<div class="form-group">
+				<label class="checkbox" for="name">
+					<span class="icons">
+						<span class="first-icon"></span>
+						<span class="second-icon fa fa-check"></span>
+					</span>
+					<input value="" id="name" name="name" data-toggle="checkbox" type="checkbox">
+					<span class="">
+						By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to automatically renew my AHA membership annually. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the auto renewal terms.
+						<br/>
+
+					</span>
+				</label>
+				<div class="clearfix">
+					<a class="text-serif text-muted pull-right" data-toggle="modal" href="#autoRenewModal"><em>(See our auto renewal terms)</em></a>
+				</div>
+			</div>
+		</div>
+		<!-- Payment Plan -->
+		<div class="col-sm-12">
+			<h3 class="heading">Payment Plan</h3>
+			<div class="form-group">
+				<label class="checkbox" for="paymentplan">
+					<span class="icons">
+						<span class="first-icon"></span>
+						<span class="second-icon fa fa-check"></span>
+					</span>
+					<input value="" id="paymentplan" name="paymentplan" data-toggle="checkbox" type="checkbox">
+					<span class="">
+						By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to setup my AHA membership on the Payment Plan. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the auto renewal terms.
+						<br/>
+
+					</span>
+				</label>
+				<div class="clearfix">
+						<a class="text-serif text-muted pull-right" data-toggle="modal" href="#paymentPlanModal"><em>(See our payment plan terms)</em></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--Button-->
+	<div class="col-sm-12">
 		<div class="spacer"></div>
 		<div class="">
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" class="btn btn-primary"> Purchase </button>
 		</div>
 	</div>
+
+
+</div><!-- /.row -->
 </form>
 
+
+<!-- Modals -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Auto Renewal Terms Modal -->
+
+<div class="modal fade" id="autoRenewModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Auto Renewal Terms</h4>
+			</div>
+			<div class="modal-body">
+				<p>The Auto Renewal Program is a renewal option that automatically renews your membership each year.</p>
+				<p>
+					Just think, by taking advantage of this new service, you will...
+					<ul>
+						<li>No longer receive a long series of renewal reminders</li>
+						<li>No longer have to think about where you placed your most recent invoice
+						</li>
+						<li>No longer have to wonder if you have already paid for next year's membership</li>
+						<li>Best yet, you will never again risk missing valuable information and issues because you forgot to renew your membership.</li>
+					</ul>
+				</p>
+				<h5>How the Program Works…</h5>
+				<p>
+					By signing up for the Auto Renewal Program, your membership will automatically be renewed every year moving forward until you instruct us otherwise or until the credit card designated has expired.
+				</p>
+				<p>
+					You will receive an email confirmation once your payment has been processed by Lippincott Williams & Wilkins.
+					<br/><br/>
+					Prior to your renewal period, you will receive a notification letter from Lippincott Williams & Wilkins approximately six weeks before your current membership term expires that your account will be renewed and your designated credit card will be charged.
+					<br/>
+					The credit card designated for your order will be debited for the cost of the membership term, at the then prevailing price. The cost will show on your credit card as a charge from Lippincott Williams & Wilkins.
+					<br/>
+					<ul>
+						<li>If your credit card is declined you will be notified by Lippincott Williams & Wilkins and payment is expected immediately to cover the declined charges</li>
+						<li>If a payment is not made to cover the declined credit card, your membership and online access will be inactivated until paid and you will receive an invoice for the full amount from Lippincott Williams & Wilkins. </li>
+
+					</ul>
+					Should you have any questions about the Auto Renewal Program or no longer wish to be enrolled, please contact Customer Service.
+					<br/>
+					<br/>
+					<strong>Customer Service</strong> <br/>
+					1-800-787-8984 (Inside U.S.) <br/>
+					1-301-223-2307 (Outside U.S.) <br/>
+					<a href="mailto:ahacustomerservice@lww.com">ahacustomerservice@lww.com</a>
+				
+				</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Payment Plan Modal -->
+
+<div class="modal fade" id="paymentPlanModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Payment Plan Terms</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+					The Payment Plan Program is only available for the <strong>Premium Professional Plus</strong> and <strong>Premium Professional</strong> membership levels.
+				</p>
+				<h5>How the Program Works…</h5>
+				<p>
+					By signing up for the Payment Plan Program, your membership becomes active immediately.
+					The Payment Plan Program only applies to your current membership term.
+					Dues are divided into 3 convenient payments:
+					<ul>
+						<li>The 1st payment is due immediately</li>
+						<li>The 2nd payment is due 2 months after the initial payment and will automatically be debited to your credit card</li>
+						<li>The 3rd payment is due 4 months after the initial payment and will automatically be debited to your credit card</li>
+					</ul>
+
+				You will receive an email confirmation once your payment has been processed by Lippincott Williams & Wilkins.
+				<br/><br/>
+				The credit card designated for your order will be debited and show on your credit card as a charge from Lippincott Williams & Wilkins.
+					<ul>
+						<li>If your credit card is declined you will be notified by Lippincott Williams & Wilkins and payment is expected immediately to cover the declined charges</li>
+						<li>If a payment is not made to cover the declined credit card, your membership and online access will be inactivated until paid and you will receive an invoice for the full amount from Lippincott Williams & Wilkins. </li>
+					</ul>
+				Should you have any questions about the Payment Plan Program, please contact Customer Service.
+				<br/>
+				<br/>
+				<strong>Customer Service</strong> <br/>
+				1-800-787-8984 (Inside U.S.) <br/>
+				1-301-223-2307 (Outside U.S.) <br/>
+				<a href="mailto:ahacustomerservice@lww.com">ahacustomerservice@lww.com</a>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Payment Form -->
 <!--  Custom dropdown select with search capabilities  -->
 <link rel="stylesheet" href="http://static.heart.org/ahaanywhere/js/chosen/chosen.css"/>
 <script src="http://static.heart.org/ahaanywhere/js/chosen/chosen.jquery.min.js"></script>
