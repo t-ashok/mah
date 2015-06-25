@@ -10,83 +10,108 @@ card: "membership-form"
 <h2 class="heading border-1-bottom text-primary">Professional Plus</h2>
 
 {% include components/step-card.html %}
+
 <!--Temporary Space while breadcrumb is not in use-->
 <div class="spacer"></div>
 
-<div class="row">
-    <div class="col-sm-6">
+<!--Purchase Summary-->
+<div class="panel panel-default">
+    <div class="panel-heading">
         <h5>PURCHASE SUMMARY</h5>
-     </div>
-    <div class="col-sm-12 purchaseSummaryContent">
+    </div>
+    <div class="panel-body purchaseSummaryContent">
         Carefully review your selections below. If you wish to make changes to your membership, click on the "Edit" button
         next to the appropriate section. When you are ready to complete your order, click on the "Purchase" button at the bottom of this page.
     </div>
 </div>
+<!--Purchase Summary Ends-->
 
-<div class="row">
-    <div class="col-sm-12">
-        <h5 class="col-sm-3 tier">Membership Tier</h5>
-        <button class="col-sm-1 buttonEdit">Edit</button>
-        <h5 class="col-sm-1 cost">COST</h5>
+<!--Membership Tier-->
+<div class="panel panel-default attachPanel">
+    <div class="panel-heading panelHeight">
+        <div>
+            <h5 class="col-sm-3 membershipTier">Membership Tier</h5>
+            <button class="col-sm-1 buttonEdit">Edit</button>
+            <h5 class="col-sm-2 cost">COST</h5>
+        </div>
     </div>
 
-    <h5 class="col-sm-10">Early Career</h5>
-    <div class="col-sm-2 careerCost">$75.00</div>
-
-    <div class="col-sm-3">Valid Through: 6/30/2016</div>
-
-    <div class="col-sm-12 note">*NOTE: All membership terms are automatically set to expire in June or December. If you need further explanation about
-        the renewal process, please call Customer Service at 1-800-787-8984 (inside U.S.) or 1-301-223-2307 (outide U.S.)
-        or email ahacustomerservice@lww.com
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-12">
-        <h5 class="col-sm-5 councilSummary">Scientific Council Affiliation(s) Summary</h5>
-        <button class="col-sm-1 buttonEdit">Edit</button>
-        <h5 class="col-sm-1 cost">COST</h5>
-    </div>
-
-    <div class="col-sm-12">
-        <div class="col-sm-8">1. Stroke Council</div>
-        <div class="councilCost col-sm-2">$0.00</div>
-        <div class="col-sm-8">2. Council on Arteriosclerosis, Thrombosis, and Vascular Biology - Extra Council</div>
-        <div class="councilCost col-sm-2">$50.00</div>
-        <div class="col-sm-8">International Atherosclerotic Society</div>
-        <div class="councilCost col-sm-2">$3.00</div>
+    <div class="panel-body">
+        <div><b>Early Career</b></div>
+        <div class="careerCost">$75.00</div>
+        <div class="note">Valid Through: 6/30/2016</div>
+        <div class="note">*NOTE: All membership terms are automatically set to expire in June or December. If you need further explanation about
+            the renewal process, please call Customer Service at 1-800-787-8984 (inside U.S.) or 1-301-223-2307 (outide U.S.)
+            or email ahacustomerservice@lww.com
+        </div>
     </div>
 </div>
+<!--Membership Tier Ends-->
 
-<div class="row">
-    <div class="col-sm-12">
+<!--Council Summary-->
+<div class="panel panel-default attachPanel">
+    <div class="panel-heading panelHeight">
+        <h5 class="councilSummary col-sm-5">Scientific Council Affiliation(s) Summary</h5>
+        <button class="buttonEdit col-sm-1">Edit</button>
+        <h5 class="col-sm-2 cost">COST</h5>
+    </div>
+
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="councilCost col-sm-2">$0.00</div>
+                <div>1. Stroke Council</div>
+            </li>
+            <li class="list-group-item">
+                <div class="councilCost col-sm-2">$50.00</div>
+                <div>2. Council on Arteriosclerosis, Thrombosis, and Vascular Biology - Extra Council</div>
+            </li>
+            <li class="list-group-item">
+                <div class="councilCost col-sm-2">$3.00</div>
+                <div>International Atherosclerotic Society</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Council Summary Ends-->
+
+<!--Member Profile Summary-->
+<div class="panel panel-default attachPanel">
+    <div class="panel-heading panelHeight">
         <h5 class="col-sm-2 tier">Member Profile</h5>
         <button class="col-sm-1 buttonEdit">Edit</button>
     </div>
+    <div class="row">
+        <div class="col-sm-3 profileSummary">
+            <div>Tu Trinh </div>
+            <h6><b>Primary Address:</b></h6>
+            <div>6809 Wood Crest Ln Sachse TX 75048 USA</div>
+            <h6><b>Shipping Address:</b></h6>
+            <div> 6809 Wood Crest Ln Sachse TX 75048 USA</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="note"><b>Email:</b> tuthanhtrinh@yahoo.com </div>
+            <div class="note"><b>Home Phone:</b></div>
+            <div class="note"><b>Work Phone:</b></div>
+            <div class="note"><b>Job Title:</b></div>
+            <div class="note"><b>Customer Segment:</b> Early Career</div>
+        </div>
+        <div class="col-sm-5">
+            <h6><b>Degrees</b></h6>
+            <div class="note"><b>Advanced Degree:</b></div>
+            <div class="note"><b>Certification 1:</b></div>
+            <div class="note"><b>Certification 2:</b></div>
+            <div class="note"><b>Primary Classification:</b> Administrator</div>
+            <div class="note"><b>Primary Specialty:</b> Allergy and Immunology</div>
+        </div>
+    </div>
+</div>
+<!--Membership Profile Summary-->
 
-    <div class="col-sm-12">
-        <div class="col-sm-3">
-            <div class="memberProfileMargin">Tu Trinh </div>
-            <div>Primary Address:</div>
-            <div class="memberProfileMargin">6809 Wood Crest Ln Sachse TX 75048 USA</div>
-            <div>Shipping Address</div>
-            <div class="memberProfileMargin"> 6809 Wood Crest Ln Sachse TX 75048 USA</div>
-        </div>
-        <div class="col-sm-3">
-            <div class="memberProfileMargin">Email: tuthanhtrinh@yahoo.com </div>
-            <div class="memberProfileMargin">Home Phone:</div>
-            <div class="memberProfileMargin">Work Phone:</div>
-            <div class="memberProfileMargin">Job Title:</div>
-            <div class="memberProfileMargin">Customer Segment: Early Career</div>
-        </div>
-        <div class="col-sm-6">
-            <div class="memberProfileMargin">Degrees</div>
-            <div class="memberProfileMargin">Advanced Degree:</div>
-            <div class="memberProfileMargin">Certification 1:</div>
-            <div class="memberProfileMargin">Certification 2:</div>
-            <div class="memberProfileMargin">Primary Classification: Administrator</div>
-            <div class="memberProfileMargin">Primary Specialty: Allergy and Immunology</div>
-        </div>
+<div class="panel-default">
+    <div class="panel-heading panelHeight">
+        <h5 class="col-sm-3 total">Total</h5>
+        <h5 class="col-sm-2 totalCost">$128.00</h5>
     </div>
 </div>
 
