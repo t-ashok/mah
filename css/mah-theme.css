@@ -197,6 +197,9 @@ Typography
     font-family: serif;
 }
 
+.text-right {
+    text-align: right;
+}
 /*Text Color*/
 .text-danger,
 .text-primary {
