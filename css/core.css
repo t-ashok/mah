@@ -1159,3 +1159,14 @@ visibility: hidden;
 .print{
     padding-left: 0px;
 }
+/*User Agreement*/
+.userAgreement{
+    padding-left: 30px;
+}
+.form-control{
+    width:96%;
+}
+.userText{
+    font-weight:200;
+    font-size: 24px;
+}
