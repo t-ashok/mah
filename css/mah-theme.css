@@ -1224,7 +1224,7 @@ fieldset[disabled] .btn-inverse.active {
 }
 @media (min-width: 1000px) {
     .dropdown-menu {
-        right: 0;
+        /*right: 0;*/
         left: auto;
     }
     .dropdown-menu > .top.arrow {
