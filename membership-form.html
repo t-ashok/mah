@@ -26,35 +26,59 @@ card: "membership-form"
 		<div class="panel panel-default bg-color-lightgrey">
 			<div class="panel-body">
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="email">Username <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="email" id="username" placeholder="Username">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="email">Username <span class="required">*</span> <span class="text-serif text-muted text-italic">(minimum 6 characters)</span></label>
+							<input type="text" class="form-control " required name="email" id="username"
+								   placeholder="Username">
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="email">Email <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="email" id="email" placeholder="Email">
-						<label id="" class="checkbox" for="emailUpdates">
-							<input value="" id="emailUpdates" name="Email Update" data-toggle="checkbox" type="checkbox">Please update me via email
-						</label>
+				
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="email">Email <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="email" id="email"
+								   placeholder="Email">
+							<!--checkbox for email opt in-->
+							<label id="" class="checkbox" for="emailUpdates">
+								<input value="" id="emailUpdates" name="Email Update" data-toggle="checkbox"
+									   type="checkbox">Please update me via email
+							</label>
+						</div>
 					</div>
+					<!--confirm email-->
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="confirmemail">Confirm Email <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="confirmemail" id="confirmemail"
+								   placeholder="Confirm Email">
+
+						</div>
+					</div>
+
 				</div>
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="password">Password <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="password" id="password" placeholder="Password">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="password">Password <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="password" id="password"
+								   placeholder="Password">
+						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6">
-					<div class="form-group">
-						<label for="confirmPassword">Confirm Password <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="confirmPassword"
+								   id="confirmPassword" placeholder="Confirm Password">
+						</div>
 					</div>
-				</div>
+				</div><!-- /.row -->
 			</div>
 		</div>
 	</div>
@@ -230,9 +254,9 @@ card: "membership-form"
     You may terminate your access privilege to the AHA Extranet at any time by providing written or email notice to the Association at websupport@heart.org.  The Association also reserves the right to terminate your registration at any time without notice.  All applicable provisions of the Agreement will survive termination of this Agreement.
     		</textarea>
 
-	<label class="checkbox col-sm-12" for="agreementTerms">
-		<input value="" id="agreementTerms" name="Agreement Terms" data-toggle="checkbox" type="checkbox">I agree to the user agreement.
-	</label>
+		<label class="checkbox col-sm-12" for="agreementTerms">
+			<input value="" id="agreementTerms" name="Agreement Terms" data-toggle="checkbox" type="checkbox">I agree to the user agreement. <span class="text-serif text-muted text-italic">(required)</span><span class="required">*</span>
+		</label>
 	</div>
 
 
