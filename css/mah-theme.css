@@ -196,7 +196,9 @@ Typography
 .text-serif {
     font-family: serif;
 }
-
+.text-italic {
+    font-style: italic;
+}
 
 /*Text Color*/
 .text-danger,
