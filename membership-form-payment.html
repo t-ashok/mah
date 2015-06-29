@@ -13,6 +13,7 @@ showTitle: true
 	<p>
 		All payment information below is required. Click on the 'PURCHASE' button to complete your order.
 	</p>
+	<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
 </div>
 
 <form action="membership-form-more-info.html" method="post" role="form" id="card" autocomplete="off">
@@ -34,9 +35,9 @@ showTitle: true
 				<br/><br/>
 				<!-- multi-year -->
 				<label for="multiyear">
-					Membership subscription years
+					Membership Subscription Years
 					<br/>
-					<span class="text-muted text-serif small">( You can now select membership subscription years )</span>
+					<span class="text-muted text-serif text-italic">( You can now select membership subscription years )</span>
 				</label>
 				<select name="multiyear" id="multiyear" class="form-control">
 					<option value="1"> 1 </option>
@@ -51,48 +52,52 @@ showTitle: true
 		</div><!-- /.row -->
 		<div class="spacer"></div>
 
-		<!-- Auto renew -->
-		<div class="col-sm-12">
-			<h3 class="heading">Auto Renewal</h3>
-			<div class="form-group">
-				<label class="checkbox" for="name">
-					<span class="icons">
-						<span class="first-icon"></span>
-						<span class="second-icon fa fa-check"></span>
-					</span>
-					<input value="" id="name" name="name" data-toggle="checkbox" type="checkbox">
-					<span class="">
-						By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to automatically renew my AHA membership annually. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the auto renewal terms.
-						<br/>
+		<div class="row">
+			<h3 class="heading media-heading col-sm-12">Payment Options</h3>
+			<!-- Auto renewal -->
+			<div class="col-sm-12">
+				<h5 class="">Auto Renewal</h5>
+				<div class="form-group">
+					<label class="checkbox" for="name">
+						<span class="icons">
+							<span class="first-icon"></span>
+							<span class="second-icon fa fa-check"></span>
+						</span>
+						<input value="" id="name" name="name" data-toggle="checkbox" type="checkbox">
+						<span class="">
+							By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to automatically renew my AHA membership annually. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the auto renewal terms.
+							<br/>
 
-					</span>
-				</label>
-				<div class="clearfix">
-					<a class="text-serif text-muted pull-right" data-toggle="modal" href="#autoRenewModal"><em>(See our auto renewal terms)</em></a>
+						</span>
+					</label>
+					<div class="clearfix">
+						<a class="text-serif text-muted text-italic pull-right" data-toggle="modal" href="#autoRenewModal">(See our auto renewal terms)</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Payment Plan -->
-		<div class="col-sm-12">
-			<h3 class="heading">Payment Plan</h3>
-			<div class="form-group">
-				<label class="checkbox" for="paymentplan">
-					<span class="icons">
-						<span class="first-icon"></span>
-						<span class="second-icon fa fa-check"></span>
-					</span>
-					<input value="" id="paymentplan" name="paymentplan" data-toggle="checkbox" type="checkbox">
-					<span class="">
-						By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to setup my AHA membership on the Payment Plan. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the payment plan terms.
-						<br/>
 
-					</span>
-				</label>
-				<div class="clearfix">
-					<a class="text-serif text-muted pull-right" data-toggle="modal" href="#paymentPlanModal"><em>(See our payment plan terms)</em></a>
+			<!-- Payment Plan -->
+			<div class="col-sm-12">
+				<h5 class="">Payment Plan</h5>
+				<div class="form-group">
+					<label class="checkbox" for="paymentplan">
+						<span class="icons">
+							<span class="first-icon"></span>
+							<span class="second-icon fa fa-check"></span>
+						</span>
+						<input value="" id="paymentplan" name="paymentplan" data-toggle="checkbox" type="checkbox">
+						<span class="">
+							By checking this box, I authorize Lippincott Williams & Wilkins (LWW) to setup my AHA membership on the Payment Plan. I understand the credit card designated for this order will be debited for the cost of my membership as a charge from LWW. I agree to the payment plan terms.
+							<br/>
+
+						</span>
+					</label>
+					<div class="clearfix">
+						<a class="text-serif text-muted text-italic pull-right" data-toggle="modal" href="#paymentPlanModal">(See our payment plan terms)</a>
+					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- /.row -->
 
 
 
@@ -101,7 +106,7 @@ showTitle: true
 	<div class="col-sm-6">
 			<div class="">
 
-		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+
 
 		<div class="panel bg-color-lightgrey">
 			<div class="panel-body">
@@ -117,10 +122,12 @@ showTitle: true
 					</div>
 					<!-- credit card here -->
 					
-					<div class="form-group">
+					<div class="row	">
+						<div class="form-group col-sm-12">
 						<label for="number">Number <span class="required">*</span></label>
 						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
-					</div>
+						</div>
+					</div><!-- /.row -->
 
 					<div class="row">
 						<div class="form-group col-sm-6">
