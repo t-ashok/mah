@@ -1160,15 +1160,15 @@ visibility: hidden;
     padding-left: 0px;
 }
 /*User Agreement*/
-.userAgreement{
-    padding-left: 30px;
-}
+    /*.userAgreement{*/
+        /*padding-left: 30px;*/
+    /*}*/
 
-.userText{
-    font-weight:200;
-    font-size: 24px;
-}
-.agreementCheckbox{
-    padding-left: 15px;
-    padding-top: 10px;
-}
+/*.userText{*/
+    /*font-weight:200;*/
+    /*font-size: 24px;*/
+/*}*/
+/*.agreementCheckbox{*/
+    /*padding-left: 15px;*/
+    /*padding-top: 10px;*/
+/*}*/

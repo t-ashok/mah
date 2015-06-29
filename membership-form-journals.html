@@ -57,7 +57,7 @@ card: "membership-form-journals"
 			{% for journal in journals %}
 			<li class="list-group-item">
 				<strong>{{journal.name}}</strong>
-				<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}"><em>(description)</em></a>
+				<a href="#" class="small text-muted text-serif text-italic" data-toggle="modal" data-target="#{{journal.journalCode | append:'Modal'}}">(description)</a>
 				<label class="checkbox checkbox-journal" for="{{journal.journalCode}}">
 				<span class="icons">
 					<span class="first-icon"></span>
@@ -85,12 +85,12 @@ card: "membership-form-journals"
 							<div class="row">
 							<span class="col-sm-6 col-xs-6 text-right padding-0">
 								<strong>{{journal.inside}}</strong><br/>
-								<span class="text-muted text-serif"><em>Domestic</em></span>
+								<span class="text-muted text-serif text-italic">Domestic</span>
 							</span>
 
 							<span class="col-sm-6 col-xs-6 text-right padding-0">
 								<strong>{{journal.outside}}</strong><br/>
-								<span class="text-muted text-serif"><em>International</em></span>
+								<span class="text-muted text-serif text-italic">International</span>
 							</span>
 							</div>
 						</span>

@@ -47,7 +47,7 @@ card: "membership-form-councils"
 					<input data-type="checkbox-council" value="{{council.councilCode}}" id="{{council.councilCode}}" name="checkbox-council" data-toggle="checkbox" type="checkbox">
 					<strong>{{council.councilCode}}</strong>: {{council.name}}
 
-					<a href="#" class="small text-muted text-serif" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}"><em>(description)</em></a>
+					<a href="#" class="small text-muted text-serif text-italic" data-toggle="modal" data-target="#{{council.councilCode | append:'Modal'}}">(description)</a>
 				</label>
 
 
@@ -62,7 +62,7 @@ card: "membership-form-councils"
 									<span class="second-icon fa fa-check"></span>
 								</span>
 									<input value="{{council.addonid}}" data-type="checkbox-addon" id="{{council.addonid}}" name="checkbox-addon" data-toggle="checkbox" type="checkbox">
-									<strong>{{council.addonname}}</strong><span class="text-muted text-serif"><em> ({{council.addonnote}}) </em></span>
+									<strong>{{council.addonname}}</strong><span class="text-muted text-serif text-italic"> ({{council.addonnote}}) </span>
 
 								<span class="pull-right margin-left-10"><strong>+ ${{council.addonprice}}</strong></span>
 							</label>
