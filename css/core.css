@@ -1112,9 +1112,14 @@ visibility: hidden;
 .panelHeading{
     height:50px;
 }
+.summaryHead{
+    margin-top:4px;
+    padding-left: 0px;
+}
 .cost{
     float:right;
-    padding-left:70px;
+    padding-left:65px;
+    margin-top: 5px;
 }
 .buttonEdit{
     margin-top:8px;
@@ -1123,27 +1128,19 @@ visibility: hidden;
 .membershipTier{
     padding-left: 0px;
 }
-.attachPanel{
-    margin-bottom:0px;
-}
 .careerCost{
     float:right;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 .councilCost{
     float:right;
-    padding-left: 85px;
+    padding-left: 79px;
 }
 .totalCost{
     float:right;
-    padding-left:75px;
 }
 .total{
     padding-left:0px;
-}
-.councilSummary,
-.tier{
-    padding-left: 0px;
 }
 .profileSummary{
     padding-left:40px;
@@ -1160,15 +1157,15 @@ visibility: hidden;
     padding-left: 0px;
 }
 /*User Agreement*/
-    /*.userAgreement{*/
-        /*padding-left: 30px;*/
-    /*}*/
+   /* .userAgreement{
+        padding-left: 30px;
+    }
 
-/*.userText{*/
-    /*font-weight:200;*/
-    /*font-size: 24px;*/
-/*}*/
-/*.agreementCheckbox{*/
-    /*padding-left: 15px;*/
-    /*padding-top: 10px;*/
-/*}*/
+.userText{
+    font-weight:200;
+    font-size: 24px;
+}
+.agreementCheckbox{
+    padding-left: 15px;
+    padding-top: 10px;
+}*/
