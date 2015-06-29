@@ -18,82 +18,39 @@ showTitle: true
 <form action="membership-form-more-info.html" method="post" role="form" id="card" autocomplete="off">
 <div class="row">
 	<div class="col-sm-6">
-			<div class="">
-
-		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
-
-		<div class="panel bg-color-lightgrey">
-			<div class="panel-body">
-			<h3 class="heading media-heading">Credit Card Info</h3>
-
-				<div class="card-wrapper">
-					<div class="alert alert-info clearfix">
-<div class="row spacer spacer-0">
-						<span class="col-xs-9"><strong>Total</strong> </span><span class="col-xs-3"><strong>$968.00</strong></span>
-					</div>
-
-						<a href="membership-form-summary.html" class="text-right small" style="text-align: right;">view summary</a>
-					</div>
-					<!-- credit card here -->
-					
-					<div class="form-group">
-						<label for="number">Number <span class="required">*</span></label>
-						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
-					</div>
-
-					<div class="row">
-						<div class="form-group col-sm-6">
-							<label for="first-name">First Name <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="first-name" id="first-name"
-								   placeholder="First Name">
-						</div>
-						<div class="form-group col-sm-6">
-							<label for="last-name">Last Name <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="last-name" id="last-name"
-								   placeholder="Last Name">
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-sm-6">
-							<label for="expiry">Expiration <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
-						</div>
-						<div class="form-group col-sm-6">
-							<label for="cvc">CVC <span class="required">*</span></label>
-							<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<label for="promoCode">Promotion Code <span class="required">*</span></label>
-							<!-- dropdown -->
-							{% include components/dropdown-payment-promotion-code-01.html %}
-							<br/><br/>
-							<!-- dropdown -->
-							{% include components/dropdown-payment-promotion-code-02.html %}
-
-						</div>
-					</div>
-					<div class="spacer"></div>
 
 
-				</div>
-				<!--Button-->
-				<div class="col-sm-12">
-					<div class="spacer"></div>
-					<div class="">
-						<button type="submit" class="btn btn-primary"> Purchase </button>
-					</div>
-				</div>
-			</div><!-- /.panel-body -->
 
 
-		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<label for="promoCode">Promotion Code <span class="required">*</span></label>
+				<!-- dropdown -->
+				{% include components/dropdown-payment-promotion-code-01.html %}
+				<br/><br/>
+				<!-- dropdown -->
+				{% include components/dropdown-payment-promotion-code-02.html %}
 
-	</div>
+				<br/><br/>
+				<!-- multi-year -->
+				<label for="multiyear">
+					Membership subscription years
+					<br/>
+					<span class="text-muted text-serif small">( You can now select membership subscription years )</span>
+				</label>
+				<select name="multiyear" id="multiyear" class="form-control">
+					<option value="1"> 1 </option>
+					<option value="2"> 2 </option>
+					<option value="3"> 3 </option>
+					<option value="4"> 4 </option>
 
-	</div>
-	<div class="col-sm-6">
+
+				</select>
+
+			</div>
+		</div><!-- /.row -->
+		<div class="spacer"></div>
+
 		<!-- Auto renew -->
 		<div class="col-sm-12">
 			<h3 class="heading">Auto Renewal</h3>
@@ -132,7 +89,7 @@ showTitle: true
 					</span>
 				</label>
 				<div class="clearfix">
-						<a class="text-serif text-muted pull-right" data-toggle="modal" href="#paymentPlanModal"><em>(See our payment plan terms)</em></a>
+					<a class="text-serif text-muted pull-right" data-toggle="modal" href="#paymentPlanModal"><em>(See our payment plan terms)</em></a>
 				</div>
 			</div>
 		</div>
@@ -140,7 +97,73 @@ showTitle: true
 
 
 
-	</div> <!-- /.second column -->
+	</div>
+	<div class="col-sm-6">
+			<div class="">
+
+		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+
+		<div class="panel bg-color-lightgrey">
+			<div class="panel-body">
+			<h3 class="heading media-heading">Credit Card Info</h3>
+
+				<div class="card-wrapper">
+					<div class="alert alert-info clearfix">
+						<div class="row spacer spacer-0">
+							<span class="col-xs-6"><strong>Total</strong> </span><span class="col-xs-6 text-right"><strong>$968.00</strong>/yr</span>
+						</div>
+
+						<a href="membership-form-summary.html" class="text-right small" style="text-align: right;">view summary</a>
+					</div>
+					<!-- credit card here -->
+					
+					<div class="form-group">
+						<label for="number">Number <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
+					</div>
+
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label for="first-name">First Name <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="first-name" id="first-name"
+								   placeholder="First Name">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="last-name">Last Name <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="last-name" id="last-name"
+								   placeholder="Last Name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label for="expiry">Expiration <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="cvc">CVC <span class="required">*</span></label>
+							<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
+						</div>
+					</div>
+
+
+
+				</div>
+				<!--Button-->
+				<div class="col-sm-12">
+					<div class="spacer"></div>
+					<div class="">
+						<button type="submit" class="btn btn-primary"> Purchase </button>
+					</div>
+				</div>
+			</div><!-- /.panel-body -->
+
+
+		</div>
+
+	</div>
+
+	</div>
+	 <!-- /.second column -->
 
 
 
