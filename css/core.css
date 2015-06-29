@@ -1168,3 +1168,7 @@ visibility: hidden;
     font-weight:200;
     font-size: 24px;
 }
+.agreementCheckbox{
+    padding-left: 15px;
+    padding-top: 10px;
+}
