@@ -17,7 +17,9 @@
       <div class="row">
         <!--Big-->
         <div class="col-sm-6 feature">
-                {% include components/carousel.html %}
+            {% assign hero = "blogBanner.jpg" %}
+            {% assign description = "Stories explaining how the scientific research underway in the Cardiovascular Genome-Phenome Study can save and improve lives" %}
+            {% include components/caption-image-feature.html %}
         </div>
         <!--Quarters-->
         <div class="col-sm-6">

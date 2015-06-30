@@ -1686,7 +1686,7 @@ select[multiple].input-lg {
 }
 
 #main-navigation {
-    border-top: 2px solid #5d5d5d;
+    border-top: 2px solid #000;
     border-bottom: 1px solid #EAEAEA;
     background-color: #f7f7f7;
     /*color: #000;*/
@@ -1715,7 +1715,7 @@ select[multiple].input-lg {
 
 .navbar-nav .dropdown .dropdown-menu {
     background: #f7f7f7;
-    border-top: 4px solid #000;
+    border-top: 2px solid #000;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
     border-left: 1px solid #000;

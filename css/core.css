@@ -548,6 +548,9 @@ width: 350px;
 .navbar-nav>li>.dropdown-menu {
     margin-top: -1px;
     margin-left:    -7px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .avatar-wrapper {
@@ -830,6 +833,11 @@ nav#main-navigation .menu > li {
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
     /*position: relative;*/
+
+}
+
+nav#main-navigation .menu > li ul.list-unstyled li {
+    padding: 0 !important;
 }
 
 nav#main-navigation .menu > li > a {
@@ -1067,10 +1075,7 @@ visibility: hidden;
 
 
 
-    nav#main-navigation .menu > li {
-        /*padding-left: 10px;*/
-        /*padding-right: 10px;*/
-    }
+
 
 
 
@@ -1078,14 +1083,7 @@ visibility: hidden;
 
 /*Bootstrap MD*/
 @media(min-width:992px){
-    /*nav#main-navigation .menu > li > a > a{*/
-        /*font-size: 1em;*/
-    /*}*/
 
-    nav#main-navigation .menu > li {
-        /*padding-left: 6px;*/
-        /*padding-right: 6px;*/
-    }
     .sub-logo {
         width: 300px;
     }
