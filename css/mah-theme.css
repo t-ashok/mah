@@ -199,6 +199,9 @@ Typography
 .text-italic {
     font-style: italic;
 }
+.text-bold {
+    font-weight: bold;
+}
 
 /*Text Color*/
 .text-danger,
