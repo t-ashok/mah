@@ -1141,6 +1141,10 @@ visibility: hidden;
     padding-left:65px;
     margin-top: 5px;
 }
+.costPopUp{
+    float:right;
+    padding-left:65px;
+}
 .buttonEdit{
     margin-top:8px;
     height: 22px;
@@ -1175,6 +1179,23 @@ visibility: hidden;
 /*Journals*/
 .print{
     padding-left: 0px;
+}
+.titlePopUp{
+    padding-bottom:0px;
+}
+.submitButton{
+    margin-left: 475px;
+    margin-top:30px;
+    marigin-bottom:15px;
+}
+.earlyCareerBody{
+    margin-left:20px;
+}
+.careerForm{
+    margin-left:25px;
+}
+.radioMargin{
+    margin-bottom:10px !important;
 }
 /*User Agreement*/
    /* .userAgreement{
