@@ -271,17 +271,16 @@ bodyClass: "membership"
     <!--End cards-->
 </div><!-- //.col-md-12 -->
 
-<!--Student Trainee Modal-->
+<!--Student Trainee Modal
 <div class="modal fade" id="studentTraineeModal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header titlePopUp">
-               <!--RADIO BUTTON STARTs-->
-                <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+            <div class="modal-header">
+               RADIO BUTTON STARTs
+                <label class="radio modal-title">
+                    <input type="radio" name="optionsRadios" data-toggle="radio" checked="">
                     Student/Trainee
-                    <a href="">More Info</a>
-                    <div class="costPopUp">$75.00</div>
+                    <div class="costModal">$75.00</div>
                 </label>
            </div>
             <div class="modal-body">
@@ -289,8 +288,8 @@ bodyClass: "membership"
                     <input value="" id="eligibility" name="Eligible" data-toggle="checkbox" type="checkbox">
                         I certify that I am eligible for this category based on the criteria described in the more link above.
                 </label>
-                <label class="checkbox" for="learn">
-                    <input value="" id="learn" name="Eligible" data-toggle="checkbox" type="checkbox">
+                <label class="checkbox" for="learnStCheckbox">
+                    <input value="" id="learnStCheckbox" name="Eligible" data-toggle="checkbox" type="checkbox">
                     <strong> AHA learning Library - </strong> Check here for online access which includes:<strong> (For an additional $84.00/year)</strong>
                 </label>
                 <ul>
@@ -301,26 +300,26 @@ bodyClass: "membership"
                     <li>Up to 36 tokens to apply toward CME courses available online through Circulation, Stroke and Hypertension with subscription to one or more of those journals.</li>
                 </ul>
                 <div class="submitButton">
+                    <a href="membership.html" role="button" class="btn btn-default btn-sm">Cancel</a>
                     <a href="membership-form.html" role="button" class="btn btn-primary btn-sm">Submit</a>
                 </div>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!--Student Trainee Modal Ends-->
+        </div> /.modal-content
+    </div> /.modal-dialog
+</div> /.modal
+Student Trainee Modal Ends
 
-<!--Early Career Modal-->
+Early Career Modal
 
 <div class="modal fade" id="earlyCareerModal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header titlePopUp">
-                <!--RADIO BUTTON STARTs-->
-                <label class="radio">
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
-                    Early Career
-                    <a href="">More Info</a>
-                    <div class="costPopUp">$75.00</div>
+            <div class="modal-header">
+                RADIO BUTTON STARTs
+                <label class="radio modal-title">
+                    <input type="radio" name="optionsRadios" data-toggle="radio" checked="">
+                        Early Career
+                    <div class="costModal">$75.00</div>
                 </label>
             </div>
             <div class="modal-body earlyCareerBody">
@@ -347,8 +346,8 @@ bodyClass: "membership"
                             </form>
                     </label>
                 </div>
-                <label class="checkbox" for="learn">
-                    <input value="" id="learn" name="Eligible" data-toggle="checkbox" type="checkbox">
+                <label class="checkbox" for="learnEaCheckbox">
+                    <input value="" id="learnEaCheckbox" name="Eligible" data-toggle="checkbox" type="checkbox">
                     <strong> AHA learning Library - </strong> Check here for online access which includes:<strong> (For an additional $84.00/year)</strong>
                 </label>
                 <ul>
@@ -358,11 +357,107 @@ bodyClass: "membership"
                     <li>24 hour cardiovascular new feel.</li>
                     <li>Up to 36 tokens to apply toward CME courses available online through Circulation, Stroke and Hypertension with subscription to one or more of those journals.</li>
                 </ul>
-                <div class="submitButton">
+                <div class="earlyCareerSubmitButton">
+                    <a href="membership.html" role="button" class="btn btn-default btn-sm">Cancel</a>
                     <a href="membership-form.html" role="button" class="btn btn-primary btn-sm">Submit</a>
                 </div>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!--Early Career Modal Ends-->
+        </div> /.modal-content
+    </div> /.modal-dialog
+</div> /.modal
+Early Career Modal Ends-->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="earlyCareerModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header titlePopUp">
+                <h4 class="costModal">$75.00</h4>
+                <h4 class="modal-title">Early Career</h4>
+            </div>
+            <div class="modal-body careerModal">
+                <label>
+                    Please indicate number of years since completion of training:
+                    <div class="careerForm">
+                        <label class="radio radioMargin">
+                            <input type="radio" name="optionsRadios" id="firstCompletion" value="option1" data-toggle="radio">
+                            1st year after completion.
+                        </label>
+                        <label class="radio radioMargin">
+                            <input type="radio" name="optionsRadios" id="secondCompletion" value="option1" data-toggle="radio" checked="">
+                            2nd year after completion.
+                        </label>
+                        <label class="radio radioMargin">
+                            <input type="radio" name="optionsRadios" id="thirdCompletion" value="option1" data-toggle="radio">
+                            3rd year after completion.
+                        </label>
+                        <label class="radio radioMargin">
+                            <input type="radio" name="optionsRadios" id="fourthCompletion" value="option1" data-toggle="radio" checked="">
+                            4th year after completion.
+                        </label>
+                    </div>
+                </label>
+
+
+                <label class="checkbox learningLibrary" for="learnEaCheckbox">
+                    <input value="" id="learnEaCheckbox" name="Eligible" data-toggle="checkbox" type="checkbox">
+                    <strong> AHA learning Library - </strong> Check here for online access which includes:<strong> (For an additional $84.00/year)</strong>
+                </label>
+                <ul>
+                    <li>Access to 7 <strong>online</strong> AHA scientific Journals of your choice (full Text).</li>
+                    <li>Substantial discounts to <strong>online</strong> AHA scientific journal subscription.</li>
+                    <li>Online access to b non-AHA affiliated journals.</li>
+                    <li>24 hour cardiovascular new feel.</li>
+                    <li>Up to 36 tokens to apply toward CME courses available online through Circulation, Stroke and Hypertension with subscription to one or more of those journals.</li>
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm">Submit</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="studentTraineeModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header titlePopUp">
+                <h4 class="costModal">$75.00</h4>
+                <h4 class="modal-title">Student/Trainee</h4>
+            </div>
+            <div class="modal-body careerModal">
+                <label class="checkbox" for="eligibility">
+                    <input value="" id="eligibility" name="Eligible" data-toggle="checkbox" type="checkbox">
+                    I certify that I am eligible for this category based on the criteria described in the more link above.
+                </label>
+
+                <label class="checkbox learningLibrary" for="learnStCheckbox">
+                    <input value="" id="learnStCheckbox" name="Eligible" data-toggle="checkbox" type="checkbox">
+                    <strong> AHA learning Library - </strong> Check here for online access which includes:<strong> (For an additional $84.00/year)</strong>
+                </label>
+                <ul>
+                    <li>Access to 7 <strong>online</strong> AHA scientific Journals of your choice (full Text).</li>
+                    <li>Substantial discounts to <strong>online</strong> AHA scientific journal subscription.</li>
+                    <li>Online access to b non-AHA affiliated journals.</li>
+                    <li>24 hour cardiovascular new feel.</li>
+                    <li>Up to 36 tokens to apply toward CME courses available online through Circulation, Stroke and Hypertension with subscription to one or more of those journals.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <a href="membership-form.html" role="button" class="btn btn-primary btn-sm">Submit</a>
+            </div>
+        </div>
+
+    </div>
+</div>

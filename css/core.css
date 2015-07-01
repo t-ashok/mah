@@ -1180,33 +1180,23 @@ visibility: hidden;
 .print{
     padding-left: 0px;
 }
+/*Modal for early career and student/trainee on membership.html*/
+.costModal{
+    float:right;
+    margin-top: 4px;
+}
 .titlePopUp{
-    padding-bottom:0px;
-}
-.submitButton{
-    margin-left: 475px;
-    margin-top:30px;
-    marigin-bottom:15px;
-}
-.earlyCareerBody{
-    margin-left:20px;
+    background-color: #f2f2f2;
 }
 .careerForm{
-    margin-left:25px;
+    margin-left:20px;
+}
+.careerModal{
+    margin-left: 20px;
 }
 .radioMargin{
     margin-bottom:10px !important;
 }
-/*User Agreement*/
-   /* .userAgreement{
-        padding-left: 30px;
-    }
-
-.userText{
-    font-weight:200;
-    font-size: 24px;
+.learningLibrary{
+    margin-bottom:10px !important;
 }
-.agreementCheckbox{
-    padding-left: 15px;
-    padding-top: 10px;
-}*/
