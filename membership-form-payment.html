@@ -14,10 +14,13 @@ showSummaryWidget: true
 	<p>
 		All payment information below is required. Click on the 'PURCHASE' button to complete your order.
 	</p>
-	<p>
-		Sales tax will be added to Journal subscription orders for residents of AL, CO, FL, GA, HI, ID, IN, KS, LA, MD, MO, ND, NM, NV, PR, RI, SC, SD, UT, VT, WA, WV. GST will be added for residents of Canada. These taxes will be reflected in the actual charges to your credit card at the time your order is processed in our system. Sales tax does not apply to Membership dues.
-	</p>
-	<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> required )</div>
+
+	<div class="alert alert-info">
+		<p>
+			Sales tax will be added to Journal subscription orders for residents of AL, CO, FL, GA, HI, ID, IN, KS, LA, MD, MO, ND, NM, NV, PR, RI, SC, SD, UT, VT, WA, WV. GST will be added for residents of Canada. These taxes will be reflected in the actual charges to your credit card at the time your order is processed in our system. Sales tax does not apply to Membership dues.
+		</p>
+	</div>
+
 </div>
 
 <form action="membership-form-more-info.html" method="post" role="form" id="card" autocomplete="off">
@@ -29,12 +32,12 @@ showSummaryWidget: true
 
 			<div class="panel bg-color-lightgrey">
 				<div class="panel-body">
-					<h3 class="heading media-heading">Credit Card Info</h3>
+					<h3 class="heading media-heading">Credit Card Info <span class="text-muted small">(<span class="required" style="line-height: 12px">*</span> required )</span></h3>
 
 					<div class="card-wrapper">
 						<div class="alert alert-info clearfix">
 							<div class="row spacer spacer-0">
-								<span class="col-xs-6"><strong>Total</strong> </span><span class="col-xs-6 text-right"><strong>$968.00</strong>/yr</span>
+								<span class="col-xs-6"><strong>Total</strong> </span><span class="col-xs-6 text-right"><strong>$1936.00</strong></span>
 							</div>
 
 							<a href="membership-form-summary.html" class="text-right small" style="text-align: right;">view summary</a>
@@ -171,7 +174,8 @@ showSummaryWidget: true
 			<div class="">
 				<!--Previous Button-->
 				<a href="membership-form-summary.html" type="submit" class="btn btn-default btn-default margin-right-10"> Previous </a>
-				<a href="membership-thankyou.html" type="submit" class="btn btn-primary"> Purchase </a>
+				<!--<a href="membership-thankyou.html" type="submit" class="btn btn-primary"> Purchase </a>-->
+				<a class="btn btn-primary" data-toggle="modal" href="#confirmModal"> Purchase </a>
 			</div>
 		</div>
 	</div>
@@ -284,6 +288,26 @@ showSummaryWidget: true
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<!-- Payment Authoization Modal -->
+
+<div class="modal fade" id="confirmModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Payment Confirmation</h4>
+			</div>
+			<div class="modal-body">
+				Payment authorization/confirmation text <br/>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores aspernatur, consectetur impedit itaque iure mollitia nesciunt odit officia optio quis recusandae rem sequi sit, tempore totam vel veniam, vero.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>
+				<a href="membership-thankyou.html" class="btn btn-primary"> Confirm </a>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 <!-- Payment Form -->
