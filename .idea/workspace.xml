@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-payment.html" afterPath="$PROJECT_DIR$/membership-form-payment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-summary.html" afterPath="$PROJECT_DIR$/membership-form-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" afterPath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -78,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/_site/membership-form-checkout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.5833335">
-              <caret line="568" column="108" selection-start-line="568" selection-start-column="108" selection-end-line="568" selection-end-column="108" />
+              <caret line="566" column="0" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -86,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68014705">
+            <state vertical-scroll-proportion="-10.882353">
               <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -106,6 +105,16 @@
               <folding>
                 <element signature="n#style#0;n#span#1;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="membership-summary-widget.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.73309606">
+              <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,7 +190,6 @@
         <option value="$PROJECT_DIR$/css/mah-theme.css" />
         <option value="$PROJECT_DIR$/_layouts/l_no_sidebar.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
         <option value="$PROJECT_DIR$/membership-form-checkout.html" />
         <option value="$PROJECT_DIR$/membership-form-tellusmore.html" />
         <option value="$PROJECT_DIR$/membership.html" />
@@ -192,6 +200,7 @@
         <option value="$PROJECT_DIR$/membership-form.html" />
         <option value="$PROJECT_DIR$/membership-form-payment.html" />
         <option value="$PROJECT_DIR$/membership-form-summary.html" />
+        <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
       </list>
     </option>
   </component>
@@ -544,12 +553,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00113" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <created>1433910158164</created>
-      <option name="number" value="00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1433910158165</updated>
-    </task>
     <task id="LOCAL-00114" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
       <created>1433911504984</created>
       <option name="number" value="00114" />
@@ -838,7 +841,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435856756832</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="Tu: Additional membership pages - Payment&#10;&#10;">
+      <created>1435862350480</created>
+      <option name="number" value="00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1435862350480</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1208,14 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-tellusmore.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1235,7 +1236,7 @@
     <entry file="file://$PROJECT_DIR$/_site/membership-form-checkout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5833335">
-          <caret line="568" column="108" selection-start-line="568" selection-start-column="108" selection-end-line="568" selection-end-column="108" />
+          <caret line="566" column="0" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1299,11 +1300,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68014705">
+        <state vertical-scroll-proportion="-10.882353">
           <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73309606">
+          <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
+          <folding />
         </state>
       </provider>
     </entry>
