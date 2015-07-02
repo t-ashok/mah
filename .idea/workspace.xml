@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-councils.html" afterPath="$PROJECT_DIR$/membership-form-councils.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-summary.html" afterPath="$PROJECT_DIR$/membership-form-summary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" afterPath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,8 +68,8 @@
       <file leaf-file-name="membership-form-councils.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state vertical-scroll-proportion="-5.0392156">
+              <caret line="146" column="46" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -85,14 +87,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.882353">
-              <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.5955882">
+              <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="membership-thankyou.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/membership-thankyou.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-summary-widget.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="membership-summary-widget.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73309606">
-              <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
+            <state vertical-scroll-proportion="-24.5">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -196,11 +208,11 @@
         <option value="$PROJECT_DIR$/_site/membership-form-checkout.html" />
         <option value="$PROJECT_DIR$/membership-thankyou.html" />
         <option value="$PROJECT_DIR$/membership-form-journals.html" />
-        <option value="$PROJECT_DIR$/membership-form-councils.html" />
         <option value="$PROJECT_DIR$/membership-form.html" />
         <option value="$PROJECT_DIR$/membership-form-payment.html" />
-        <option value="$PROJECT_DIR$/membership-form-summary.html" />
         <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
+        <option value="$PROJECT_DIR$/membership-form-councils.html" />
+        <option value="$PROJECT_DIR$/membership-form-summary.html" />
       </list>
     </option>
   </component>
@@ -553,12 +565,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00114" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <created>1433911504984</created>
-      <option name="number" value="00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1433911504984</updated>
-    </task>
     <task id="LOCAL-00115" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
       <created>1433913077323</created>
       <option name="number" value="00115" />
@@ -847,7 +853,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435862350480</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Tu: Additional membership pages - Payment&#10;&#10;">
+      <created>1435862656864</created>
+      <option name="number" value="00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1435862656864</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1243,14 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-thankyou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-journals.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.627451">
@@ -1258,14 +1262,6 @@
           <folding>
             <element signature="n#style#0;n#span#1;n#label#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,21 +1294,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
+    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.882353">
-          <caret line="207" column="39" selection-start-line="207" selection-start-column="39" selection-end-line="207" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-24.5">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
+    <entry file="file://$PROJECT_DIR$/membership-thankyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73309606">
-          <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-councils.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0392156">
+          <caret line="146" column="46" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5955882">
+          <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
