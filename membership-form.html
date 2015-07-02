@@ -4,7 +4,7 @@ bodyClass: "membership-tiers"
 sidebar: "sidebar_membership_tiers.html"
 title: "Premium Professional Plus"
 showTitle: true
-showSummaryWidget: false
+showSummaryWidget: true
 card: "membership-form"
 ---
 
@@ -16,7 +16,7 @@ card: "membership-form"
 
 <!--Temporary Space while breadcrumb-->
 <div class="clearfix">
-		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> = required )</div>
+		<div class="text-muted margin-bottom-10">(<span class="required" style="line-height: 12px">*</span> required )</div>
 </div>
 
 <form action="" method="post" role="form">
@@ -164,49 +164,129 @@ card: "membership-form"
 		</div>
 	</div>
 
-	<div class="col-sm-12">
 
-		<div class="spacer"></div>
-		<h3 class="media-heading heading">Address</h3>
 
-	</div>
+	<div class="clearfix" id="Billing">
 
-	<!--Address-->
-	<div class="col-sm-12">
-		<div class="form-group">
-			<label for="address1">Address</label>
-			<input type="text" class="form-control margin-bottom-10" name="address1" id="address1" placeholder="Street Address (required)">
-			<input type="text" class="form-control margin-bottom-10" name="address2" id="address2" placeholder="Department">
-			<input type="text" class="form-control margin-bottom-10" name="address3" id="address3" placeholder="Building number, Suite Number or Apartment number">
+		<div class="col-sm-12">
+
+
+			<h3 class="media-heading heading">Address</h3>
+
 		</div>
-	</div>
 
-	<div class=" col-sm-6">
-		<div class="form-group">
-			<label for="city">City <span class="required">*</span></label>
-			<input type="text" class="form-control " required name="city" id="city" placeholder="City">
-		</div>
-	</div>
-
-	<div class="col-sm-6 margin-bottom-10">
-		<label for="state"> State/Province <span class="required">*</span></label>
-		{% include components/dropdown-billing-states.html %}
-	</div>
-
-	<div class="col-sm-12">
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="form-group">
-					<label for="zip">Zip/Postal Code <span class="required">*</span></label>
-					<input type="text" class="form-control " required name="zip" id="zip" placeholder="Zip/Postal Code">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="bill_address">Address <span class="required">*</span></label>
+						<input type="text" class="form-control margin-bottom-10" name="billing_address1" id="billing_address1" placeholder="Address 1">
+						<input type="text" class="form-control margin-bottom-10" name="billing_address2" id="billing_address2" placeholder="Address 2">
+						<input type="text" class="form-control margin-bottom-10" name="billing_address3" id="billing_address3" placeholder="Address 3">
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-9">
-				<label for="country"> Country <span class="required">*</span></label>
-				{% include components/dropdown-countries.html %}
-			</div>
+
+
+
+				<div class=" col-sm-6">
+					<div class="form-group">
+						<label for="billing_city">City <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="billing_city" id="billing_city" placeholder="City">
+					</div>
+				</div>
+
+				<div class="col-sm-6 margin-bottom-10">
+					<label for="bill_state"> State <span class="required">*</span></label>
+					{% include components/dropdown-billing-states.html %}
+				</div>
+
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label for="billing_zip">Zip <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="billing_zip" id="billing_zip" placeholder="Zip">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<label for="bill_country"> Country <span class="required">*</span></label>
+							{% include components/dropdown-billing-countries.html %}
+						</div>
+					</div>
+				</div>
+
+
+	</div><!-- //.col -->
+
+	<!-- Shipping Address if select print journal -->
+	<div class="clearfix" id="Shipping">
+		<div class="spacer"></div>
+
+		<!-- Dev note -->
+		<div class="alert alert-info">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<strong>Developer's Note:</strong> Shipping address will appear if select PRINT journal.
 		</div>
-	</div>
+
+
+		<!-- Same As Billing -->
+		<div class="col-sm-12">
+			<label id="" class="checkbox" for="same_as_billing">
+				<span class="icons">
+					<span class="first-icon"></span>
+					<span class="second-icon fa fa-check"></span>
+				</span>
+				<input value="" id="same_as_billing" name="same_as_billing" data-toggle="checkbox" type="checkbox">
+				<span class="">
+					<i class="fa fa-truck" style="transform: scaleX(-1)"></i> Same As Billing
+				</span>
+			</label>
+		</div>
+
+
+		<div class="col-sm-12">
+
+			<h3 class="media-heading heading">Shipping Address</h3>
+
+		</div>
+
+
+
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="ship_address">Address <span class="required">*</span></label>
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address1" id="shipping_address1" placeholder="Address 1">
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address2" id="shipping_address2" placeholder="Address 2">
+						<input type="text" class="form-control margin-bottom-10" name="shipping_address3" id="shipping_address3" placeholder="Address 3">
+					</div>
+				</div>
+
+				<div class=" col-sm-6">
+					<div class="form-group">
+						<label for="shipping_city">City <span class="required">*</span></label>
+						<input type="text" class="form-control " required name="shipping_city" id="shipping_city" placeholder="City">
+					</div>
+				</div>
+
+				<div class="col-sm-6 margin-bottom-10">
+					<label for="shipping_state"> State <span class="required">*</span></label>
+					{% include components/dropdown-shipping-states.html %}
+				</div>
+
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label for="shipping_zip">Zip <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="shipping_zip" id="shipping_zip" placeholder="Zip">
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<label for="country"> Country <span class="required">*</span></label>
+							{% include components/dropdown-shipping-countries.html %}
+						</div>
+					</div>
+				</div>
+
+	</div><!-- //.col -->
 
 	<!--User Agreement-->
 	<div class="col-sm-3">
@@ -216,7 +296,7 @@ card: "membership-form"
 	</div>
 
 	<div class="col-sm-12">
-		<textarea rows="23" class="form-control" name="viewUserAgreement" readonly="readonly">This User Agreement sets forth the terms and conditions governing your access and use of the AHA Extranet. In order to participate you must represent and agree that you are at least eighteen (18) years of age and that you accept this User Agreement. The American Heart Association, Inc. (the "Association") may amend these terms and conditions from time to time without notice.
+		<textarea rows="8" class="form-control" name="viewUserAgreement" readonly="readonly">This User Agreement sets forth the terms and conditions governing your access and use of the AHA Extranet. In order to participate you must represent and agree that you are at least eighteen (18) years of age and that you accept this User Agreement. The American Heart Association, Inc. (the "Association") may amend these terms and conditions from time to time without notice.
     
     1. Notices:
     1.1 YOU ACKNOWLEDGE THAT THE INFORMATION ON THE WEBSITE IS PROVIDED "AS IS" FOR GENERAL INFORMATION ONLY. IT IS NOT INTENDED AS MEDICAL ADVICE, AND SHOULD NOT BE RELIED UPON AS A SUBSTITUTE FOR CONSULTATIONS WITH QUALIFIED HEALTH PROFESSIONALS WHO ARE FAMILIAR WITH YOUR INDIVIDUAL MEDICAL NEEDS
@@ -256,7 +336,7 @@ card: "membership-form"
     		</textarea>
 
 		<label class="checkbox col-sm-12" for="agreementTerms">
-			<input value="" id="agreementTerms" name="Agreement Terms" data-toggle="checkbox" type="checkbox">I agree to the user agreement. <span class="text-serif text-muted text-italic">(required)</span><span class="required">*</span>
+			<input value="" id="agreementTerms" name="Agreement Terms" data-toggle="checkbox" type="checkbox">I agree to the user agreement. <span class="required">*</span>
 		</label>
 	</div>
 
@@ -267,8 +347,9 @@ card: "membership-form"
 	<!--Submit-->
 
 	<div class="col-sm-12 spacer">
-
-		<a href="membership-form-councils.html" type="submit" class="btn btn-primary"> Next </a>
+		<!--Previous Button-->
+		<a href="membership-form-journals.html" type="submit" class="btn btn-default btn-default margin-right-10"> Previous </a>
+		<a href="membership-form-summary.html" type="submit" class="btn btn-primary"> Next </a>
 	</div>
 </form>
 
@@ -281,5 +362,95 @@ card: "membership-form"
 			width:'100%',
 			"disable_search": true
 		});
+	});
+</script>
+
+<script>
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	var getSelectedIndex = function(stateOrCountry) {
+		var i = String(stateOrCountry);
+		switch (i){
+			case "state":
+				return $("select#billing_state").get(0).selectedIndex;
+				break;
+			case "country":
+				return $("select#billing_country").get(0).selectedIndex;
+				break;
+		}
+	}
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var matchBillingAndShippingState = function(selectedIndex){
+
+		if($('#same_as_billing').prop('checked')){
+			$("select#shipping_state")[0].selectedIndex = selectedIndex;
+			$("select#shipping_state").trigger("chosen:updated");
+		}
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var matchBillingAndShippingCountries = function(selectedIndex){
+
+		if($('#same_as_billing').prop('checked')){
+			$("select#shipping_country")[0].selectedIndex = selectedIndex;
+			$("select#shipping_country").trigger("chosen:updated");
+		}
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	$("select#billing_state").on('change',function(evt,params){
+		if($('#same_as_billing').prop('checked')){
+
+			matchBillingAndShippingState(getSelectedIndex("state"));
+			matchBillingAndShippingCountries(getSelectedIndex("country"));
+		}
+	});
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	var resetStateAndCountry = function(){
+
+
+		$("select#shipping_state")[0].selectedIndex = 0;
+		$("select#shipping_state").trigger("chosen:updated");
+
+		$("select#shipping_country")[0].selectedIndex = 0;
+		$("select#shipping_country").trigger("chosen:updated");
+
+
+	};
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	// checkbox
+	$("#same_as_billing").on("change", function(){
+
+		if (this.checked) {
+			console.log("checked");
+
+			$("[name='shipping_address1']").val($("[name='billing_address1']").val());
+			$("[name='shipping_address2']").val($("[name='billing_address2']").val());
+			$("[name='shipping_address3']").val($("[name='billing_address3']").val());
+			$("[name='shipping_city']").val($("[name='billing_city']").val());
+			matchBillingAndShippingState(getSelectedIndex("state"));
+			matchBillingAndShippingCountries(getSelectedIndex("country"));
+
+
+			$("[name='shipping_zip']").val($("[name='billing_zip']").val());
+
+		}else{
+			$("[name='shipping_address1']").val('');
+			$("[name='shipping_address2']").val('');
+			$("[name='shipping_address3']").val('');
+			$("[name='shipping_city']").val('');
+
+			$("[name='shipping_zip']").val('');
+			resetStateAndCountry();
+
+		}
 	});
 </script>
