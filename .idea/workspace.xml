@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-payment.html" afterPath="$PROJECT_DIR$/membership-form-payment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-summary.html" afterPath="$PROJECT_DIR$/membership-form-summary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5513308">
+            <state vertical-scroll-proportion="-7.1153846">
               <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -89,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.529411">
-              <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
+            <state vertical-scroll-proportion="0.35661766">
+              <caret line="136" column="153" selection-start-line="136" selection-start-column="153" selection-end-line="136" selection-end-column="153" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -213,8 +213,8 @@
         <option value="$PROJECT_DIR$/membership-form.html" />
         <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
         <option value="$PROJECT_DIR$/membership-form-councils.html" />
-        <option value="$PROJECT_DIR$/membership-form-summary.html" />
         <option value="$PROJECT_DIR$/membership-form-payment.html" />
+        <option value="$PROJECT_DIR$/membership-form-summary.html" />
       </list>
     </option>
   </component>
@@ -567,12 +567,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00116" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <created>1435075369874</created>
-      <option name="number" value="00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1435075369875</updated>
-    </task>
     <task id="LOCAL-00117" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
       <created>1435093398761</created>
       <option name="number" value="00117" />
@@ -861,7 +855,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435863503088</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Tu: Additional membership pages - Payment&#10;&#10;">
+      <created>1435864937241</created>
+      <option name="number" value="00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1435864937241</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1312,24 +1312,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.529411">
-          <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5513308">
+        <state vertical-scroll-proportion="-7.1153846">
           <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35661766">
+          <caret line="136" column="153" selection-start-line="136" selection-start-column="153" selection-end-line="136" selection-end-column="153" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
