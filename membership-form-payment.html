@@ -10,18 +10,11 @@ showSummaryWidget: true
 
 <!--Temporary Space while breadcrumb-->
 
-<div>
+<!-- <div>
 	<p>
 		All payment information below is required. Click on the 'PURCHASE' button to complete your order.
 	</p>
-
-	<div class="alert alert-info">
-		<p>
-			Sales tax will be added to Journal subscription orders for residents of AL, CO, FL, GA, HI, ID, IN, KS, LA, MD, MO, ND, NM, NV, PR, RI, SC, SD, UT, VT, WA, WV. GST will be added for residents of Canada. These taxes will be reflected in the actual charges to your credit card at the time your order is processed in our system. Sales tax does not apply to Membership dues.
-		</p>
-	</div>
-
-</div>
+</div> -->
 
 <form action="membership-form-more-info.html" method="post" role="form" id="card" autocomplete="off">
 <div class="row">
@@ -32,10 +25,10 @@ showSummaryWidget: true
 
 			<div class="panel bg-color-lightgrey">
 				<div class="panel-body">
-					<h3 class="heading media-heading">Credit Card Info <span class="text-muted small">(<span class="required" style="line-height: 12px">*</span> required )</span></h3>
+					<h3 class="heading media-heading">Credit Card Info <span class="text-muted small" style="font-size: 12px;">(<span class="required" style="line-height: 12px">*</span> required )</span></h3>
 
 					<div class="card-wrapper">
-						<div class="alert alert-info clearfix">
+						<div class="alert alert-danger clearfix">
 							<div class="row spacer spacer-0">
 								<span class="col-xs-6"><strong>Total</strong> </span><span class="col-xs-6 text-right"><strong>$1936.00</strong></span>
 							</div>
@@ -45,23 +38,27 @@ showSummaryWidget: true
 						<div class="row">
 							<div class="col-sm-12">
 								<label for="promoCode">Promotion Code <span class="required">*</span></label>
+							</div>
+
+							<div class="col-sm-6">
 								<!-- dropdown -->
 								{% include components/dropdown-payment-promotion-code-01.html %}
-								<br/><br/>
+							</div>
+							<div class="col-sm-6">
 								<!-- dropdown -->
 								{% include components/dropdown-payment-promotion-code-02.html %}
-
-
-
-
 							</div>
 						</div><!-- /.row -->
 						<!-- credit card here -->
-
+						<div class="spacer"></div>
 						<div class="row	">
-							<div class="form-group col-sm-12">
+							<div class="form-group col-sm-6">
 								<label for="number">Number <span class="required">*</span></label>
 								<input type="text" class="form-control " required name="number" id="number" placeholder="Number">
+							</div>
+							<div class="form-group col-sm-6">
+								<label for="expiry">Expiration <span class="required">*</span></label>
+								<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
 							</div>
 						</div><!-- /.row -->
 
@@ -78,14 +75,11 @@ showSummaryWidget: true
 							</div>
 						</div>
 						<div class="row">
-							<div class="form-group col-sm-6">
-								<label for="expiry">Expiration <span class="required">*</span></label>
-								<input type="text" class="form-control " required name="expiry" id="expiry" placeholder="MM/YYYY">
-							</div>
-							<div class="form-group col-sm-6">
+
+							<!-- <div class="form-group col-sm-6">
 								<label for="cvc">CVC <span class="required">*</span></label>
 								<input type="text" class="form-control " required name="cvc" id="cvc" placeholder="CVC">
-							</div>
+							</div> -->
 						</div>
 
 
@@ -98,7 +92,9 @@ showSummaryWidget: true
 			</div>
 
 		</div>
-
+		<p class="small">
+			Sales tax will be added to Journal subscription orders for residents of AL, CO, FL, GA, HI, ID, IN, KS, LA, MD, MO, ND, NM, NV, PR, RI, SC, SD, UT, VT, WA, WV. GST will be added for residents of Canada. These taxes will be reflected in the actual charges to your credit card at the time your order is processed in our system. Sales tax does not apply to Membership dues.
+		</p>
 	</div>
 	<div class="col-sm-6">
 
@@ -154,6 +150,7 @@ showSummaryWidget: true
 				</div>
 			</div>
 		</div><!-- /.row -->
+
 
 
 

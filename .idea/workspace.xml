@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac3a7d98-7145-4c79-b6dd-46d972c93a34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-councils.html" afterPath="$PROJECT_DIR$/membership-form-councils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-summary.html" afterPath="$PROJECT_DIR$/membership-form-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" afterPath="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membership-form-payment.html" afterPath="$PROJECT_DIR$/membership-form-payment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="be7b7e96-5bf1-47d4-b5a2-c4c339fd7381" name="New changelist" comment="" />
@@ -42,12 +40,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="membership-form-payment.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.371795">
-              <caret line="39" column="52" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="52" />
-              <folding />
+            <state vertical-scroll-proportion="0.5513308">
+              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="membership-form-summary.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5955882">
+            <state vertical-scroll-proportion="-9.529411">
               <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -209,10 +211,10 @@
         <option value="$PROJECT_DIR$/membership-thankyou.html" />
         <option value="$PROJECT_DIR$/membership-form-journals.html" />
         <option value="$PROJECT_DIR$/membership-form.html" />
-        <option value="$PROJECT_DIR$/membership-form-payment.html" />
         <option value="$PROJECT_DIR$/_includes/components/membership-summary-widget.html" />
         <option value="$PROJECT_DIR$/membership-form-councils.html" />
         <option value="$PROJECT_DIR$/membership-form-summary.html" />
+        <option value="$PROJECT_DIR$/membership-form-payment.html" />
       </list>
     </option>
   </component>
@@ -565,12 +567,6 @@
       <option name="number" value="Default" />
       <updated>1430757209368</updated>
     </task>
-    <task id="LOCAL-00115" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
-      <created>1433913077323</created>
-      <option name="number" value="00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1433913077323</updated>
-    </task>
     <task id="LOCAL-00116" summary="Tu: Additional membership pages - Shipping and Billing&#10;&#10;">
       <created>1435075369874</created>
       <option name="number" value="00116" />
@@ -859,7 +855,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435862656864</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Tu: Additional membership pages - Payment&#10;&#10;">
+      <created>1435863503088</created>
+      <option name="number" value="00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1435863503088</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -873,17 +875,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28691983" sideWeight="0.4968153" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19770946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28751975" sideWeight="0.50318474" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2858684" sideWeight="0.5172634" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3039106" sideWeight="0.4900568" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1286,14 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.371795">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/membership-summary-widget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.5">
@@ -1320,10 +1314,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/membership-form-summary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5955882">
+        <state vertical-scroll-proportion="-9.529411">
           <caret line="221" column="90" selection-start-line="221" selection-start-column="90" selection-end-line="221" selection-end-column="90" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/membership-form-payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5513308">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
